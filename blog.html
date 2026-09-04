@@ -1,0 +1,1034 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Blog dan Artikel - Seminarkits.id</title>
+  <meta name="description" content="Temukan wawasan terbaru, tips praktis, dan panduan pengadaan seputar vendor souvenir kantor, seminar kit, corporate gift, kalender duduk meja, hingga finishing cetak dari para pakar kami.">
+  
+  <link rel="canonical" href="https://seminarkits.id/blog.html">
+  <meta name="robots" content="index, follow">
+  
+  <!-- OpenGraph -->
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blog dan Artikel - Seminarkits.id">
+  <meta property="og:description" content="Temukan wawasan terbaru seputar pengadaan souvenir kantor, seminar kit, corporate gift, dan souvenir promosi kantor bergaransi resmi.">
+  <meta property="og:url" content="https://seminarkits.id/blog.html">
+  <meta property="og:site_name" content="Seminarkits.id">
+  <meta property="og:image" content="https://seminarkits.id/assets/img/index/seminar-kit-custom.webp">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css?v=20260323" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css?v=20260323" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css?v=20260323" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css?v=20260323" rel="stylesheet">
+
+  <style>
+    /* Dark Theme Blog Layout matching Reference */
+    body.blog-page {
+      background-color: #062540 !important;
+      color: #cbd5e1;
+    }
+    
+    .blog-page .page-title {
+      background-color: #062540 !important;
+      padding: 100px 0 20px 0;
+      text-align: center;
+    }
+    
+    .blog-page .heading-title {
+      color: #ffffff !important;
+      font-size: 2.4rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    
+    .blog-page .heading-subtitle {
+      color: #cbd5e1 !important;
+      font-size: 0.98rem;
+      max-width: 720px;
+      margin: 0 auto 20px auto;
+      line-height: 1.6;
+    }
+    
+    .blog-page .breadcrumbs {
+      padding: 0 0 20px 0;
+      background: transparent !important;
+    }
+    
+    .blog-page .breadcrumbs ol {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: flex-start;
+      gap: 8px;
+      font-size: 0.88rem;
+    }
+    
+    .blog-page .breadcrumbs a {
+      color: #94a3b8;
+      text-decoration: none;
+    }
+    
+    .blog-page .breadcrumbs .separator {
+      color: #64748b;
+    }
+    
+    .blog-page .breadcrumbs .current {
+      color: #f1c232;
+      font-weight: 600;
+    }
+    
+    /* Blog Card Design */
+    .post-list-dark {
+      background-color: #062540 !important;
+      padding: 10px 0 80px 0;
+    }
+    
+    .blog-dark-card {
+      background: rgba(255, 255, 255, 0.04) !important;
+      border: 1px solid rgba(255, 255, 255, 0.12) !important;
+      border-radius: 12px !important;
+      padding: 18px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      height: 100% !important;
+      transition: all 0.3s ease !important;
+    }
+    
+    .blog-dark-card:hover {
+      background: rgba(255, 255, 255, 0.08) !important;
+      border-color: rgba(241, 194, 50, 0.5) !important;
+      transform: translateY(-4px) !important;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35) !important;
+    }
+    
+    .blog-card-img-wrap {
+      width: 100%;
+      height: 220px;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 16px;
+      background-color: #0b3558;
+    }
+    
+    .blog-card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    
+    .blog-dark-card:hover .blog-card-img-wrap img {
+      transform: scale(1.04);
+    }
+    
+    .blog-card-heading {
+      font-size: 1.15rem !important;
+      font-weight: 700 !important;
+      line-height: 1.4 !important;
+      margin-bottom: 10px !important;
+    }
+    
+    .blog-card-heading a {
+      color: #ffffff !important;
+      text-decoration: none !important;
+      transition: color 0.2s ease;
+    }
+    
+    .blog-card-heading a:hover {
+      color: #f1c232 !important;
+    }
+    
+    .blog-card-meta-list {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 0.82rem;
+      color: #94a3b8;
+      margin-bottom: 12px;
+      list-style: none;
+      padding: 0;
+    }
+    
+    .blog-card-meta-list li {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    
+    .blog-card-meta-list i {
+      color: #94a3b8;
+    }
+    
+    /* Golden Author Link */
+    .author-gold-link {
+      color: #f1c232 !important;
+      font-weight: 700 !important;
+      text-decoration: none !important;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    
+    .author-gold-link:hover {
+      color: #ffffff !important;
+      text-decoration: underline !important;
+    }
+    
+    .blog-card-paragraph {
+      font-size: 0.90rem !important;
+      color: #cbd5e1 !important;
+      line-height: 1.65 !important;
+      margin-bottom: 20px !important;
+      flex-grow: 1 !important;
+    }
+    
+    .btn-blog-read {
+      background-color: #f1c232 !important;
+      color: #062540 !important;
+      font-weight: 700 !important;
+      font-size: 0.85rem !important;
+      padding: 8px 18px !important;
+      border-radius: 5px !important;
+      text-decoration: none !important;
+      display: inline-block !important;
+      align-self: flex-start !important;
+      margin-top: auto !important;
+      transition: all 0.2s ease !important;
+      border: none !important;
+    }
+    
+    .btn-blog-read:hover {
+      background-color: #e5b320 !important;
+      color: #041627 !important;
+      box-shadow: 0 4px 12px rgba(241, 194, 50, 0.35) !important;
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+
+<body class="blog-page">
+
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="header d-flex align-items-center fixed-top" role="banner">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0" aria-label="Beranda Seminarkits.id">
+        <img src="assets/img/logo-seminar-kits.webp" alt="Logo Resmi Seminarkits.id" decoding="sync">
+      </a>
+
+      <nav id="navmenu" class="navmenu" role="navigation" aria-label="Menu Navigasi Utama">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang-kami.html">Tentang Kami</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="katalog.html">Katalog</a></li>
+          <li><a href="portofolio.html">Portofolio</a></li>
+          <li class="dropdown"><a href="produk.html"><span>Produk</span> <i class="bi bi-chevron-down toggle-dropdown" aria-hidden="true"></i></a>
+            <ul>
+              <li><a href="produk/seminar-kit.html">Seminar Kit</a></li>
+              <li><a href="produk/souvenir.html">Souvenir</a></li>
+              <li><a href="produk/hampers.html">Hampers</a></li>
+              <li><a href="produk/corporate-gift.html">Corporate Gift</a></li>
+              <li><a href="produk/merchandise.html">Merchandise</a></li>
+              <li><a href="produk/tumbler-custom.html">Tumbler Custom</a></li>
+              <li><a href="produk/lanyard-custom.html">Lanyard Custom</a></li>
+              <li><a href="produk/pulpen-promosi.html">Pulpen Promosi</a></li>
+              <li><a href="produk/agenda-custom.html">Agenda Custom</a></li>
+              <li><a href="produk/kalender-custom.html">Kalender Custom</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Toggle Menu Navigasi"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="minta-penawaran.html">Penawaran</a>
+
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="main" id="main-content" role="main">
+
+    <!-- Page Title & Header -->
+    <section class="page-title">
+      <div class="container">
+        <h1 class="heading-title" data-aos="fade-up" data-aos-delay="100">Blog dan Artikel</h1>
+        <p class="heading-subtitle" data-aos="fade-up" data-aos-delay="150">
+          Temukan wawasan terbaru, tips praktis, dan tren industri seputar pengadaan vendor souvenir kantor, seminar kit, corporate gift, kalender cetak, hingga finishing percetakan bersama para praktisi kami.
+        </p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="200">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Beranda</a></li>
+            <li class="separator">/</li>
+            <li class="current" aria-current="page">Blog</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Post List Section -->
+    <section id="post-list" class="post-list-dark">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <!-- Card: 2026-09-09 - Hard Cover Artinya Apa? Penjelasan Lengkap untuk Pemula di Dunia Cetak -> Dina Rahmawati -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/agenda-seminar.webp" alt="Hard Cover Artinya Apa? Penjelasan Lengkap untuk Pemula di Dunia Cetak" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/hard-cover-artinya-apa-penjelasan-lengkap-untuk-pemula-di-dunia-cetak.html">Hard Cover Artinya Apa? Penjelasan Lengkap untuk Pemula di Dunia Cetak</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#dina-rahmawati" class="author-gold-link" itemprop="author">Dina Rahmawati</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>09 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Hard Cover Artinya Apa? Penjelasan Lengkap untuk Pemula di Dunia Cetak. Pahami struktur karton board, kelebihan, komparasi vs soft cover, dan aplikasi buku agenda kantor.
+              </p>
+              <a href="blog/hard-cover-artinya-apa-penjelasan-lengkap-untuk-pemula-di-dunia-cetak.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Hard Cover Artinya Apa? Penjelasan Lengkap untuk Pemula di Dunia Cetak">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-09 - Kalender Gantung Custom: Ide Desain dan Ukuran Ideal untuk Ruang Kerja -> Herman Sulis -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/merchandise-corporate.webp" alt="Kalender Gantung Custom: Ide Desain dan Ukuran Ideal untuk Ruang Kerja" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/kalender-gantung-custom-ide-desain-dan-ukuran-ideal-untuk-ruang-kerja.html">Kalender Gantung Custom: Ide Desain dan Ukuran Ideal untuk Ruang Kerja</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#herman-sulis" class="author-gold-link" itemprop="author">Herman Sulis</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>09 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Kalender Gantung Custom: Ide Desain dan Ukuran Ideal untuk Ruang Kerja. Panduan ukuran 32x48 cm, 38x53 cm, bahan kertas, dan finishing klem seng vs spiral hanger.
+              </p>
+              <a href="blog/kalender-gantung-custom-ide-desain-dan-ukuran-ideal-untuk-ruang-kerja.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Kalender Gantung Custom: Ide Desain dan Ukuran Ideal untuk Ruang Kerja">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-09 - Studi Kasus: Pengadaan Seminar Kit untuk Kampus Negeri di Malang -> Natasya ZW -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/merchandise-kampus.webp" alt="Studi Kasus: Pengadaan Seminar Kit untuk Kampus Negeri di Malang" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/studi-kasus-pengadaan-seminar-kit-untuk-kampus-negeri-di-malang.html">Studi Kasus: Pengadaan Seminar Kit untuk Kampus Negeri di Malang</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#natasya-zw" class="author-gold-link" itemprop="author">Natasya ZW</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>09 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Studi Kasus: Pengadaan Seminar Kit untuk Kampus Negeri di Malang. Kisah sukses produksi 1.200 paket seminar kit konferensi internasional bergaransi tepat waktu & e-Faktur PPN.
+              </p>
+              <a href="blog/studi-kasus-pengadaan-seminar-kit-untuk-kampus-negeri-di-malang.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Studi Kasus: Pengadaan Seminar Kit untuk Kampus Negeri di Malang">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-08 - Buku Sampul Custom: Cara Memilih Bahan Sampul yang Tepat untuk Agenda -> Dina Rahmawati -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/agenda-seminar.webp" alt="Buku Sampul Custom: Cara Memilih Bahan Sampul yang Tepat untuk Agenda" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/buku-sampul-custom-cara-memilih-bahan-sampul-yang-tepat-untuk-agenda.html">Buku Sampul Custom: Cara Memilih Bahan Sampul yang Tepat untuk Agenda</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#dina-rahmawati" class="author-gold-link" itemprop="author">Dina Rahmawati</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>08 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Buku Sampul Custom: Cara Memilih Bahan Sampul yang Tepat untuk Agenda. Ulasan bahan kulit PU, hardcover board, kraft eco, dan teknik finishing logo.
+              </p>
+              <a href="blog/buku-sampul-custom-cara-memilih-bahan-sampul-yang-tepat-untuk-agenda.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Buku Sampul Custom: Cara Memilih Bahan Sampul yang Tepat untuk Agenda">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-08 - Daftar Harga Souvenir Kantor Terbaru: Panduan Anggaran untuk Procurement -> Natasya ZW -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/corporate-gift-custom.webp" alt="Daftar Harga Souvenir Kantor Terbaru: Panduan Anggaran untuk Procurement" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/daftar-harga-souvenir-kantor-terbaru-panduan-anggaran-untuk-procurement.html">Daftar Harga Souvenir Kantor Terbaru: Panduan Anggaran untuk Procurement</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#natasya-zw" class="author-gold-link" itemprop="author">Natasya ZW</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>08 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Daftar Harga Souvenir Kantor Terbaru: Panduan Anggaran untuk Procurement. Rincian harga tumbler SUS304, agenda kulit, pulpen metal, dan gift set resmi PKP.
+              </p>
+              <a href="blog/daftar-harga-souvenir-kantor-terbaru-panduan-anggaran-untuk-procurement.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Daftar Harga Souvenir Kantor Terbaru: Panduan Anggaran untuk Procurement">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-08 - Kalender Spiral: Kelebihan Binding Spiral untuk Kalender Meja dan Dinding -> Herman Sulis -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/merchandise-corporate.webp" alt="Kalender Spiral: Kelebihan Binding Spiral untuk Kalender Meja dan Dinding" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/kalender-spiral-kelebihan-binding-spiral-untuk-kalender-meja-dan-dinding.html">Kalender Spiral: Kelebihan Binding Spiral untuk Kalender Meja dan Dinding</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#herman-sulis" class="author-gold-link" itemprop="author">Herman Sulis</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>08 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Kalender Spiral: Kelebihan Binding Spiral untuk Kalender Meja dan Dinding. Ulasan lengkap keunggulan kawat wire-o, jenis kertas, dan tips desain kalender promosi kantor.
+              </p>
+              <a href="blog/kalender-spiral-kelebihan-binding-spiral-untuk-kalender-meja-dan-dinding.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Kalender Spiral: Kelebihan Binding Spiral untuk Kalender Meja dan Dinding">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-07 - Buku Jilid: Jenis-Jenis Metode Jilid dan Kegunaannya untuk Dokumen Kantor -> Dina Rahmawati -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/agenda-seminar.webp" alt="Buku Jilid: Jenis-Jenis Metode Jilid dan Kegunaannya untuk Dokumen Kantor" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/buku-jilid-jenis-jenis-metode-jilid-dan-kegunaannya-untuk-dokumen-kantor.html">Buku Jilid: Jenis-Jenis Metode Jilid dan Kegunaannya untuk Dokumen Kantor</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#dina-rahmawati" class="author-gold-link" itemprop="author">Dina Rahmawati</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>07 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Buku Jilid: Jenis-Jenis Metode Jilid dan Kegunaannya untuk Dokumen Kantor. Panduan lengkap jilid spiral kawat, perfect binding lem panas, jilid baut, dan hardcover jahit benang.
+              </p>
+              <a href="blog/buku-jilid-jenis-jenis-metode-jilid-dan-kegunaannya-untuk-dokumen-kantor.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Buku Jilid: Jenis-Jenis Metode Jilid dan Kegunaannya untuk Dokumen Kantor">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-07 - Desain Kalender Meja Custom: Inspirasi Layout & Branding Perusahaan -> Herman Sulis -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/merchandise-corporate.webp" alt="Desain Kalender Meja Custom: Inspirasi Layout & Branding Perusahaan" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/desain-kalender-meja-custom-inspirasi-layout-untuk-branding-perusahaan.html">Desain Kalender Meja Custom: Inspirasi Layout & Branding Perusahaan</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#herman-sulis" class="author-gold-link" itemprop="author">Herman Sulis</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>07 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Desain Kalender Meja Custom: Inspirasi Layout untuk Branding Perusahaan. Panduan lengkap desain kalender meja kantor, material dudukan, ukuran, dan tips layout profesional.
+              </p>
+              <a href="blog/desain-kalender-meja-custom-inspirasi-layout-untuk-branding-perusahaan.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Desain Kalender Meja Custom: Inspirasi Layout & Branding Perusahaan">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-07 - Seminar Kit Surabaya Custom: Paket Lengkap untuk Seminar, Workshop, dan Event Kampus -> Natasya ZW -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/seminar-kit-custom.webp" alt="Seminar Kit Surabaya Custom: Paket Lengkap untuk Seminar, Workshop, dan Event Kampus" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/seminar-kit-surabaya-custom-untuk-seminar-workshop-dan-event-kampus.html">Seminar Kit Surabaya Custom: Paket Lengkap untuk Seminar, Workshop, dan Event Kampus</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#natasya-zw" class="author-gold-link" itemprop="author">Natasya ZW</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>07 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Seminar Kit Surabaya Custom: Paket Lengkap untuk Seminar, Workshop, dan Event Kampus. Panduan pengadaan paket seminar kit di Surabaya dengan legalitas PKP & Faktur PPN 11%.
+              </p>
+              <a href="blog/seminar-kit-surabaya-custom-untuk-seminar-workshop-dan-event-kampus.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Seminar Kit Surabaya Custom: Paket Lengkap untuk Seminar, Workshop, dan Event Kampus">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-06 - Buku Hardcover Custom: Material dan Proses Produksi yang Perlu Diketahui -> Dina Rahmawati -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/agenda-seminar.webp" alt="Buku Hardcover Custom: Material dan Proses Produksi yang Perlu Diketahui" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/buku-hardcover-custom-material-dan-proses-produksi.html">Buku Hardcover Custom: Material dan Proses Produksi yang Perlu Diketahui</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#dina-rahmawati" class="author-gold-link" itemprop="author">Dina Rahmawati</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>06 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Panduan teknis pembuatan buku hardcover custom: pemilihan material karton board, jenis kertas isi Bookpaper vs HVS, proses penjilidan jahit benang, dan opsi branding deboss emas.
+              </p>
+              <a href="blog/buku-hardcover-custom-material-dan-proses-produksi.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Buku Hardcover Custom: Material dan Proses Produksi yang Perlu Diketahui">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-06 - Desain Kalender Dinding yang Menarik: Tips Layout dan Pemilihan Warna Brand -> Herman Sulis -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/merchandise-corporate.webp" alt="Desain Kalender Dinding yang Menarik: Tips Layout dan Pemilihan Warna Brand" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/desain-kalender-dinding-menarik-layout-warna-brand.html">Desain Kalender Dinding yang Menarik: Tips Layout dan Pemilihan Warna Brand</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#herman-sulis" class="author-gold-link" itemprop="author">Herman Sulis</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>06 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Tips merancang desain kalender dinding promosi kantor yang menarik: proporsi grid penanggalan, hierarki tipografi, harmonisasi warna brand corporate, dan spesifikasi cetak offset bergaransi.
+              </p>
+              <a href="blog/desain-kalender-dinding-menarik-layout-warna-brand.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Desain Kalender Dinding yang Menarik: Tips Layout dan Pemilihan Warna Brand">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-06 - Souvenir Kantor untuk Karyawan dan Klien: Ide Terlengkap Berdasarkan Budget -> Natasya ZW -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/corporate-gift-set.webp" alt="Souvenir Kantor untuk Karyawan dan Klien: Ide Terlengkap Berdasarkan Budget" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/souvenir-kantor-karyawan-dan-klien-berdasarkan-budget.html">Souvenir Kantor untuk Karyawan dan Klien: Ide Terlengkap Berdasarkan Budget</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#natasya-zw" class="author-gold-link" itemprop="author">Natasya ZW</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>06 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Ide souvenir kantor terlengkap untuk karyawan dan klien B2B berdasarkan tingkatan budget (Ekonomis Rp 25rb, Menengah Rp 65rb, Premium Rp 150rb+) dengan legalitas faktur PPN resmi.
+              </p>
+              <a href="blog/souvenir-kantor-karyawan-dan-klien-berdasarkan-budget.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Souvenir Kantor untuk Karyawan dan Klien: Ide Terlengkap Berdasarkan Budget">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-05 - Hard Cover Buku: Pengertian, Bahan, dan Kelebihan Dibanding Soft Cover -> Dina Rahmawati -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/agenda-seminar.webp" alt="Hard Cover Buku: Pengertian, Bahan, dan Kelebihan Dibanding Soft Cover" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/hard-cover-buku-pengertian-bahan-kelebihan.html">Hard Cover Buku: Pengertian, Bahan, dan Kelebihan Dibanding Soft Cover</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#dina-rahmawati" class="author-gold-link" itemprop="author">Dina Rahmawati</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>05 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Panduan lengkap hard cover buku: pengertian, susunan bahan karton board (Greyboard/Yellowboard), perbandingan daya tahan vs soft cover, dan aplikasi pada agenda souvenir kantor.
+              </p>
+              <a href="blog/hard-cover-buku-pengertian-bahan-kelebihan.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Hard Cover Buku: Pengertian, Bahan, dan Kelebihan Dibanding Soft Cover">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-05 - Kalender Libur Nasional 2027: Referensi untuk Desain Kalender Kantor -> Herman Sulis -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/merchandise-corporate.webp" alt="Kalender Libur Nasional 2027: Referensi untuk Desain Kalender Kantor" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/kalender-libur-nasional-2027-desain-kalender-kantor.html">Kalender Libur Nasional 2027: Referensi untuk Desain Kalender Kantor</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#herman-sulis" class="author-gold-link" itemprop="author">Herman Sulis</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>05 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Referensi daftar hari libur nasional dan cuti bersama 2027 resmi SKB 3 Menteri untuk desain kalender dinding dan meja kantor: timeline cetak, tips layout penanggalan, dan estimasi biaya pabrik.
+              </p>
+              <a href="blog/kalender-libur-nasional-2027-desain-kalender-kantor.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Kalender Libur Nasional 2027: Referensi untuk Desain Kalender Kantor">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-05 - Supplier Souvenir Perusahaan: Cara Kerja Sama Rutin dan Sistem Kontrak -> Natasya ZW -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/corporate-gift-set.webp" alt="Supplier Souvenir Perusahaan: Cara Kerja Sama Rutin dan Sistem Kontrak" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/supplier-souvenir-perusahaan-kerja-sama-dan-kontrak.html">Supplier Souvenir Perusahaan: Cara Kerja Sama Rutin dan Sistem Kontrak</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#natasya-zw" class="author-gold-link" itemprop="author">Natasya ZW</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>05 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Panduan lengkap memilih supplier souvenir perusahaan untuk pengadaan rutin: sistem kontrak tahunan (PKS), SLA deadline terjamin, legalitas faktur PPN, dan efisiensi anggaran B2B.
+              </p>
+              <a href="blog/supplier-souvenir-perusahaan-kerja-sama-dan-kontrak.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Supplier Souvenir Perusahaan: Cara Kerja Sama Rutin dan Sistem Kontrak">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-04 - Cara Memesan Seminar Kit untuk Instansi & Kampus: Alur Kerja Sama Lengkap -> Natasya ZW -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/seminar-kit-custom.webp" alt="Cara Memesan Seminar Kit untuk Instansi & Kampus: Alur Kerja Sama Lengkap" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/cara-memesan-seminar-kit-instansi-kampus.html">Cara Memesan Seminar Kit untuk Instansi & Kampus: Alur Kerja Sama Lengkap</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#natasya-zw" class="author-gold-link" itemprop="author">Natasya ZW</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>04 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Panduan lengkap cara memesan paket seminar kit untuk instansi pemerintah, BUMN, dan kampus: alur konsultasi, desain mockup 3D, legalitas faktur pajak PPN, dan jaminan SLA tiba H-3.
+              </p>
+              <a href="blog/cara-memesan-seminar-kit-instansi-kampus.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Cara Memesan Seminar Kit untuk Instansi & Kampus: Alur Kerja Sama Lengkap">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-04 - Laminasi Glossy: Kelebihan, Kekurangan, dan Aplikasi pada Produk Cetak -> Herman Sulis -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/merchandise-corporate.webp" alt="Laminasi Glossy: Kelebihan, Kekurangan, dan Aplikasi pada Produk Cetak" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/laminasi-glossy-kelebihan-kekurangan-aplikasi.html">Laminasi Glossy: Kelebihan, Kekurangan, dan Aplikasi pada Produk Cetak</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#herman-sulis" class="author-gold-link" itemprop="author">Herman Sulis</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>04 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Panduan lengkap laminasi glossy: kelebihan kilap visual, proteksi air & debu, kekurangan, serta aplikasi terbaik pada brosur, kalender, poster, dan packaging souvenir.
+              </p>
+              <a href="blog/laminasi-glossy-kelebihan-kekurangan-aplikasi.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Laminasi Glossy: Kelebihan, Kekurangan, dan Aplikasi pada Produk Cetak">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-04 - Ukuran Kalender Standar: Perbandingan Kalender Dinding, Meja, dan Duduk -> Herman Sulis -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/merchandise-corporate.webp" alt="Ukuran Kalender Standar: Perbandingan Kalender Dinding, Meja, dan Duduk" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/ukuran-kalender-standar-dinding-meja-duduk.html">Ukuran Kalender Standar: Perbandingan Kalender Dinding, Meja, dan Duduk</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#herman-sulis" class="author-gold-link" itemprop="author">Herman Sulis</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>04 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Panduan perbandingan ukuran kalender standar: kalender dinding (38x53 cm, A3, A2), kalender meja & duduk (21x15 cm), jenis bahan kertas Art Carton, dan estimasi biaya cetak.
+              </p>
+              <a href="blog/ukuran-kalender-standar-dinding-meja-duduk.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Ukuran Kalender Standar: Perbandingan Kalender Dinding, Meja, dan Duduk">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-03 - Corporate Gift: Pengertian, Manfaat, dan Cara Memilih untuk Klien & Karyawan -> Natasya ZW -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/corporate-gift-set.webp" alt="Corporate Gift: Pengertian, Manfaat, dan Cara Memilih untuk Klien & Karyawan" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/corporate-gift-klien-dan-karyawan.html">Corporate Gift: Pengertian, Manfaat, dan Cara Memilih untuk Klien & Karyawan</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#natasya-zw" class="author-gold-link" itemprop="author">Natasya ZW</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>03 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Panduan lengkap corporate gift untuk perusahaan: pengertian, manfaat retensi klien B2B & loyalitas karyawan, estimasi RAB harga paket, dan kriteria memilih vendor resmi.
+              </p>
+              <a href="blog/corporate-gift-klien-dan-karyawan.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Corporate Gift: Pengertian, Manfaat, dan Cara Memilih untuk Klien & Karyawan">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-03 - Kalender Duduk Custom untuk Meja Kerja: Ukuran, Bahan, dan Contoh Desain -> Herman Sulis -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/merchandise-corporate.webp" alt="Kalender Duduk Custom untuk Meja Kerja: Ukuran, Bahan, dan Contoh Desain" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/kalender-duduk-custom-meja-kerja.html">Kalender Duduk Custom untuk Meja Kerja: Ukuran, Bahan, dan Contoh Desain</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#herman-sulis" class="author-gold-link" itemprop="author">Herman Sulis</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>03 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Panduan lengkap kalender duduk custom untuk meja kerja kantor: standar ukuran lanskap/potret, bahan Art Carton 260 gsm, tatakan linen board, dan estimasi harga cetak offset.
+              </p>
+              <a href="blog/kalender-duduk-custom-meja-kerja.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Kalender Duduk Custom untuk Meja Kerja: Ukuran, Bahan, dan Contoh Desain">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-03 - Laminasi Doff vs Glossy: Mana yang Lebih Baik untuk Souvenir dan Packaging? -> Herman Sulis -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/merchandise-corporate.webp" alt="Laminasi Doff vs Glossy: Mana yang Lebih Baik untuk Souvenir dan Packaging?" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/laminasi-doff-vs-glossy-souvenir-packaging.html">Laminasi Doff vs Glossy: Mana yang Lebih Baik untuk Souvenir dan Packaging?</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#herman-sulis" class="author-gold-link" itemprop="author">Herman Sulis</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>03 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Ulasan komparasi lengkap laminasi doff vs glossy untuk souvenir kantor, cover buku agenda, kalender, dan packaging hardbox: kelebihan, kekurangan, dan tips memilih sesuai branding.
+              </p>
+              <a href="blog/laminasi-doff-vs-glossy-souvenir-packaging.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Laminasi Doff vs Glossy: Mana yang Lebih Baik untuk Souvenir dan Packaging?">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-02 - Binder Ukuran B5: Kapan Sebaiknya Dipakai untuk Dokumen Kantor? -> Dina Rahmawati -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/seminar-kit-lanyar-notebook-pulpen.webp" alt="Binder Ukuran B5: Kapan Sebaiknya Dipakai untuk Dokumen Kantor?" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/binder-ukuran-b5-untuk-dokumen-kantor.html">Binder Ukuran B5: Kapan Sebaiknya Dipakai untuk Dokumen Kantor?</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#dina-rahmawati" class="author-gold-link" itemprop="author">Dina Rahmawati</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>02 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Binder Ukuran B5: Kapan Sebaiknya Dipakai untuk Dokumen Kantor?. Panduan lengkap binder ukuran b5 untuk kebutuhan souvenir & corporate gift perusahaan.
+              </p>
+              <a href="blog/binder-ukuran-b5-untuk-dokumen-kantor.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Binder Ukuran B5: Kapan Sebaiknya Dipakai untuk Dokumen Kantor?">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-02 - Kalender Dinding Custom Logo: Ide Desain dan Estimasi Harga per Unit -> Herman Sulis -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/merchandise-corporate.webp" alt="Kalender Dinding Custom Logo: Ide Desain dan Estimasi Harga per Unit" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/kalender-dinding-custom-logo.html">Kalender Dinding Custom Logo: Ide Desain dan Estimasi Harga per Unit</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#herman-sulis" class="author-gold-link" itemprop="author">Herman Sulis</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>02 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Kalender Dinding Custom Logo: Ide Desain dan Estimasi Harga per Unit. Panduan lengkap kalender dinding untuk kebutuhan souvenir & corporate gift perusahaan.
+              </p>
+              <a href="blog/kalender-dinding-custom-logo.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Kalender Dinding Custom Logo: Ide Desain dan Estimasi Harga per Unit">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-02 - Vendor Souvenir Kantor Terpercaya: 7 Pertanyaan Wajib Sebelum Memesan -> Natasya ZW -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/merchandise-corporate.webp" alt="Vendor Souvenir Kantor Terpercaya: 7 Pertanyaan Wajib Sebelum Memesan" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/vendor-souvenir-kantor-terpercaya.html">Vendor Souvenir Kantor Terpercaya: 7 Pertanyaan Wajib Sebelum Memesan</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#natasya-zw" class="author-gold-link" itemprop="author">Natasya ZW</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>02 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Vendor Souvenir Kantor Terpercaya: 7 Pertanyaan Wajib Sebelum Memesan. Panduan lengkap vendor souvenir kantor untuk kebutuhan souvenir & corporate gift bergaransi resmi.
+              </p>
+              <a href="blog/vendor-souvenir-kantor-terpercaya.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Vendor Souvenir Kantor Terpercaya: 7 Pertanyaan Wajib Sebelum Memesan">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-01 - Cetak Kalender Custom: Panduan Pesan dari Desain sampai Cetak Massal -> Herman Sulis -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/merchandise-corporate.webp" alt="Cetak Kalender Custom: Panduan Pesan dari Desain sampai Cetak Massal" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/cetak-kalender-custom.html">Cetak Kalender Custom: Panduan Pesan dari Desain sampai Cetak Massal</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#herman-sulis" class="author-gold-link" itemprop="author">Herman Sulis</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>01 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Cetak Kalender Custom: Panduan Pesan dari Desain sampai Cetak Massal. Panduan lengkap cetak kalender untuk kebutuhan souvenir & corporate gift perusahaan bergaransi resmi.
+              </p>
+              <a href="blog/cetak-kalender-custom.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Cetak Kalender Custom: Panduan Pesan dari Desain sampai Cetak Massal">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-01 - Apa Saja Isi Seminar Kit yang Ideal untuk Perusahaan? (Checklist Lengkap) -> Natasya ZW -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/seminar-kit-custom.webp" alt="Apa Saja Isi Seminar Kit yang Ideal untuk Perusahaan? (Checklist Lengkap)" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/isi-seminar-kit-perusahaan.html">Apa Saja Isi Seminar Kit yang Ideal untuk Perusahaan? (Checklist Lengkap)</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#natasya-zw" class="author-gold-link" itemprop="author">Natasya ZW</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>01 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Apa Saja Isi Seminar Kit yang Ideal untuk Perusahaan? (Checklist Lengkap). Panduan checklist seminar kit custom, paket hemat hingga eksekutif bergaransi resmi.
+              </p>
+              <a href="blog/isi-seminar-kit-perusahaan.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Apa Saja Isi Seminar Kit yang Ideal untuk Perusahaan? (Checklist Lengkap)">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-09-01 - Ukuran Binder A5: Standar Internasional dan Cara Pilih untuk Dokumen Seminar -> Dina Rahmawati -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/seminar-kit-lanyar-notebook-pulpen.webp" alt="Ukuran Binder A5: Standar Internasional dan Cara Pilih untuk Dokumen Seminar" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/ukuran-binder-a5-standar-internasional.html">Ukuran Binder A5: Standar Internasional dan Cara Pilih untuk Dokumen Seminar</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#dina-rahmawati" class="author-gold-link" itemprop="author">Dina Rahmawati</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>01 September 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Ukuran Binder A5: Standar Internasional dan Cara Pilih untuk Dokumen Seminar. Panduan lengkap ukuran binder a5 untuk kebutuhan souvenir & corporate gift bergaransi resmi.
+              </p>
+              <a href="blog/ukuran-binder-a5-standar-internasional.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Ukuran Binder A5: Standar Internasional dan Cara Pilih untuk Dokumen Seminar">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-08-31 - Binder A5 vs B5 vs A4: Mana yang Cocok untuk Seminar Kit? -> Dina Rahmawati -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/seminar-kit-lanyar-notebook-pulpen.webp" alt="Binder A5 vs B5 vs A4: Mana yang Cocok untuk Seminar Kit?" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/binder-a5-b5-a4-untuk-seminar-kit.html">Binder A5 vs B5 vs A4: Mana yang Cocok untuk Seminar Kit?</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#dina-rahmawati" class="author-gold-link" itemprop="author">Dina Rahmawati</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>31 Agustus 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Binder A5 vs B5 vs A4: Mana yang Cocok untuk Seminar Kit? Panduan lengkap ukuran binder a5 dan b5, bahan cover kulit PU, dan tips souvenir seminar kit kantor.
+              </p>
+              <a href="blog/binder-a5-b5-a4-untuk-seminar-kit.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Binder A5 vs B5 vs A4: Mana yang Cocok untuk Seminar Kit?">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-08-31 - Seminar Kit Malang Custom: Paket Lengkap untuk Seminar, Workshop, dan Pelatihan -> Natasya ZW -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/seminar-kit-custom.webp" alt="Seminar Kit Malang Custom: Paket Lengkap untuk Seminar, Workshop, dan Pelatihan" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/seminar-kit-malang-custom-paket-lengkap.html">Seminar Kit Malang Custom: Paket Lengkap untuk Seminar, Workshop, dan Pelatihan</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#natasya-zw" class="author-gold-link" itemprop="author">Natasya ZW</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>31 Agustus 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Seminar Kit Malang Custom: Paket Lengkap untuk Seminar, Workshop, dan Pelatihan. Panduan harga & souvenir corporate bergaransi PKP resmi.
+              </p>
+              <a href="blog/seminar-kit-malang-custom-paket-lengkap.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Seminar Kit Malang Custom: Paket Lengkap untuk Seminar, Workshop, dan Pelatihan">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+          <!-- Card: 2026-08-31 - Ukuran Kalender Dinding Standar untuk Souvenir Perusahaan: Panduan Lengkap -> Herman Sulis -->
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-dark-card" itemscope itemtype="https://schema.org/Article">
+              <div class="blog-card-img-wrap">
+                <img src="assets/img/index/merchandise-corporate.webp" alt="Ukuran Kalender Dinding Standar untuk Souvenir Perusahaan: Panduan Lengkap" width="400" height="220" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <h2 class="blog-card-heading" itemprop="headline">
+                <a href="blog/ukuran-kalender-dinding-souvenir-perusahaan.html">Ukuran Kalender Dinding Standar untuk Souvenir Perusahaan: Panduan Lengkap</a>
+              </h2>
+              <ul class="blog-card-meta-list">
+                <li><i class="bi bi-person text-warning" aria-hidden="true"></i> <a href="penulis.html#herman-sulis" class="author-gold-link" itemprop="author">Herman Sulis</a></li>
+                <li><i class="bi bi-clock" aria-hidden="true"></i> <span>31 Agustus 2026</span></li>
+              </ul>
+              <p class="blog-card-paragraph" itemprop="description">
+                Ukuran Kalender Dinding Standar untuk Souvenir Perusahaan: Panduan Lengkap. Ketahui ukuran kalender dinding A3, A2, 38x53 cm, bahan kertas, dan harga cetak custom pabrik.
+              </p>
+              <a href="blog/ukuran-kalender-dinding-souvenir-perusahaan.html" class="btn-blog-read" aria-label="Baca selengkapnya artikel Ukuran Kalender Dinding Standar untuk Souvenir Perusahaan: Panduan Lengkap">
+                Baca Selengkapnya
+              </a>
+            </article>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- End Post List Section -->
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer" class="footer dark-background" role="contentinfo">
+    <div class="container footer-top">
+      <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/logo-seminar-kits.webp" alt="Logo Seminarkits.id" decoding="sync">
+          </a>
+          <div class="footer-contact pt-3">
+            <p><strong>Seminarkits.id</strong></p>
+            <p>Perum Bulan Terang Utama, Kota Malang. Kodepos 65132</p>
+            <p class="mt-3"><strong>Telepon:</strong> <span>+62 889-8964-3555</span></p>
+            <p><strong>Email:</strong> <span>officialseminarkits@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.facebook.com/officialseminarkits" aria-label="Facebook Seminarkits.id"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/officialseminarkits" aria-label="Instagram Seminarkits.id"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@officialseminarkits" aria-label="YouTube Seminarkits.id TV"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.tiktok.com/@officialseminarkits" aria-label="TikTok Seminarkits.id TV"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Tautan Penting</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            <li><a href="penulis.html">Tim Penulis</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="katalog.html">Katalog</a></li>
+            <li><a href="ketentuan-layanan.html">Ketentuan Layanan</a></li>
+            <li><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Layanan Kami</h4>
+          <ul>
+            <li><a href="produk/merchandise-perusahaan.html">Merchandise Perusahaan</a></li>
+            <li><a href="produk/merchandise-pendidikan.html">Merchandise Pendidikan</a></li>
+            <li><a href="produk/corporate-gift.html">Corporate Gift</a></li>
+            <li><a href="souvenir-perusahaan.html">Souvenir Perusahaan</a></li>
+            <li><a href="vendor-souvenir-kantor.html">Vendor Souvenir</a></li>
+            <li><a href="minta-penawaran.html">Minta Penawaran</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Kategori</h4>
+          <ul>
+            <li><a href="produk/seminar-kit.html">Seminar Kit</a></li>
+            <li><a href="produk/souvenir.html">Souvenir</a></li>
+            <li><a href="produk/hampers.html">Hampers</a></li>
+            <li><a href="produk/corporate-gift.html">Corporate Gift</a></li>
+            <li><a href="produk/merchandise.html">Merchandise</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Area Multi-Kota</h4>
+          <ul>
+            <li><a href="seminar-kit-jakarta.html">Jakarta</a></li>
+            <li><a href="seminar-kit-surabaya.html">Surabaya</a></li>
+            <li><a href="seminar-kit-bandung.html">Bandung</a></li>
+            <li><a href="seminar-kit-jogja.html">Yogyakarta</a></li>
+            <li><a href="seminar-kit-malang.html">Malang</a></li>
+            <li><a href="seminar-kit-makassar.html">Makassar</a></li>
+            <li><a href="seminar-kit-denpasar.html">Denpasar (Bali)</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>&copy; <span>Hak Cipta</span> <strong class="px-1 sitename">Seminarkits.id</strong> <span>Seluruh Hak Dilindungi</span></p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/6288989643555" class="whatsapp-float d-flex align-items-center justify-content-center" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp Seminarkits.id">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Scroll To Top -->
+  <a href="#header" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Kembali ke atas">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Vendor JS -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js?v=20260323" defer></script>
+  <script src="assets/vendor/aos/aos.js?v=20260323" defer></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js?v=20260323" defer></script>
+
+</body>
+</html>
