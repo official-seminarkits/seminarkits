@@ -220,32 +220,148 @@
       border-radius: 999px;
       letter-spacing: 0.3px;
     }
-    .isotope-filters {
+    /* CTA Buttons in Portfolio Intro */
+    .cta-buttons {
       display: flex;
+      align-items: center;
+      gap: 14px;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 8px;
-      list-style: none;
-      padding: 0;
-      margin-bottom: 2rem;
+    }
+    .btn-cta-explore {
+      background: #f1c232 !important;
+      color: #062540 !important;
+      border: 2px solid #f1c232 !important;
+      font-weight: 700 !important;
+      padding: 12px 24px !important;
+      border-radius: 10px !important;
+      font-size: 0.95rem !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      transition: all 0.3s ease !important;
+      text-decoration: none !important;
+      min-height: 48px;
+    }
+    .btn-cta-explore:hover {
+      background: #d8ad2c !important;
+      border-color: #d8ad2c !important;
+      color: #062540 !important;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(241, 194, 50, 0.35);
+    }
+    .btn-cta-wa {
+      background: #25d366 !important;
+      color: #ffffff !important;
+      border: 2px solid #25d366 !important;
+      font-weight: 700 !important;
+      padding: 12px 24px !important;
+      border-radius: 10px !important;
+      font-size: 0.95rem !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      transition: all 0.3s ease !important;
+      text-decoration: none !important;
+      min-height: 48px;
+    }
+    .btn-cta-wa:hover {
+      background: #1eb954 !important;
+      border-color: #1eb954 !important;
+      color: #ffffff !important;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+    }
+
+    @media (max-width: 576px) {
+      .cta-buttons {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 10px !important;
+        width: 100% !important;
+      }
+      .btn-cta-explore,
+      .btn-cta-wa {
+        width: 100% !important;
+        padding: 10px 8px !important;
+        font-size: 0.85rem !important;
+        min-height: 44px !important;
+        text-align: center !important;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .btn-cta-explore,
+      .btn-cta-wa {
+        font-size: 0.78rem !important;
+        padding: 8px 4px !important;
+      }
+    }
+
+    /* Isotope Filter Tabs (Grid 4 Kolom di Desktop / 2 Kolom di Mobile) */
+    .programs-filters.isotope-filters {
+      display: grid !important;
+      grid-template-columns: repeat(4, 1fr) !important;
+      gap: 12px !important;
+      max-width: 980px !important;
+      margin: 0 auto 2.5rem !important;
+      padding: 0 !important;
+      list-style: none !important;
+      width: 100% !important;
     }
     .isotope-filters li {
-      padding: 9px 20px;
-      border-radius: 999px;
+      width: 100% !important;
+      padding: 12px 10px !important;
+      border-radius: 10px !important;
       background: #0a406f !important;
       color: #ffffff !important;
-      font-size: 0.94rem;
-      font-weight: 700;
+      font-size: 0.92rem !important;
+      font-weight: 700 !important;
       border: 1px solid rgba(255, 255, 255, 0.2) !important;
-      cursor: pointer;
-      transition: all 0.25s ease;
+      cursor: pointer !important;
+      transition: all 0.25s ease !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      text-align: center !important;
+      box-sizing: border-box !important;
     }
     .isotope-filters li:hover,
     .isotope-filters li.filter-active {
       background: #f1c232 !important;
       color: #062540 !important;
       border-color: #f1c232 !important;
-      box-shadow: 0 4px 12px rgba(241, 194, 50, 0.3);
+      box-shadow: 0 4px 14px rgba(241, 194, 50, 0.35) !important;
+    }
+
+    @media (max-width: 991.98px) {
+      .programs-filters.isotope-filters {
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 10px !important;
+      }
+      .isotope-filters li {
+        font-size: 0.88rem !important;
+        padding: 10px 8px !important;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .programs-filters.isotope-filters {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+        max-width: 100% !important;
+      }
+      .isotope-filters li {
+        font-size: 0.86rem !important;
+        padding: 11px 8px !important;
+        border-radius: 8px !important;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .isotope-filters li {
+        font-size: 0.8rem !important;
+        padding: 9px 4px !important;
+      }
     }
     .trust-card {
       background: #0a406f !important;
@@ -361,8 +477,8 @@
               <p class="lead">Solusi manufaktur seminar kit terintegrasi langsung dari pabrik kami di Kota Malang.</p>
               <p>Kami telah dipercaya oleh ratusan kementerian, BUMN, perguruan tinggi nasional, dan korporasi swasta untuk memenuhi kebutuhan paket seminar kit dan merchandise dengan legalitas usaha PKP resmi (Faktur Pajak PPN 11%).</p>
               <div class="cta-buttons mt-4">
-                <a href="#program" class="btn btn-warning fw-bold text-dark me-3">Jelajahi Portofolio</a>
-                <a href="https://wa.me/6288989643555?text=Halo%20Seminarkits.id%2C%20saya%20ingin%20konsultasi%20pengadaan%20seminar%20kit." class="btn btn-outline-light" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp me-1"></i> Penawaran</a>
+                <a href="#program" class="btn btn-cta-explore"><i class="bi bi-grid-3x3-gap me-1"></i> Jelajahi Portofolio</a>
+                <a href="https://wa.me/6288989643555?text=Halo%20Seminarkits.id%2C%20saya%20ingin%20konsultasi%20pengadaan%20seminar%20kit." class="btn btn-cta-wa" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp me-1"></i> WA Penawaran</a>
               </div>
             </div>
           </div>
@@ -787,16 +903,20 @@
           </ul>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
+                <div class="col-lg-2 col-md-3 footer-links">
           <h4>Area Multi-Kota</h4>
           <ul>
-            <li><a href="seminar-kit-jakarta.html">Jakarta</a></li>
-            <li><a href="seminar-kit-surabaya.html">Surabaya</a></li>
-            <li><a href="seminar-kit-bandung.html">Bandung</a></li>
-            <li><a href="seminar-kit-jogja.html">Yogyakarta</a></li>
-            <li><a href="seminar-kit-malang.html">Malang</a></li>
-            <li><a href="seminar-kit-makassar.html">Makassar</a></li>
-            <li><a href="seminar-kit-denpasar.html">Denpasar (Bali)</a></li>
+            <li><a href="produk/seminar-kit-jakarta.html">Jakarta</a></li>
+            <li><a href="produk/seminar-kit-surabaya.html">Surabaya</a></li>
+            <li><a href="produk/seminar-kit-bandung.html">Bandung</a></li>
+            <li><a href="produk/seminar-kit-jogja.html">Yogyakarta</a></li>
+            <li><a href="produk/seminar-kit-semarang.html">Semarang</a></li>
+            <li><a href="produk/seminar-kit-malang.html">Malang</a></li>
+            <li><a href="produk/seminar-kit-denpasar.html">Denpasar (Bali)</a></li>
+            <li><a href="produk/seminar-kit-makassar.html">Makassar</a></li>
+            <li><a href="produk/seminar-kit-balikpapan.html">Balikpapan</a></li>
+            <li><a href="produk/seminar-kit-samarinda.html">Samarinda</a></li>
+            <li><a href="produk/seminar-kit-palembang.html">Palembang</a></li>
           </ul>
         </div>
 

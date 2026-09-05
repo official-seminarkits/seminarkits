@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- ========== 1. HALAMAN UTAMA (Priority 1.0) ========== -->
@@ -409,43 +409,67 @@
 
   <!-- ========== 3. HALAMAN MULTI-KOTA (Priority 0.8) ========== -->
   <url>
-    <loc>https://seminarkits.id/seminar-kit-jakarta.html</loc>
+    <loc>https://seminarkits.id/produk/seminar-kit-jakarta.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://seminarkits.id/seminar-kit-surabaya.html</loc>
+    <loc>https://seminarkits.id/produk/seminar-kit-surabaya.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://seminarkits.id/seminar-kit-bandung.html</loc>
+    <loc>https://seminarkits.id/produk/seminar-kit-bandung.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://seminarkits.id/seminar-kit-jogja.html</loc>
+    <loc>https://seminarkits.id/produk/seminar-kit-jogja.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://seminarkits.id/seminar-kit-malang.html</loc>
+    <loc>https://seminarkits.id/produk/seminar-kit-malang.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://seminarkits.id/seminar-kit-makassar.html</loc>
+    <loc>https://seminarkits.id/produk/seminar-kit-semarang.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://seminarkits.id/seminar-kit-denpasar.html</loc>
+    <loc>https://seminarkits.id/produk/seminar-kit-denpasar.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seminarkits.id/produk/seminar-kit-makassar.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seminarkits.id/produk/seminar-kit-balikpapan.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seminarkits.id/produk/seminar-kit-samarinda.html</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seminarkits.id/produk/seminar-kit-palembang.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
