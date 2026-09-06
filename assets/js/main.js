@@ -111,9 +111,6 @@
     });
   }
 
-  initGlightbox();
-  initIsotopeLayouts();
-
   function loadScriptOnce(src) {
     return new Promise((resolve, reject) => {
       if (document.querySelector(`script[src="${src}"]`)) {
