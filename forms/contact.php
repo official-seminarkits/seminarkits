@@ -7,7 +7,7 @@
   */
 
   // Email tujuan formulir kontak
-  $receiving_email_address = 'officialrkinstitute@gmail.com';
+  $receiving_email_address = 'officialseminarkits@gmail.com';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
