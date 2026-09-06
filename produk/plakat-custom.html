@@ -79,7 +79,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="../index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="../assets/img/logo-seminar-kits.webp" alt="Logo Seminarkits.id" decoding="sync">
+        <img src="../assets/img/logo-seminar-kits.webp" alt="Logo Seminarkits.id" width="160" height="40" decoding="sync">
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -384,7 +384,7 @@
 
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="../index.html" class="logo d-flex align-items-center">
-            <img src="../assets/img/logo-seminar-kits.webp" alt="Logo Seminarkits.id" decoding="sync">
+            <img src="../assets/img/logo-seminar-kits.webp" alt="Logo Seminarkits.id" width="160" height="40" decoding="sync">
           </a>
           <div class="footer-contact pt-3">
             <p><strong>Seminarkits.id</strong></p>
@@ -482,15 +482,9 @@
     (function () {
       const current = window.location.pathname.split('/').pop() || 'index.html';
       const navLinks = document.querySelectorAll('#navmenu > ul > li > a');
-      const servicePages = [
-        'jurnalistik.html', 'digital-marketing.html', 'public-speaking.html',
-        'photography.html', 'videography.html', 'ldk.html', 'outbound.html',
-        'kelas-inspirasi.html', 'kelas-inspirasi-character-building.html',
-        'school-jurnalist-trip.html',
-        'student-journalist-trip.html', 'kompetisi-kompetensi-akademik.html',
-        'event-wisuda-sekolah-kampus.html', 'journalist-kids-experience.html',
-        'gebyar-dies-natalis-milad-sekolah.html', 'outbound-team-building.html',
-        'politics-government-studies.html', 'pelatihan-website-coding-ai.html'
+            const servicePages = [
+        'seminar-kit.html', 'tumbler-custom.html', 'lanyard-custom.html',
+        'agenda-custom.html', 'pulpen-promosi.html', 'hampers-corporate.html', 'merchandise-perusahaan.html'
       ];
 
       navLinks.forEach(link => {
