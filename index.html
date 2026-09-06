@@ -190,6 +190,14 @@
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 
+  <!-- DNS Prefetch -->
+  <link rel="dns-prefetch" href="//wa.me">
+  <link rel="dns-prefetch" href="//api.whatsapp.com">
+
+  <!-- Preload Stylesheets for Fast Discovery -->
+  <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css?v=20260323" as="style">
+  <link rel="preload" href="assets/css/main.css?v=20260323" as="style">
+
   <!-- Critical CSS -->
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css?v=20260323">
   <link rel="stylesheet" href="assets/css/main.css?v=20260323">
@@ -207,13 +215,15 @@
     }
 
     @supports (content-visibility: auto) {
+      #about,
+      #services,
       #portfolio,
       #why-us,
       #testimonials-2,
       #contact,
       #faq {
         content-visibility: auto;
-        contain-intrinsic-size: 1px 1200px;
+        contain-intrinsic-size: 1px 1000px;
       }
     }
 
