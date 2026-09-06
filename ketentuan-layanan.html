@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -93,7 +93,7 @@
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/logo-seminar-kits.webp" alt="Logo Seminarkits.id" decoding="sync">
+        <img src="assets/img/logo-seminar-kits.webp" alt="Logo Seminarkits.id" width="160" height="40" decoding="sync">
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -221,23 +221,23 @@
                 <div class="article-number">02</div>
                 <div class="article-content">
                   <h3>Ruang Lingkup Layanan</h3>
-                  <p>Seminarkits.id menyediakan berbagai layanan seperti pelatihan jurnalistik, digital marketing, public speaking, fotografi, videografi, konten kreator, literasi digital, sertifikasi, kegiatan sekolah, dan program pengembangan kapasitas lainnya.</p>
+                  <p>Seminarkits.id menyediakan layanan manufaktur dan pengadaan B2B paket seminar kit custom, corporate gift set, hampers perusahaan, merchandise promosi kantor, tumbler stainless, buku agenda, tas ransel/tote bag, lanyard, dan aneka cinderamata custom untuk instansi pemerintah, BUMN, korporasi, dan institusi pendidikan.</p>
                   <div class="checklist">
                     <div class="check-item">
                       <i class="bi bi-check2-circle"></i>
-                      <span>Pelatihan individu dan institusional</span>
+                      <span>Pengadaan paket seminar kit custom instansi dan kampus</span>
                     </div>
                     <div class="check-item">
                       <i class="bi bi-check2-circle"></i>
-                      <span>Workshop, seminar, dan in-house training</span>
+                      <span>Produksi corporate gift & executive hampers perusahaan</span>
                     </div>
                     <div class="check-item">
                       <i class="bi bi-check2-circle"></i>
-                      <span>Program publikasi, branding, dan penguatan kapasitas</span>
+                      <span>Merchandise promosi, souvenir kantor & cinderamata event</span>
                     </div>
                     <div class="check-item">
                       <i class="bi bi-check2-circle"></i>
-                      <span>Layanan pendukung sesuai kesepakatan kerja sama</span>
+                      <span>Layanan legalitas faktur pajak PPN/PPh dan administrasi tender resmi</span>
                     </div>
                   </div>
                 </div>
@@ -401,7 +401,7 @@
 
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/logo-seminar-kits.webp" alt="Logo Seminarkits.id" decoding="sync">
+            <img src="assets/img/logo-seminar-kits.webp" alt="Logo Seminarkits.id" width="160" height="40" decoding="sync">
           </a>
           <div class="footer-contact pt-3">
             <p><strong>Seminarkits.id</strong></p>
@@ -524,24 +524,7 @@
         });
       });
 
-      if (currentPage.indexOf('blog') !== -1 ||
-        currentPage === 'artikel.html' ||
-        currentPage === 'cara-ampuh-mengatasi-gugup-sebelum-berbicara-depan-umum.html' ||
-        currentPage === 'dasar-public-speaking.html' ||
-        currentPage === 'desain-grafis-konten-kreator.html' ||
-        currentPage === 'gaya-kepemimpinan-agile.html' ||
-        currentPage === 'keamanan-informasi-literasi-data.html' ||
-        currentPage === 'kepemimpinan-agile-strategi.html' ||
-        currentPage === 'management-krisis-media.html' ||
-        currentPage === 'masterclass-mc-dan-moderator.html' ||
-        currentPage === 'memahami-segitiga-exposure.html' ||
-        currentPage === 'mengenal-kode-etik-jurmalistik.html' ||
-        currentPage === 'panduan-dasar-melindungi-data-kebijakan-privasi.html' ||
-        currentPage === 'pentingnya-uji-komptensi.html' ||
-        currentPage === 'rahasia-desain-media-sosial.html' ||
-        currentPage === 'strategi-sosial-media-branding.html' ||
-        currentPage === 'trend-digital-marketing-2026.html' ||
-        currentPage === 'pelatihan-jurnalistik-investigasi.html') {
+      if (currentPage.indexOf('blog') !== -1) {
         navLinks.forEach(function (link) {
           if (link.getAttribute('href') === 'blog.html') {
             link.classList.add('active');
@@ -549,7 +532,7 @@
         });
       }
 
-      if (currentPage.indexOf('layanan-') === 0 || currentPage === 'service-details.html') {
+      if (currentPage.indexOf('layanan') !== -1) {
         navLinks.forEach(function (link) {
           if (link.getAttribute('href') === 'layanan.html') {
             link.classList.add('active');
@@ -557,18 +540,17 @@
         });
       }
 
-      var servicePages = ['jurnalistik.html', 'digital-marketing.html', 'public-speaking.html',
-        'photography.html', 'videography.html', 'ldk.html', 'outbound.html', 'kelas-inspirasi.html',
-        'school-jurnalist-trip.html'];
-      if (servicePages.indexOf(currentPage) !== -1) {
+      var servicePages = ['seminar-kit', 'tumbler-custom', 'lanyard-custom',
+        'agenda-custom', 'pulpen-promosi', 'hampers-corporate', 'merchandise-perusahaan'];
+      if (servicePages.indexOf(currentPage.replace('.html', '')) !== -1) {
         navLinks.forEach(function (link) {
-          if (link.getAttribute('href') === 'layanan.html') {
+          if (link.getAttribute('href') === 'produk.html' || link.getAttribute('href') === 'layanan.html') {
             link.classList.add('active');
           }
         });
       }
 
-      if (currentPage === 'portfolio-details.html' || currentPage === 'project-details.html' || currentPage === 'projects.html') {
+      if (currentPage.indexOf('portofolio') !== -1) {
         navLinks.forEach(function (link) {
           if (link.getAttribute('href') === 'portofolio.html') {
             link.classList.add('active');
