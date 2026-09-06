@@ -190,9 +190,6 @@
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 
-  <!-- Preload LCP Hero Image -->
-  <link rel="preload" as="image" href="assets/img/index/seminarkit-tas-notebook.webp" type="image/webp" fetchpriority="high">
-
   <!-- Critical CSS -->
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css?v=20260323">
   <link rel="stylesheet" href="assets/css/main.css?v=20260323">
@@ -221,6 +218,9 @@
     }
 
     /* Performance + Accessibility overrides (homepage) */
+    @media (max-width: 768px) {
+      .hero-decoration { display: none !important; }
+    }
     .hero .hero-showcase .stats-overlay .stat-card .stat-text { color: #f3f8ff; }
     .about .highlight-points .point-item .point-number { color: #f1c232; }
     .about .counter-box p,
@@ -453,7 +453,7 @@
         <div class="row justify-content-center mt-5">
           <div class="col-lg-10" data-aos="fade-up" data-aos-delay="200">
             <div class="hero-showcase">
-              <img src="assets/img/index/seminarkit-tas-notebook.webp" alt="Seminar Kits, Notebook Tas dan Pulpen" class="img-fluid" width="960" height="540" loading="eager" fetchpriority="high" decoding="async">
+              <img src="assets/img/index/seminarkit-tas-notebook.webp" alt="Seminar Kits, Notebook Tas dan Pulpen" class="img-fluid" width="960" height="540" loading="lazy" decoding="async">
               <div class="stats-overlay">
                 <div class="row g-0">
                   <div class="col-4">
