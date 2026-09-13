@@ -2,7 +2,6 @@
 <html lang="id">
 
 <head>
-  <base href="/">
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>404 — Halaman Tidak Ditemukan | Seminarkits.id</title>
@@ -10,6 +9,13 @@
   <link rel="canonical" href="https://seminarkits.id/404">
   <meta name="author" content="Seminarkits.id">
   <meta name="robots" content="noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <!-- Base URL Handler: Ensures all relative links, styles, and assets resolve from domain root on web server (including nested paths like /blog/seminar-kit) while keeping local file:/// preview intact -->
+  <script>
+    if (window.location.protocol.indexOf('http') === 0) {
+      document.write('<base href="/">');
+    }
+  </script>
 
   <!-- GEO Meta Tags -->
   <meta name="geo.region" content="ID-JI">
@@ -23,7 +29,7 @@
   <meta property="og:description" content="Halaman tidak ditemukan. Jelajahi katalog lengkap Seminar Kit Custom, Corporate Gift Set, Merchandise Promosi, dan Souvenir Kantor B2B di Seminarkits.id.">
   <meta property="og:url" content="https://seminarkits.id/404">
   <meta property="og:site_name" content="Seminarkits.id">
-  <meta property="og:image" content="https://seminarkits.id/assets/img/logo-seminar-kits.webp">
+  <meta property="og:image" content="assets/img/logo-seminar-kits.webp">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Schema.org JSON-LD -->
@@ -62,27 +68,29 @@
   </script>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
-  <!-- Vendor CSS -->
-  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css?v=20260323">
+  <!-- External Stylesheets (CDN + Local Fallback) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/vendor/bootstrap-icons/bootstrap-icons.css?v=20260323">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="/assets/vendor/aos/aos.css?v=20260323">
-  <link rel="stylesheet" href="/assets/css/main.css?v=20260323">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css?v=20260323">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css?v=20260323">
+  <link rel="stylesheet" href="assets/vendor/aos/aos.css?v=20260323">
+  <link rel="stylesheet" href="assets/css/main.css?v=20260323">
 
   <style>
     :root {
       --default-font: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
       --heading-font: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
       --nav-font: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      --primary-color: #062540;
+      --surface-color: #0a406f;
+      --accent-color: #f1c232;
+      --dark-bg: #01020e;
     }
-    * {
-      box-sizing: border-box;
-    }
+
     body {
       color: #ffffff !important;
       background-color: #062540 !important;
@@ -91,177 +99,40 @@
       line-height: 1.6;
       margin: 0;
       padding: 0;
+      overflow-x: hidden;
     }
+
     h1, h2, h3, h4, h5, h6 {
       color: #ffffff !important;
       font-family: var(--heading-font);
       font-weight: 700;
     }
+
     p, .lead-text {
       color: #e2e8f0 !important;
     }
+
     a {
       text-decoration: none;
       transition: all 0.3s ease;
     }
 
-    /* Header & Navigation Standalone Styles */
-    .header {
-      background-color: transparent;
-      padding: 15px 0;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 997;
-      transition: all 0.4s;
-    }
-    .header .header-container {
-      background: #060606;
-      border-radius: 50px;
-      padding: 6px 24px;
-      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.35);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    .header .logo img {
-      max-height: 38px;
-      width: auto;
-      display: block;
-    }
-    .header .btn-getstarted {
-      color: #062540 !important;
-      background-color: #f1c232 !important;
-      font-size: 14px;
-      font-weight: 700;
-      padding: 8px 22px;
-      margin-left: 20px;
-      border-radius: 50px;
-      display: inline-block;
-      text-decoration: none;
-    }
-    .header .btn-getstarted:hover {
-      background-color: #dfb227 !important;
-      color: #062540 !important;
-      transform: scale(1.04);
-    }
-
-    /* Desktop Navigation */
-    @media (min-width: 1200px) {
-      .navmenu { padding: 0; }
-      .navmenu ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        list-style: none;
-        align-items: center;
-        gap: 4px;
-      }
-      .navmenu li { position: relative; }
-      .navmenu a {
-        color: #dcdcdc;
-        padding: 12px 14px;
-        font-size: 15px;
-        font-weight: 500;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        white-space: nowrap;
-      }
-      .navmenu a:hover, .navmenu .active { color: #f1c232; }
-      .navmenu .dropdown ul {
-        margin: 0;
-        padding: 10px 0;
-        background: #0a406f;
-        display: block;
-        position: absolute;
-        visibility: hidden;
-        left: 0;
-        top: 130%;
-        opacity: 0;
-        transition: 0.3s ease;
-        border-radius: 8px;
-        z-index: 999;
-        box-shadow: 0px 10px 30px rgba(0,0,0,0.35);
-        list-style: none;
-        min-width: 210px;
-        border: 1px solid rgba(255,255,255,0.15);
-      }
-      .navmenu .dropdown:hover > ul {
-        opacity: 1;
-        top: 100%;
-        visibility: visible;
-      }
-      .navmenu .dropdown ul a {
-        padding: 8px 18px;
-        font-size: 14px;
-        color: #e2e8f0;
-      }
-      .navmenu .dropdown ul a:hover {
-        color: #f1c232;
-        background: rgba(241, 194, 50, 0.08);
-      }
-      .mobile-nav-toggle { display: none; }
-    }
-
-    /* Mobile Navigation */
-    @media (max-width: 1199px) {
-      .header { padding: 10px 0; }
-      .header .header-container { margin: 0 10px; padding: 10px 18px; }
-      .header .logo { order: 1; }
-      .header .btn-getstarted { order: 2; margin: 0 10px 0 0; padding: 6px 16px; font-size: 13px; }
-      .header .navmenu { order: 3; }
-      .mobile-nav-toggle {
-        color: #ffffff;
-        font-size: 30px;
-        cursor: pointer;
-        line-height: 0;
-        display: block;
-      }
-      .navmenu ul {
-        display: none;
-        list-style: none;
-        position: fixed;
-        inset: 65px 15px 15px 15px;
-        padding: 15px 0;
-        margin: 0;
-        border-radius: 12px;
-        background-color: #0a406f;
-        overflow-y: auto;
-        z-index: 9998;
-        box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-        border: 1px solid rgba(255,255,255,0.15);
-      }
-      .navmenu a {
-        color: #ffffff;
-        padding: 12px 20px;
-        font-size: 16px;
-        font-weight: 500;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 1px solid rgba(255,255,255,0.06);
-      }
-      .navmenu a:hover { color: #f1c232; }
-      .mobile-nav-active { overflow: hidden; }
-      .mobile-nav-active .navmenu { position: fixed; inset: 0; background: rgba(6, 37, 64, 0.95); z-index: 9997; }
-      .mobile-nav-active .navmenu > ul { display: block; }
-    }
-
-    /* Page Title & Hero */
+    /* 404 Hero & Heading */
     .page-title {
       padding-top: 130px;
-      padding-bottom: 20px;
-      background: linear-gradient(180deg, rgba(10, 64, 111, 0.4) 0%, rgba(6, 37, 64, 1) 100%);
+      padding-bottom: 30px;
+      background: #062540 !important;
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       text-align: center;
     }
     .error-code-badge {
-      font-size: 4.5rem;
+      font-size: 5.5rem;
       font-weight: 900;
       color: #f1c232;
       line-height: 1;
       text-shadow: 0 4px 20px rgba(241, 194, 50, 0.35);
       margin-bottom: 12px;
+      letter-spacing: -1px;
     }
     .page-title .breadcrumbs {
       padding: 15px 0;
@@ -278,11 +149,49 @@
       gap: 8px;
       font-size: 0.92rem;
     }
-    .page-title .breadcrumbs ol li a { color: #a0aec0; }
-    .page-title .breadcrumbs ol li a:hover { color: #f1c232; }
-    .page-title .breadcrumbs ol li.current { color: #f1c232; }
+    .page-title .breadcrumbs ol li a {
+      color: #a0aec0;
+    }
+    .page-title .breadcrumbs ol li a:hover {
+      color: #f1c232;
+    }
+    .page-title .breadcrumbs ol li.current {
+      color: #f1c232;
+    }
 
-    /* Cards & Components */
+    /* Buttons */
+    .btn-warning {
+      color: #062540 !important;
+      background-color: #f1c232 !important;
+      border-color: #f1c232 !important;
+    }
+    .btn-warning:hover {
+      background-color: #dfb227 !important;
+      border-color: #dfb227 !important;
+      transform: translateY(-2px);
+    }
+    .btn-success {
+      color: #fff !important;
+      background-color: #25d366 !important;
+      border-color: #25d366 !important;
+    }
+    .btn-success:hover {
+      background-color: #1eb954 !important;
+      border-color: #1eb954 !important;
+      transform: translateY(-2px);
+    }
+    .btn-outline-light {
+      color: #f8f9fa !important;
+      border-color: #f8f9fa !important;
+      background-color: transparent !important;
+    }
+    .btn-outline-light:hover {
+      color: #062540 !important;
+      background-color: #f8f9fa !important;
+      transform: translateY(-2px);
+    }
+
+    /* Directory & Info Cards */
     .about-card {
       background: #0a406f !important;
       border: 1px solid rgba(255, 255, 255, 0.15) !important;
@@ -300,8 +209,8 @@
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
     }
     .about-icon {
-      width: 52px;
-      height: 52px;
+      width: 56px;
+      height: 56px;
       border-radius: 12px;
       background: rgba(241, 194, 50, 0.15);
       color: #f1c232;
@@ -310,11 +219,14 @@
       justify-content: center;
       font-size: 1.6rem;
       margin-bottom: 16px;
+      transition: all 0.3s ease;
     }
     .about-card:hover .about-icon {
       background: #f1c232;
       color: #062540;
     }
+
+    /* Product Badges */
     .product-badge-card {
       background: #09345a;
       border: 1px solid rgba(255, 255, 255, 0.12);
@@ -328,6 +240,7 @@
       font-size: 0.92rem;
       transition: all 0.25s ease;
       height: 100%;
+      text-decoration: none;
     }
     .product-badge-card i {
       color: #f1c232;
@@ -341,6 +254,8 @@
       transform: translateY(-2px);
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
     }
+
+    /* City Chips */
     .city-chip {
       display: inline-block;
       background: rgba(255, 255, 255, 0.08);
@@ -351,6 +266,7 @@
       color: #e2e8f0;
       margin: 4px;
       transition: all 0.2s ease;
+      text-decoration: none;
     }
     .city-chip:hover {
       background: #f1c232;
@@ -358,6 +274,8 @@
       border-color: #f1c232;
       font-weight: 600;
     }
+
+    /* CTA Banner */
     .cta-banner {
       background: linear-gradient(135deg, #0a406f 0%, #062540 100%);
       border: 2px solid rgba(241, 194, 50, 0.4);
@@ -366,76 +284,44 @@
       box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
     }
 
-    /* Footer */
-    .footer {
-      color: #dcdcdc;
-      background-color: #01020e;
-      font-size: 14px;
-    }
-    .footer .footer-top {
-      padding: 50px 0 30px;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    .footer .social-links a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: #ffffff;
-      margin-right: 8px;
-    }
-    .footer .social-links a:hover { color: #f1c232; border-color: #f1c232; }
-    .footer h4 { font-size: 16px; font-weight: 700; margin-bottom: 15px; color: #ffffff; }
-    .footer .footer-links ul { list-style: none; padding: 0; margin: 0; }
-    .footer .footer-links ul li { padding: 6px 0; }
-    .footer .footer-links ul a { color: #a0aec0; }
-    .footer .footer-links ul a:hover { color: #f1c232; }
-    .footer .copyright {
-      padding: 20px 0;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
+    /* Floating WhatsApp Button (Positioned above Scroll-To-Top) */
     .whatsapp-float {
       position: fixed;
-      width: 55px;
-      height: 55px;
-      bottom: 25px;
-      right: 25px;
-      background-color: #25d366;
+      bottom: 75px;
+      right: 15px;
+      width: 50px;
+      height: 50px;
+      background: #25d366;
       color: #fff;
       border-radius: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 30px;
-      box-shadow: 2px 4px 15px rgba(0,0,0,0.35);
+      text-align: center;
+      font-size: 26px;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
       z-index: 1000;
-    }
-    .whatsapp-float:hover { color: #fff; transform: scale(1.08); }
-    .scroll-top {
-      position: fixed;
-      visibility: hidden;
-      opacity: 0;
-      right: 25px;
-      bottom: 90px;
-      z-index: 999;
-      background-color: #f1c232;
-      width: 42px;
-      height: 42px;
-      border-radius: 50px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #062540;
-      transition: all 0.3s;
+      transition: all 0.3s ease;
+      text-decoration: none;
     }
-    .scroll-top.active { visibility: visible; opacity: 1; }
+    .whatsapp-float:hover {
+      background-color: #20ba5a;
+      color: #fff;
+      transform: scale(1.08);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.55);
+    }
 
+    /* Mobile Responsive Fine-tuning */
     @media (max-width: 768px) {
-      .error-code-badge { font-size: 3.5rem; }
-      .page-title { padding-top: 100px; }
+      .error-code-badge { font-size: 3.8rem; }
+      .page-title { padding-top: 110px; }
+      .whatsapp-float {
+        bottom: 70px;
+        right: 15px;
+        width: 46px;
+        height: 46px;
+        font-size: 24px;
+      }
       .btn-responsive-group {
         display: flex;
         flex-direction: column;
@@ -465,7 +351,7 @@
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/logo-seminar-kits.webp" alt="Logo Seminarkits.id" width="160" height="40" decoding="sync">
+        <img src="assets/img/logo-seminar-kits.webp" alt="Logo Seminarkits.id" width="160" height="40" decoding="sync" onerror="if(!this.dataset.retried){this.dataset.retried=1;this.src='/assets/img/logo-seminar-kits.webp';}">
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -885,7 +771,7 @@
 
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/logo-seminar-kits.webp" alt="Logo Seminarkits.id" width="160" height="40" decoding="sync">
+            <img src="assets/img/logo-seminar-kits.webp" alt="Logo Seminarkits.id" width="160" height="40" decoding="sync" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='/assets/img/logo-seminar-kits.webp';}">
           </a>
           <div class="footer-contact pt-3">
             <p><strong>Seminarkits.id</strong></p>
@@ -970,42 +856,10 @@
   <a href="#header" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Kembali ke atas">
     <i class="bi bi-arrow-up-short"></i>
   </a>
-  <script src="/assets/vendor/aos/aos.js?v=20260323" defer></script>
+  <script src="assets/vendor/aos/aos.js?v=20260323" defer></script>
 
   <!-- Main JS -->
-  <script src="/assets/js/main.js?v=20260323" defer></script>
-
-  <!-- Standalone Fail-safe Script for Mobile Nav Toggle & Scroll-Top -->
-  <script>
-    (function() {
-      const toggleBtn = document.querySelector('.mobile-nav-toggle');
-      if (toggleBtn) {
-        toggleBtn.addEventListener('click', function() {
-          document.body.classList.toggle('mobile-nav-active');
-          this.classList.toggle('bi-list');
-          this.classList.toggle('bi-x');
-        });
-      }
-      document.querySelectorAll('.navmenu .toggle-dropdown').forEach(item => {
-        item.addEventListener('click', function(e) {
-          e.preventDefault();
-          this.parentNode.classList.toggle('active');
-          const dropdown = this.parentNode.nextElementSibling;
-          if (dropdown) dropdown.classList.toggle('dropdown-active');
-        });
-      });
-      const scrollTop = document.querySelector('.scroll-top');
-      if (scrollTop) {
-        window.addEventListener('scroll', function() {
-          if (window.scrollY > 100) {
-            scrollTop.classList.add('active');
-          } else {
-            scrollTop.classList.remove('active');
-          }
-        });
-      }
-    })();
-  </script>
+  <script src="assets/js/main.js?v=20260323" defer></script>
 
 </body>
 </html>
