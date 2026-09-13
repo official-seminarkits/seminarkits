@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -220,6 +220,365 @@
       color: #062540 !important;
       border-color: #f1c232 !important;
       box-shadow: 0 4px 12px rgba(241, 194, 50, 0.3);
+    }
+
+    /* Supporting Cluster Section & Card (Topical Authority Hub) */
+    #hampers-pendukung {
+      background-color: #041b30 !important;
+      border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+    .topic-cluster-card {
+      background: #0a406f !important;
+      border: 1px solid rgba(255, 255, 255, 0.15) !important;
+      border-radius: 14px;
+      padding: 24px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      transition: all 0.3s ease;
+    }
+    .topic-cluster-card:hover {
+      border-color: #f1c232 !important;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.38);
+      transform: translateY(-4px);
+    }
+    .topic-cluster-card h4 {
+      color: #ffffff !important;
+      font-weight: 800;
+      font-size: 1.15rem;
+    }
+    .topic-cluster-card p {
+      color: #cbd5e1 !important;
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+    .topic-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: rgba(241, 194, 50, 0.15) !important;
+      color: #f1c232 !important;
+      font-size: 0.8rem;
+      font-weight: 800;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      border: 1px solid rgba(241, 194, 50, 0.3);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .topic-link-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 16px;
+    }
+    .topic-link-list li {
+      margin-bottom: 8px;
+    }
+    .topic-link-list a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-size: 0.88rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s ease;
+    }
+    .topic-link-list a:hover {
+      color: #f1c232;
+    }
+
+    /* ==========================================================================
+       SECTION DESKRIPSI HAMPERS (SEO ENTITY PILLAR)
+       ========================================================================== */
+    #deskripsi-hampers {
+      background: linear-gradient(180deg, #062540 0%, #041b30 100%);
+      color: #cbd5e1;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .desc-header-tag {
+      display: inline-block;
+      padding: 6px 16px;
+      background: rgba(241, 194, 50, 0.15);
+      border: 1px solid rgba(241, 194, 50, 0.35);
+      color: #f1c232;
+      font-weight: 700;
+      font-size: 0.85rem;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .desc-title {
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 2.2rem;
+      line-height: 1.3;
+    }
+    .desc-subtitle {
+      color: #94a3b8;
+      font-size: 1.1rem;
+    }
+    .desc-card {
+      background: #082d4d;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 14px;
+      padding: 28px;
+      height: 100%;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      transition: all 0.3s ease;
+    }
+    .desc-card:hover {
+      border-color: rgba(241, 194, 50, 0.5);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+      transform: translateY(-4px);
+    }
+    .desc-card h3, .desc-card h4 {
+      color: #ffffff;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .desc-card h3 {
+      font-size: 1.4rem;
+      border-bottom: 2px solid rgba(241, 194, 50, 0.3);
+      padding-bottom: 10px;
+    }
+    .desc-icon-circle {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(241, 194, 50, 0.15);
+      color: #f1c232;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 16px;
+    }
+    .desc-feature-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+    .desc-feature-list li {
+      position: relative;
+      padding-left: 26px;
+      margin-bottom: 12px;
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      line-height: 1.55;
+    }
+    .desc-feature-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #f1c232;
+      font-weight: 800;
+    }
+    .desc-callout {
+      background: rgba(241, 194, 50, 0.08);
+      border-left: 4px solid #f1c232;
+      border-radius: 0 10px 10px 0;
+      padding: 18px 22px;
+      margin: 24px 0;
+    }
+    .desc-callout p {
+      margin-bottom: 0;
+      color: #f8fafc;
+      font-size: 0.97rem;
+    }
+
+    /* Table Proportional & High Contrast Styling */
+    .desc-table-responsive {
+      border-radius: 14px;
+      overflow-x: auto;
+      border: 1px solid rgba(255, 255, 255, 0.15) !important;
+      background: #082d4d !important;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+    .desc-table {
+      margin-bottom: 0 !important;
+      width: 100% !important;
+      min-width: 720px;
+      border-collapse: separate !important;
+      border-spacing: 0 !important;
+      color: #ffffff !important;
+      background-color: #082d4d !important;
+      --bs-table-bg: #082d4d !important;
+      --bs-table-color: #ffffff !important;
+    }
+    .desc-table thead {
+      background: #041b30 !important;
+      background-color: #041b30 !important;
+    }
+    .desc-table th {
+      color: #f1c232 !important;
+      background: #041b30 !important;
+      background-color: #041b30 !important;
+      font-weight: 800 !important;
+      text-transform: uppercase;
+      font-size: 0.88rem !important;
+      letter-spacing: 0.6px;
+      padding: 16px 20px !important;
+      border-bottom: 2px solid rgba(241, 194, 50, 0.4) !important;
+      border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+      border-top: none !important;
+      white-space: nowrap;
+    }
+    .desc-table th:last-child {
+      border-right: none !important;
+    }
+    .desc-table td {
+      padding: 20px !important;
+      background: #082d4d !important;
+      background-color: #082d4d !important;
+      color: #e2e8f0 !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+      border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+      border-top: none !important;
+      vertical-align: top !important;
+      font-size: 0.95rem !important;
+      line-height: 1.6 !important;
+    }
+    .desc-table td:last-child {
+      border-right: none !important;
+    }
+    .desc-table tbody tr:last-child td {
+      border-bottom: none !important;
+    }
+    .desc-table tbody tr:hover td {
+      background-color: #0b375d !important;
+    }
+    .pkg-title {
+      font-size: 1.15rem !important;
+      font-weight: 800 !important;
+      color: #ffffff !important;
+      margin-bottom: 8px;
+    }
+    .pkg-price-val {
+      font-size: 1.25rem !important;
+      font-weight: 800 !important;
+      color: #f1c232 !important;
+      display: block;
+      margin-bottom: 4px;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    }
+    .pkg-item-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+    .pkg-item-list li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 7px;
+      color: #f1f5f9 !important;
+      font-size: 0.92rem !important;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+    .pkg-item-list li::before {
+      content: "•";
+      position: absolute;
+      left: 2px;
+      top: 0;
+      color: #f1c232 !important;
+      font-size: 1.2rem;
+      font-weight: 900;
+    }
+    .pkg-desc-text {
+      color: #cbd5e1 !important;
+      font-size: 0.92rem !important;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+    .pkg-price-sub {
+      color: #94a3b8 !important;
+      font-size: 0.85rem !important;
+      display: block;
+    }
+
+    /* Mobile Table-Card Alternative view for screens under 768px */
+    @media (max-width: 767.98px) {
+      .desc-table-responsive {
+        display: none !important;
+      }
+      .desc-table-cards {
+        display: flex !important;
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+    @media (min-width: 768px) {
+      .desc-table-cards {
+        display: none !important;
+      }
+    }
+    .pkg-card-mobile {
+      background: #082d4d;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    }
+    .pkg-card-mobile.highlight {
+      border-color: rgba(241, 194, 50, 0.5);
+      background: linear-gradient(180deg, #0a3a63 0%, #082d4d 100%);
+    }
+    .pkg-card-mobile .card-header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .pkg-card-mobile .section-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #94a3b8;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    /* FAQ Accordion Styling */
+    .desc-faq-item {
+      background: #082d4d;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 10px;
+      margin-bottom: 14px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .desc-faq-item:hover {
+      border-color: rgba(241, 194, 50, 0.4);
+    }
+    .desc-faq-btn {
+      width: 100%;
+      text-align: left;
+      padding: 18px 22px;
+      background: none;
+      border: none;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 1.05rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+    .desc-faq-btn:hover {
+      color: #f1c232;
+    }
+    .desc-faq-btn[aria-expanded="true"] {
+      color: #f1c232;
+    }
+    .desc-faq-body {
+      padding: 0 22px 20px 22px;
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      line-height: 1.65;
     }
   </style>
 
@@ -485,6 +844,566 @@
 
       </div><!-- /.container -->
     </section><!-- /#events -->
+
+    <!-- ========== SECTION: PANDUAN LENGKAP & STRATEGI HAMPERS (SEO ENTITY PILLAR) ========== -->
+    <section id="deskripsi-hampers" class="py-5">
+      <div class="container" data-aos="fade-up">
+
+        <!-- Section Header -->
+        <div class="text-center mb-5">
+          <span class="desc-header-tag mb-2">Pusat Referensi & Solusi Gifting Eksklusif</span>
+          <h2 class="desc-title mt-2">Hampers Custom dan Gift Box Perusahaan untuk Berbagai Momen</h2>
+          <p class="desc-subtitle col-lg-9 mx-auto mt-2">
+            Panduan lengkap pemilihan bingkisan hampers berdasarkan momen perayaan, profil penerima, kombinasi isi kurasi, hingga tata cara pengadaan hampers corporate B2B resmi berbadan hukum PKP.
+          </p>
+        </div>
+
+        <!-- Part 1: Definisi & Jawaban Langsung AEO -->
+        <div class="row g-4 mb-5">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="desc-card">
+              <div class="desc-icon-circle"><i class="bi bi-gift"></i></div>
+              <h3>Apa Itu Hampers dan Gift Box?</h3>
+              <p>
+                <strong>Hampers</strong> adalah bingkisan hadiah terkurasi yang dikemas secara tematik dan estetik di dalam wadah eksklusif seperti hardbox kaku (<strong>rigid box</strong>), keranjang anyaman, atau <em>besek</em> modern ramah lingkungan. Berbeda dengan parsel tradisional yang umumnya hanya ditumpuk dan dibungkus plastik bening polos, hampers menitikberatkan pada keselarasan konsep estetika (<em>curated gifting</em>), kualitas material premium, perlindungan produk yang kokoh (<strong>EVA foam laser cut</strong>), serta pengalaman membuka kado (<strong>unboxing experience</strong>) yang berkesan bagi penerima.
+              </p>
+              <p>
+                Dalam konteks bisnis dan organisasi, <strong>corporate hampers</strong> berfungsi sebagai instrumen strategis untuk memperkuat relasi kemitraan, menyampaikan apresiasi tulus kepada karyawan, merayakan momen hari raya keagamaan, serta menghadirkan representasi prestisius nilai-nilai brand perusahaan.
+              </p>
+              <div class="desc-callout">
+                <p><i class="bi bi-lightbulb me-2 text-warning"></i><strong>Pembeda Utama:</strong> Parsel berfokus pada volume kemasan luar bertingkat, sedangkan hampers berfokus pada kualitas isi yang terkurasi personal, sentuhan kartu ucapan berstempel lilin (<em>wax seal</em>), kemasan ramah lingkungan, dan perlindungan kargo jarak jauh.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="desc-card">
+              <div class="desc-icon-circle"><i class="bi bi-stars"></i></div>
+              <h3>Fungsi Strategis Hampers untuk Relasi & Brand Value</h3>
+              <ul class="desc-feature-list">
+                <li>
+                  <strong>Mempererat Hubungan Kemitraan Klien (B2B Client Gifting):</strong> Mengirimkan hampers elegan saat perayaan Idul Fitri, Natal, Tahun Baru, atau selesainya kerja sama proyek membina hubungan emosional yang erat dengan para pembuat keputusan.
+                </li>
+                <li>
+                  <strong>Apresiasi Loyalitas Karyawan & Onboarding:</strong> Memberikan bingkisan istimewa saat ulang tahun kantor, pencapaian target (<em>milestone</em>), maupun welcoming gift menciptakan rasa dihargai (<em>employee recognition</em>) yang mendalam.
+                </li>
+                <li>
+                  <strong>Brand Recall Bernilai Tinggi & Ramah Lingkungan:</strong> Produk yang fungsional seperti cangkir keramik handmade, tumbler vacuum stainless, dan sajadah travel terus digunakan bertahun-tahun pasca-momen perayaan.
+                </li>
+                <li>
+                  <strong>Akuntabilitas Pengadaan Terpercaya:</strong> Transparansi pengadaan corporate B2B resmi PKP, dilengkapi Surat Penawaran, SPK, BAST, invoice resmi bermeterai, serta Faktur Pajak PPN 11%.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Part 2: 4 Pilar Utama Pemilihan Hampers (Acara, Penerima, Tema Isi, Personalisasi) -->
+        <div class="mb-5" data-aos="fade-up">
+          <div class="text-center mb-4">
+            <span class="badge bg-outline-light text-warning px-3 py-2 text-uppercase fw-bold border border-warning">Kriteria Pemilihan</span>
+            <h3 class="fw-bold text-white mt-2">4 Dimensi Utama Menentukan Hampers yang Tepat</h3>
+            <p class="text-white-50 col-lg-8 mx-auto">Memadukan konteks acara, profil penerima, dan tema isi memastikan setiap paket hadiah terasa bermakna dan tepat sasaran.</p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Dimensi 1: Berdasarkan Acara -->
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="desc-card">
+                <div class="desc-icon-circle"><i class="bi bi-calendar-check"></i></div>
+                <h4>1. Berdasarkan Momen Acara</h4>
+                <p class="small text-white-50 mb-3">Menyesuaikan nuansa perayaan dan tradisi formal maupun kasual:</p>
+                <ul class="desc-feature-list mb-3">
+                  <li><strong>Hampers Lebaran & Idul Fitri:</strong> Sajadah travel sutra, tasbih digital, cookies artisan, toples kue tolak angin, dan diffuser wangi kasturi.</li>
+                  <li><strong>Natal & Tahun Baru (Nataru):</strong> Cangkir mug keramik hangat, aromaterapi scented candle, butter cookies, dan kartu bertema festive.</li>
+                  <li><strong>Milad & HUT Kantor:</strong> Paket cinderamata plakat jam meja, tumbler smart LED, dan notebook agenda berlogo emas.</li>
+                </ul>
+                <a href="hampers-lebaran-idul-fitri.html" class="text-warning text-decoration-none small fw-bold">Eksplor Hampers Hari Raya <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Dimensi 2: Berdasarkan Penerima -->
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="desc-card">
+                <div class="desc-icon-circle"><i class="bi bi-person-heart"></i></div>
+                <h4>2. Berdasarkan Profil Penerima</h4>
+                <p class="small text-white-50 mb-3">Personalisasi hadiah sesuai strata dan kedekatan hubungan relasi:</p>
+                <ul class="desc-feature-list mb-3">
+                  <li><strong>Klien VIP & Direksi:</strong> Hardbox magnetik beludru, termos vacuum SUS304 laser grafir nama, dan pen metal eksekutif.</li>
+                  <li><strong>Karyawan & Internal Staf:</strong> Paket wellness, handuk bordir katun, snack sehat nusantara, dan voucher apresiasi kerja.</li>
+                  <li><strong>Mitra Kerja & Kolega:</strong> Artisan coffee drip bag, madu murni, cangkir enamel estetik, dan greeting card kustom.</li>
+                </ul>
+                <a href="hampers-executive-hardbox-vip.html" class="text-warning text-decoration-none small fw-bold">Pilihan Hampers VIP <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Dimensi 3: Berdasarkan Tema Isi -->
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="desc-card">
+                <div class="desc-icon-circle"><i class="bi bi-cup-hot"></i></div>
+                <h4>3. Berdasarkan Tema Isi</h4>
+                <p class="small text-white-50 mb-3">Kurasi komposisi item yang memiliki nilai fungsi tinggi sehari-hari:</p>
+                <ul class="desc-feature-list mb-3">
+                  <li><strong>Artisan Tea & Coffee:</strong> Racikan teh bunga telang/chamomile, biji kopi arabika single origin, dan cangkir keramik matte.</li>
+                  <li><strong>Eco-Friendly Go Green:</strong> Tas goni rami tenun, sendok garpu bambu, sedotan stainless, dan tumbler botol kaca sleeve kayu.</li>
+                  <li><strong>Self-Care & Wellness:</strong> Diffuser aromaterapi reed, lilin aroma kedelai alami (<em>soy wax</em>), dan sabun herbal handmade.</li>
+                </ul>
+                <a href="hampers-artisan-tea-ceramic-cup.html" class="text-warning text-decoration-none small fw-bold">Lihat Artisan Tea Set <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Dimensi 4: Personalisasi & Packaging -->
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="desc-card">
+                <div class="desc-icon-circle"><i class="bi bi-box2"></i></div>
+                <h4>4. Kemasan & Unboxing</h4>
+                <p class="small text-white-50 mb-3">Daya pikat estetika luar yang mengangkat prestise pengirim hadiah:</p>
+                <ul class="desc-feature-list mb-3">
+                  <li><strong>Hardbox Rigid Magnetik:</strong> Struktur kotak kaku berbalut kertas linen/fancy dengan hot print foil emas/silver.</li>
+                  <li><strong>Custom Sleeve & Pita Satin:</strong> Sablon sleeve luar penuh warna (<em>full-color</em>) dan pita kain satin aksen warna identitas brand.</li>
+                  <li><strong>Personalized Wax Seal:</strong> Segel lilin tradisional dengan inisial logo perusahaan pada amplop kartu ucapan.</li>
+                </ul>
+                <a href="../minta-penawaran.html" class="text-warning text-decoration-none small fw-bold">Konsultasi Packaging <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Part 3: Tabel Perbandingan Klasifikasi Budget Hampers -->
+        <div class="mb-5" data-aos="fade-up">
+          <div class="text-center mb-4">
+            <span class="badge bg-outline-light text-warning px-3 py-2 text-uppercase fw-bold border border-warning">Klasifikasi Budget</span>
+            <h3 class="fw-bold text-white mt-2">Tabel Klasifikasi Paket Hampers Berdasarkan Rentang Anggaran</h3>
+            <p class="text-white-50 col-lg-8 mx-auto">Transparansi pilihan paket hampers yang dapat disesuaikan dengan volume pengadaan dan pagu anggaran institusi Anda.</p>
+          </div>
+
+          <!-- Desktop & Tablet Proportional Table View -->
+          <div class="desc-table-responsive">
+            <table class="desc-table table">
+              <thead>
+                <tr>
+                  <th style="width: 22%;">Kategori Paket</th>
+                  <th style="width: 36%;">Komposisi & Isi Kurasi</th>
+                  <th style="width: 24%;">Rekomendasi Penggunaan</th>
+                  <th style="width: 18%;">Estimasi Harga</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="pkg-title">Paket Starter / Eco Friendly</div>
+                    <span class="badge bg-secondary text-white small px-2 py-1">Budget Efficient</span>
+                  </td>
+                  <td>
+                    <ul class="pkg-item-list">
+                      <li>Tas Jinjing Goni / Kanvas Tenun Ramah Lingkungan</li>
+                      <li>Tumbler Kaca Sleeve Kayu Bambu / Enamel Mug Retro</li>
+                      <li>Cutleries Set Sendok Garpu Kayu & Sedotan Stainless</li>
+                      <li>Hangtag Karton Kraft Ucapan Custom Logo</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <p class="pkg-desc-text">Hadiah massal gathering karyawan, komunitas, souvenir HUT yayasan, dan program CSR green environment.</p>
+                  </td>
+                  <td>
+                    <span class="pkg-price-val">Rp 65.000 – Rp 95.000</span>
+                    <span class="pkg-price-sub">/ set (tergantung qty)</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="pkg-title">Paket Standar / Artisan & Hari Raya</div>
+                    <span class="badge bg-primary text-white small px-2 py-1">Paling Populer</span>
+                  </td>
+                  <td>
+                    <ul class="pkg-item-list">
+                      <li>Box Corrugated Die-Cut Eksklusif dengan Custom Sleeve</li>
+                      <li>2 Unit Cangkir Keramik Stoneware Handmade Berlogo</li>
+                      <li>Pilihan Artisan Tea Blends (Teh Melati / Telang Herbal)</li>
+                      <li>Madu Murni Jar Kaca 150ml + Honey Dipper Kayu</li>
+                      <li>Kartu Ucapan Lipat Bertema Momen Khusus</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <p class="pkg-desc-text">Hampers Idul Fitri, bingkisan Natal, cinderamata rekanan bisnis kantor, dan apresiasi staf berprestasi.</p>
+                  </td>
+                  <td>
+                    <span class="pkg-price-val">Rp 115.000 – Rp 195.000</span>
+                    <span class="pkg-price-sub">/ set</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="pkg-title">Paket Premium / VIP Executive Hardbox</div>
+                    <span class="badge bg-warning text-dark small fw-bold px-2 py-1">Mewah & Eksklusif</span>
+                  </td>
+                  <td>
+                    <ul class="pkg-item-list">
+                      <li>Hardbox Rigid Magnetik Custom Warna & Hot Stamping Foil Emas</li>
+                      <li>Sajadah Travel Sutra Lipat Saku + Tasbih Digital Kayu</li>
+                      <li>Tumbler Vacuum Stainless SUS304 Suhu LED Grafir Nama</li>
+                      <li>Aroma Diffuser Ultrasonic / Reed Diffuser Essential Oil</li>
+                      <li>Toples Kaca Kedap Udara Cookies Artisan Cokelat Almond</li>
+                      <li>Surat Sambutan Direksi dengan Amplop Segel Lilin (Wax Seal)</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <p class="pkg-desc-text">Bingkisan RUPS akhir tahun, cinderamata jajaran direksi, hadiah pejabat instansi/BUMN, dan mitra investor strategis.</p>
+                  </td>
+                  <td>
+                    <span class="pkg-price-val">Rp 220.000 – Rp 485.000+</span>
+                    <span class="pkg-price-sub">/ set</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Mobile Alternative Proportional Cards (Visible on screens < 768px) -->
+          <div class="desc-table-cards">
+            <!-- Mobile Card 1 -->
+            <div class="pkg-card-mobile">
+              <div class="card-header-flex">
+                <div>
+                  <h4 class="h5 fw-bold text-white mb-1">Paket Starter / Eco Friendly</h4>
+                  <span class="badge bg-secondary text-white small">Budget Efficient</span>
+                </div>
+                <div class="text-end">
+                  <span class="pkg-price-val">Rp 65rb – 95rb</span>
+                  <span class="small text-white-50">/ set</span>
+                </div>
+              </div>
+              <div class="mb-3">
+                <span class="section-label"><i class="bi bi-box-seam me-1"></i> Komposisi Isi:</span>
+                <ul class="pkg-item-list">
+                  <li>Tas Jinjing Goni / Kanvas Tenun Ramah Lingkungan</li>
+                  <li>Tumbler Kaca Sleeve Kayu Bambu / Enamel Mug Retro</li>
+                  <li>Cutleries Set Sendok Garpu Kayu & Sedotan Stainless</li>
+                  <li>Hangtag Karton Kraft Ucapan Custom Logo</li>
+                </ul>
+              </div>
+              <div class="pt-2 border-top border-secondary border-opacity-25">
+                <span class="section-label"><i class="bi bi-calendar-event me-1"></i> Rekomendasi:</span>
+                <p class="small text-white-50 mb-0">Hadiah massal gathering karyawan, komunitas, souvenir HUT yayasan, dan program CSR green environment.</p>
+              </div>
+            </div>
+
+            <!-- Mobile Card 2 -->
+            <div class="pkg-card-mobile highlight">
+              <div class="card-header-flex">
+                <div>
+                  <h4 class="h5 fw-bold text-white mb-1">Paket Standar / Artisan & Hari Raya</h4>
+                  <span class="badge bg-primary text-white small">Paling Populer</span>
+                </div>
+                <div class="text-end">
+                  <span class="pkg-price-val">Rp 115rb – 195rb</span>
+                  <span class="small text-white-50">/ set</span>
+                </div>
+              </div>
+              <div class="mb-3">
+                <span class="section-label"><i class="bi bi-box-seam me-1"></i> Komposisi Isi:</span>
+                <ul class="pkg-item-list">
+                  <li>Box Corrugated Die-Cut Eksklusif dengan Custom Sleeve</li>
+                  <li>2 Unit Cangkir Keramik Stoneware Handmade Berlogo</li>
+                  <li>Pilihan Artisan Tea Blends (Teh Melati / Telang Herbal)</li>
+                  <li>Madu Murni Jar Kaca 150ml + Honey Dipper Kayu</li>
+                  <li>Kartu Ucapan Lipat Bertema Momen Khusus</li>
+                </ul>
+              </div>
+              <div class="pt-2 border-top border-secondary border-opacity-25">
+                <span class="section-label"><i class="bi bi-calendar-event me-1"></i> Rekomendasi:</span>
+                <p class="small text-white-50 mb-0">Hampers Idul Fitri, bingkisan Natal, cinderamata rekanan bisnis kantor, dan apresiasi staf berprestasi.</p>
+              </div>
+            </div>
+
+            <!-- Mobile Card 3 -->
+            <div class="pkg-card-mobile">
+              <div class="card-header-flex">
+                <div>
+                  <h4 class="h5 fw-bold text-white mb-1">Paket Premium / VIP Executive</h4>
+                  <span class="badge bg-warning text-dark small fw-bold">Mewah & Eksklusif</span>
+                </div>
+                <div class="text-end">
+                  <span class="pkg-price-val">Rp 220rb – 485rb+</span>
+                  <span class="small text-white-50">/ set</span>
+                </div>
+              </div>
+              <div class="mb-3">
+                <span class="section-label"><i class="bi bi-box-seam me-1"></i> Komposisi Isi:</span>
+                <ul class="pkg-item-list">
+                  <li>Hardbox Rigid Magnetik Custom Warna & Hot Stamping Foil Emas</li>
+                  <li>Sajadah Travel Sutra Lipat Saku + Tasbih Digital Kayu</li>
+                  <li>Tumbler Vacuum Stainless SUS304 Suhu LED Grafir Nama</li>
+                  <li>Aroma Diffuser Ultrasonic / Reed Diffuser Essential Oil</li>
+                  <li>Toples Kaca Kedap Udara Cookies Artisan Cokelat Almond</li>
+                  <li>Surat Sambutan Direksi dengan Amplop Segel Lilin (Wax Seal)</li>
+                </ul>
+              </div>
+              <div class="pt-2 border-top border-secondary border-opacity-25">
+                <span class="section-label"><i class="bi bi-calendar-event me-1"></i> Rekomendasi:</span>
+                <p class="small text-white-50 mb-0">Bingkisan RUPS akhir tahun, cinderamata jajaran direksi, hadiah pejabat instansi/BUMN, dan mitra investor strategis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Part 4: Tata Kelola Distribusi, Multi-Address & Proteksi Kargo -->
+        <div class="row g-4 mb-5">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="desc-card">
+              <div class="desc-icon-circle"><i class="bi bi-shield-check"></i></div>
+              <h3>Standar Pengemasan Aman & Proteksi Kargo</h3>
+              <p class="small text-white-50 mb-3">Keamanan produk rapuh seperti cangkir keramik dan jar madu kaca adalah prioritas mutlak kami:</p>
+              <div class="mb-3">
+                <strong class="text-white d-block mb-1"><i class="bi bi-layers text-warning me-1"></i> Busa Dudukan Presisi (Laser Cut EVA Foam):</strong>
+                <p class="small text-white-50 mb-0">Setiap item terkunci rapat pada ceruk spons pelindung sehingga tidak bergerak atau berbenturan selama guncangan perjalanan pengiriman kargo.</p>
+              </div>
+              <div class="mb-3">
+                <strong class="text-white d-block mb-1"><i class="bi bi-box-seam text-warning me-1"></i> Double-Wall Master Carton & Bubble Wrap:</strong>
+                <p class="small text-white-50 mb-0">Lapisan kardus luar tebal berdinding ganda, dibungkus gelembung udara berlapis tebal dan stretch film kedap air hujan untuk kiriman luar pulau.</p>
+              </div>
+              <div>
+                <strong class="text-white d-block mb-1"><i class="bi bi-shield-exclamation text-warning me-1"></i> Garansi Cacat Pengiriman 100%:</strong>
+                <p class="small text-white-50 mb-0">Penggantian item baru bebas biaya jika barang diterima dalam kondisi retak atau pecah akibat kendala transportasi ekspedisi.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="desc-card">
+              <div class="desc-icon-circle"><i class="bi bi-pin-map"></i></div>
+              <h3>Layanan Distribusi Multi-Alamat (Door-to-Door)</h3>
+              <p class="small text-white-50 mb-3">Solusi praktis bagi perusahaan yang memiliki banyak cabang atau staf yang bekerja dari rumah (WFH):</p>
+              <div class="mb-3">
+                <strong class="text-white d-block mb-1"><i class="bi bi-file-earmark-spreadsheet text-warning me-1"></i> Manajemen Data Alamat Massal:</strong>
+                <p class="small text-white-50 mb-0">Cukup lampirkan spreadsheet berisi daftar nama penerima, alamat rumah/kantor, dan kontak telepon; tim logistik kami yang akan mengatur labeling dan distribusinya.</p>
+              </div>
+              <div class="mb-3">
+                <strong class="text-white d-block mb-1"><i class="bi bi-qr-code-scan text-warning me-1"></i> Live Tracking Resi Pengiriman:</strong>
+                <p class="small text-white-50 mb-0">Seluruh nomor resi ekspedisi kargo akan kami rekap secara transparan dalam satu dokumen terpadu untuk kemudahan pemantauan real-time.</p>
+              </div>
+              <div>
+                <strong class="text-white d-block mb-1"><i class="bi bi-building-check text-warning me-1"></i> Legalitas PKP & Fleksibilitas TOP:</strong>
+                <p class="small text-white-50 mb-0">Kemudahan pembayaran termin untuk instansi korporasi terverifikasi, lengkap dengan kuitansi bermeterai dan faktur pajak resmi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Part 5: FAQ Hampers & Gift Box -->
+        <div class="mb-4" data-aos="fade-up">
+          <div class="text-center mb-4">
+            <span class="badge bg-outline-light text-warning px-3 py-2 text-uppercase fw-bold border border-warning">Pertanyaan Umum</span>
+            <h3 class="fw-bold text-white mt-2">FAQ Seputar Pemesanan Hampers & Gift Box</h3>
+            <p class="text-white-50 col-lg-8 mx-auto">Informasi ringkas seputar kustomisasi isi, penulisan kartu pesan, kuantitas order, dan jadwal pengiriman.</p>
+          </div>
+
+          <div class="col-lg-10 mx-auto">
+            <!-- FAQ 1 -->
+            <div class="desc-faq-item">
+              <button class="desc-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#hmp-faq-1" aria-expanded="true">
+                <span>1. Apakah isi paket hampers bisa dikustom atau diganti sesuai permintaan?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div id="hmp-faq-1" class="collapse show">
+                <div class="desc-faq-body">
+                  <strong>Sangat fleksibel!</strong> Paket yang ada di katalog merupakan panduan kombinasi terpopuler. Anda dapat menyesuaikan komposisi isi, seperti menukar tumbler dengan diffuser, menambahkan kue kering tertentu, memasukkan produk suvenir kantor sendiri, atau mengganti warna pita dan kemasan sesuai identitas brand Anda.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="desc-faq-item">
+              <button class="desc-faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hmp-faq-2" aria-expanded="false">
+                <span>2. Bisakah mencantumkan pesan ucapan yang berbeda untuk masing-masing penerima?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div id="hmp-faq-2" class="collapse">
+                <div class="desc-faq-body">
+                  <strong>Bisa.</strong> Kami menyediakan fasilitas cetak kartu ucapan personal (*personalized greeting card*) dengan nama penerima dan kata-kata sambutan yang disesuaikan. Anda cukup menyediakan draft teks ucapan, dan tim desain kami akan menyusun tata letak visualnya secara profesional.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="desc-faq-item">
+              <button class="desc-faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hmp-faq-3" aria-expanded="false">
+                <span>3. Berapa batas minimum pemesanan (MOQ) hampers?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div id="hmp-faq-3" class="collapse">
+                <div class="desc-faq-body">
+                  Minimum pemesanan untuk paket hampers custom hardbox adalah <strong>20 hingga 30 set</strong>. Untuk pesanan hampers edisi reguler atau ready-stock tertentu, pemesanan dapat dilayani mulai kuantitas lebih kecil tergantung ketersediaan stok workshop.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="desc-faq-item">
+              <button class="desc-faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hmp-faq-4" aria-expanded="false">
+                <span>4. Kapan waktu paling ideal memesan hampers hari raya seperti Lebaran atau Natal?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div id="hmp-faq-4" class="collapse">
+                <div class="desc-faq-body">
+                  Kami sangat menyarankan pemesanan dilakukan minimal <strong>3 hingga 4 minggu sebelum hari H</strong> perayaan. Hal ini penting untuk mengantisipasi kepadatan antrean produksi cetak kemasan kustom dan lonjakan arus pengiriman kargo ekspedisi nasional menjelang hari libur bersama.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="desc-faq-item">
+              <button class="desc-faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hmp-faq-5" aria-expanded="false">
+                <span>5. Apakah pesanan hampers korporat bisa dikirim langsung ke rumah masing-masing klien?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div id="hmp-faq-5" class="collapse">
+                <div class="desc-faq-body">
+                  <strong>Tentu saja bisa.</strong> Kami memiliki sistem penanganan pengiriman multi-tujuan (door-to-door direct delivery) ke alamat rumah penerima di berbagai kota di seluruh Indonesia dengan laporan resi kirim yang transparan dan terpantau tuntas.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Part 6: Final CTA Banner -->
+        <div class="mt-5 p-4 p-md-5 rounded-4" style="background: linear-gradient(135deg, #0a406f 0%, #062540 100%); border: 1px solid rgba(241, 194, 50, 0.4);" data-aos="fade-up">
+          <div class="row align-items-center">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+              <span class="badge bg-warning text-dark fw-bold text-uppercase px-3 py-1 mb-2">Konsultasi Desain & Penawaran Gratis</span>
+              <h3 class="fw-bold text-white mb-2">Siapkan Bingkisan Hampers Berkesan untuk Kolega & Mitra Anda</h3>
+              <p class="text-white-50 mb-0">Konsultasikan konsep hampers hari raya, gift set RUPS akhir tahun, atau bingkisan karyawan Anda bersama tim spesialis Seminarkits.id. Dapatkan preview mockup 3D gratis dan penawaran harga resmi B2B dalam waktu singkat.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="https://wa.me/6288989643555?text=Halo%20Seminarkits.id%2C%20saya%20ingin%20konsultasi%20pengadaan%20Hampers%20dan%20Gift%20Box." target="_blank" class="btn btn-warning text-dark fw-bold px-4 py-3 shadow-lg w-100 mb-2">
+                <i class="bi bi-whatsapp me-2"></i> Konsultasi via WhatsApp
+              </a>
+              <a href="../minta-penawaran.html" class="btn btn-outline-light fw-bold px-4 py-2 w-100 small">
+                <i class="bi bi-file-earmark-text me-2"></i> Minta Penawaran Formal (RFQ)
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.container -->
+    </section><!-- /#deskripsi-hampers -->
+
+    <!-- ========== SECTION: HAMPERS PENDUKUNG & CLUSTER TOPICAL AUTHORITY ========== -->
+    <section id="hampers-pendukung" class="py-5 border-top">
+      <div class="container" data-aos="fade-up">
+        <div class="text-center mb-5">
+          <span class="badge bg-warning text-dark px-3 py-2 text-uppercase mb-2 fw-bold">Eksplorasi Klaster Hampers</span>
+          <h2 class="fw-bold text-white">Koleksi & Kategori Hampers Pendukung</h2>
+          <p class="text-white-50 col-lg-8 mx-auto">Jelajahi berbagai opsi kurasi bingkisan tematik yang kami rancang khusus untuk memenuhi kebutuhan acara, profil penerima, dan konsep gifting instansi Anda.</p>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Cluster Card 1: Hampers Hari Raya & Keagamaan -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="topic-cluster-card">
+              <span class="topic-badge"><i class="bi bi-moon-stars me-1"></i> Momen Hari Raya</span>
+              <h4 class="mb-2">Hampers Lebaran & Natal</h4>
+              <p class="small mb-3">Bingkisan istimewa menyambut Idul Fitri, Natal, dan Tahun Baru dengan sajadah sutra, kue kering artisan, dan toples kaca kedap udara berlogo resmi.</p>
+              <ul class="topic-link-list">
+                <li><a href="hampers-lebaran-idul-fitri.html"><i class="bi bi-arrow-right-circle text-warning"></i> Hampers Lebaran Idul Fitri</a></li>
+                <li><a href="hampers-corporate.html"><i class="bi bi-arrow-right-circle text-warning"></i> Hampers Natal & Akhir Tahun</a></li>
+                <li><a href="hampers-executive-hardbox-vip.html"><i class="bi bi-arrow-right-circle text-warning"></i> Gift Box Sajadah & Tasbih Digital</a></li>
+              </ul>
+              <div class="mt-auto pt-2">
+                <a href="hampers-lebaran-idul-fitri.html" class="btn btn-sm btn-outline-warning w-100 fw-bold">Lihat Paket Hari Raya <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cluster Card 2: Hampers Corporate & RUPS -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="topic-cluster-card">
+              <span class="topic-badge"><i class="bi bi-building me-1"></i> B2B & Korporasi</span>
+              <h4 class="mb-2">Hampers Corporate & RUPS</h4>
+              <p class="small mb-3">Paket cinderamata prestisius penutup tahun buku, RUPS pemegang saham, dan bingkisan penghargaan mitra strategis korporasi dalam kemasan hardbox magnetik.</p>
+              <ul class="topic-link-list">
+                <li><a href="hampers-rups-akhir-tahun.html"><i class="bi bi-arrow-right-circle text-warning"></i> Hampers RUPS Akhir Tahun</a></li>
+                <li><a href="hampers-perusahaan.html"><i class="bi bi-arrow-right-circle text-warning"></i> Hampers Perusahaan & Vendor</a></li>
+                <li><a href="corporate-gift.html"><i class="bi bi-arrow-right-circle text-warning"></i> Corporate Gift Set B2B</a></li>
+              </ul>
+              <div class="mt-auto pt-2">
+                <a href="hampers-rups-akhir-tahun.html" class="btn btn-sm btn-outline-warning w-100 fw-bold">Lihat Paket Corporate <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cluster Card 3: Hampers Artisan Tea & Ceramic Cup -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="topic-cluster-card">
+              <span class="topic-badge"><i class="bi bi-cup-hot me-1"></i> Cita Rasa Artisan</span>
+              <h4 class="mb-2">Artisan Tea & Coffee Set</h4>
+              <p class="small mb-3">Cangkir keramik buatan tangan perajin lokal dipadukan dengan daun teh herbal telang nusantara dan madu murni berkualitas tinggi dalam kotak ramah lingkungan.</p>
+              <ul class="topic-link-list">
+                <li><a href="hampers-artisan-tea-ceramic-cup.html"><i class="bi bi-arrow-right-circle text-warning"></i> Artisan Tea & Ceramic Cup Set</a></li>
+                <li><a href="artisan-ceramic-mug-coffee-set.html"><i class="bi bi-arrow-right-circle text-warning"></i> Artisan Coffee & Mug Keramik</a></li>
+                <li><a href="tumbler-custom.html"><i class="bi bi-arrow-right-circle text-warning"></i> Set Tumbler & Mug Kantor</a></li>
+              </ul>
+              <div class="mt-auto pt-2">
+                <a href="hampers-artisan-tea-ceramic-cup.html" class="btn btn-sm btn-outline-warning w-100 fw-bold">Lihat Artisan Set <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cluster Card 4: Hampers Eco-Friendly Go Green -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="topic-cluster-card">
+              <span class="topic-badge"><i class="bi bi-flower1 me-1"></i> Ramah Lingkungan</span>
+              <h4 class="mb-2">Hampers Eco-Friendly</h4>
+              <p class="small mb-3">Mendukung kampanye keberlanjutan (*sustainable lifestyle*) dengan tas goni rami, sedotan bambu/stainless, botol minum silikon, dan kemasan daur ulang.</p>
+              <ul class="topic-link-list">
+                <li><a href="hampers-eco-friendly-go-green.html"><i class="bi bi-arrow-right-circle text-warning"></i> Hampers Eco Go Green Zero Waste</a></li>
+                <li><a href="../katalog.html#tas"><i class="bi bi-arrow-right-circle text-warning"></i> Tote Bag Goni & Blacu Polos</a></li>
+                <li><a href="souvenir-payung-mug-custom.html"><i class="bi bi-arrow-right-circle text-warning"></i> Souvenir Ramah Lingkungan</a></li>
+              </ul>
+              <div class="mt-auto pt-2">
+                <a href="hampers-eco-friendly-go-green.html" class="btn btn-sm btn-outline-warning w-100 fw-bold">Lihat Paket Eco-Friendly <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cluster Card 5: Hampers Milad & HUT Perusahaan -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="topic-cluster-card">
+              <span class="topic-badge"><i class="bi bi-award me-1"></i> Peringatan Khusus</span>
+              <h4 class="mb-2">Hampers Milad & HUT Kantor</h4>
+              <p class="small mb-3">Cinderamata perayaan tahunan instansi pemerintah, BUMN, dan universitas yang memadukan plakat akrilik, tumbler suhu LED, dan souvenir kantor fungsional.</p>
+              <ul class="topic-link-list">
+                <li><a href="hampers-milad-peringatan-hut.html"><i class="bi bi-arrow-right-circle text-warning"></i> Hampers Milad & Peringatan HUT</a></li>
+                <li><a href="plakat-akrilik-jam-meja.html"><i class="bi bi-arrow-right-circle text-warning"></i> Plakat Akrilik Meja & Jam</a></li>
+                <li><a href="plakat-kuningan-kayu.html"><i class="bi bi-arrow-right-circle text-warning"></i> Plakat Kuningan Kayu Jati</a></li>
+              </ul>
+              <div class="mt-auto pt-2">
+                <a href="hampers-milad-peringatan-hut.html" class="btn btn-sm btn-outline-warning w-100 fw-bold">Lihat Paket Milad & HUT <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cluster Card 6: Hampers Onboarding & Welcome Kit -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <div class="topic-cluster-card">
+              <span class="topic-badge"><i class="bi bi-people me-1"></i> Budaya Kantor</span>
+              <h4 class="mb-2">Onboarding & Karyawan Kit</h4>
+              <p class="small mb-3">Bingkisan selamat datang (*welcoming kit*) bagi karyawan baru yang memuat lanyard tissue sublimasi, notebook agenda kulit, pulpen metal, dan kaos polo seragam.</p>
+              <ul class="topic-link-list">
+                <li><a href="corporate-gift-set.html"><i class="bi bi-arrow-right-circle text-warning"></i> Paket Welcome Onboarding Karyawan</a></li>
+                <li><a href="seminar-kit.html"><i class="bi bi-arrow-right-circle text-warning"></i> Paket Seminar Kit Pelatihan</a></li>
+                <li><a href="../minta-penawaran.html"><i class="bi bi-arrow-right-circle text-warning"></i> Konsultasi Custom Gift Box</a></li>
+              </ul>
+              <div class="mt-auto pt-2">
+                <a href="corporate-gift-set.html" class="btn btn-sm btn-outline-warning w-100 fw-bold">Lihat Paket Onboarding <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
   </main>
 
