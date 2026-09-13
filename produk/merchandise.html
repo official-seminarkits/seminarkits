@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -220,6 +220,365 @@
       color: #062540 !important;
       border-color: #f1c232 !important;
       box-shadow: 0 4px 12px rgba(241, 194, 50, 0.3);
+    }
+
+    /* Supporting Cluster Section & Card (Topical Authority Hub) */
+    #merchandise-pendukung {
+      background-color: #041b30 !important;
+      border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+    .topic-cluster-card {
+      background: #0a406f !important;
+      border: 1px solid rgba(255, 255, 255, 0.15) !important;
+      border-radius: 14px;
+      padding: 24px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      transition: all 0.3s ease;
+    }
+    .topic-cluster-card:hover {
+      border-color: #f1c232 !important;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.38);
+      transform: translateY(-4px);
+    }
+    .topic-cluster-card h4 {
+      color: #ffffff !important;
+      font-weight: 800;
+      font-size: 1.15rem;
+    }
+    .topic-cluster-card p {
+      color: #cbd5e1 !important;
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+    .topic-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: rgba(241, 194, 50, 0.15) !important;
+      color: #f1c232 !important;
+      font-size: 0.8rem;
+      font-weight: 800;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      border: 1px solid rgba(241, 194, 50, 0.3);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .topic-link-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 16px;
+    }
+    .topic-link-list li {
+      margin-bottom: 8px;
+    }
+    .topic-link-list a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-size: 0.88rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s ease;
+    }
+    .topic-link-list a:hover {
+      color: #f1c232;
+    }
+
+    /* ==========================================================================
+       SECTION DESKRIPSI MERCHANDISE CUSTOM & PRODUK PROMOSI (SEO ENTITY PILLAR)
+       ========================================================================== */
+    #deskripsi-merchandise {
+      background: linear-gradient(180deg, #062540 0%, #041b30 100%);
+      color: #cbd5e1;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .desc-header-tag {
+      display: inline-block;
+      padding: 6px 16px;
+      background: rgba(241, 194, 50, 0.15);
+      border: 1px solid rgba(241, 194, 50, 0.35);
+      color: #f1c232;
+      font-weight: 700;
+      font-size: 0.85rem;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .desc-title {
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 2.2rem;
+      line-height: 1.3;
+    }
+    .desc-subtitle {
+      color: #94a3b8;
+      font-size: 1.1rem;
+    }
+    .desc-card {
+      background: #082d4d;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 14px;
+      padding: 28px;
+      height: 100%;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      transition: all 0.3s ease;
+    }
+    .desc-card:hover {
+      border-color: rgba(241, 194, 50, 0.5);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+      transform: translateY(-4px);
+    }
+    .desc-card h3, .desc-card h4 {
+      color: #ffffff;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .desc-card h3 {
+      font-size: 1.4rem;
+      border-bottom: 2px solid rgba(241, 194, 50, 0.3);
+      padding-bottom: 10px;
+    }
+    .desc-icon-circle {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(241, 194, 50, 0.15);
+      color: #f1c232;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 16px;
+    }
+    .desc-feature-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+    .desc-feature-list li {
+      position: relative;
+      padding-left: 26px;
+      margin-bottom: 12px;
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      line-height: 1.55;
+    }
+    .desc-feature-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #f1c232;
+      font-weight: 800;
+    }
+    .desc-callout {
+      background: rgba(241, 194, 50, 0.08);
+      border-left: 4px solid #f1c232;
+      border-radius: 0 10px 10px 0;
+      padding: 18px 22px;
+      margin: 24px 0;
+    }
+    .desc-callout p {
+      margin-bottom: 0;
+      color: #f8fafc;
+      font-size: 0.97rem;
+    }
+
+    /* Table Proportional & High Contrast Styling */
+    .desc-table-responsive {
+      border-radius: 14px;
+      overflow-x: auto;
+      border: 1px solid rgba(255, 255, 255, 0.15) !important;
+      background: #082d4d !important;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+    .desc-table {
+      margin-bottom: 0 !important;
+      width: 100% !important;
+      min-width: 720px;
+      border-collapse: separate !important;
+      border-spacing: 0 !important;
+      color: #ffffff !important;
+      background-color: #082d4d !important;
+      --bs-table-bg: #082d4d !important;
+      --bs-table-color: #ffffff !important;
+    }
+    .desc-table thead {
+      background: #041b30 !important;
+      background-color: #041b30 !important;
+    }
+    .desc-table th {
+      color: #f1c232 !important;
+      background: #041b30 !important;
+      background-color: #041b30 !important;
+      font-weight: 800 !important;
+      text-transform: uppercase;
+      font-size: 0.88rem !important;
+      letter-spacing: 0.6px;
+      padding: 16px 20px !important;
+      border-bottom: 2px solid rgba(241, 194, 50, 0.4) !important;
+      border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+      border-top: none !important;
+      white-space: nowrap;
+    }
+    .desc-table th:last-child {
+      border-right: none !important;
+    }
+    .desc-table td {
+      padding: 20px !important;
+      background: #082d4d !important;
+      background-color: #082d4d !important;
+      color: #e2e8f0 !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+      border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+      border-top: none !important;
+      vertical-align: top !important;
+      font-size: 0.95rem !important;
+      line-height: 1.6 !important;
+    }
+    .desc-table td:last-child {
+      border-right: none !important;
+    }
+    .desc-table tbody tr:last-child td {
+      border-bottom: none !important;
+    }
+    .desc-table tbody tr:hover td {
+      background-color: #0b375d !important;
+    }
+    .pkg-title {
+      font-size: 1.15rem !important;
+      font-weight: 800 !important;
+      color: #ffffff !important;
+      margin-bottom: 8px;
+    }
+    .pkg-price-val {
+      font-size: 1.25rem !important;
+      font-weight: 800 !important;
+      color: #f1c232 !important;
+      display: block;
+      margin-bottom: 4px;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    }
+    .pkg-item-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+    .pkg-item-list li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 7px;
+      color: #f1f5f9 !important;
+      font-size: 0.92rem !important;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+    .pkg-item-list li::before {
+      content: "•";
+      position: absolute;
+      left: 2px;
+      top: 0;
+      color: #f1c232 !important;
+      font-size: 1.2rem;
+      font-weight: 900;
+    }
+    .pkg-desc-text {
+      color: #cbd5e1 !important;
+      font-size: 0.92rem !important;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+    .pkg-price-sub {
+      color: #94a3b8 !important;
+      font-size: 0.85rem !important;
+      display: block;
+    }
+
+    /* Mobile Table-Card Alternative view for screens under 768px */
+    @media (max-width: 767.98px) {
+      .desc-table-responsive {
+        display: none !important;
+      }
+      .desc-table-cards {
+        display: flex !important;
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+    @media (min-width: 768px) {
+      .desc-table-cards {
+        display: none !important;
+      }
+    }
+    .pkg-card-mobile {
+      background: #082d4d;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    }
+    .pkg-card-mobile.highlight {
+      border-color: rgba(241, 194, 50, 0.5);
+      background: linear-gradient(180deg, #0a3a63 0%, #082d4d 100%);
+    }
+    .pkg-card-mobile .card-header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .pkg-card-mobile .section-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #94a3b8;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    /* FAQ Accordion Styling */
+    .desc-faq-item {
+      background: #082d4d;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 10px;
+      margin-bottom: 14px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .desc-faq-item:hover {
+      border-color: rgba(241, 194, 50, 0.4);
+    }
+    .desc-faq-btn {
+      width: 100%;
+      text-align: left;
+      padding: 18px 22px;
+      background: none;
+      border: none;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 1.05rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+    .desc-faq-btn:hover {
+      color: #f1c232;
+    }
+    .desc-faq-btn[aria-expanded="true"] {
+      color: #f1c232;
+    }
+    .desc-faq-body {
+      padding: 0 22px 20px 22px;
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      line-height: 1.65;
     }
   </style>
 
@@ -486,6 +845,717 @@
 
       </div><!-- /.container -->
     </section><!-- /#events -->
+
+    <!-- ==========================================================================
+         SECTION: DESKRIPSI MERCHANDISE CUSTOM & PRODUK PROMOSI (SEO ENTITY PILLAR)
+         ========================================================================== -->
+    <section id="deskripsi-merchandise" class="py-5">
+      <div class="container" data-aos="fade-up">
+
+        <!-- Part 1: Header & Direct Answer (AEO / Snippet) -->
+        <div class="text-center mb-5">
+          <span class="desc-header-tag mb-3">Pusat Produksi & Vendor B2B Resmi</span>
+          <h2 class="desc-title mb-3">Pusat Pengadaan Merchandise Custom untuk Perusahaan, Event, dan Komunitas</h2>
+          <p class="desc-subtitle col-lg-9 mx-auto mb-4">
+            Solusi cetak produk promosi dan suvenir berkualitas tinggi dengan cetak logo presisi, pilihan bahan terstandar industri, minimum order fleksibel, dan legalitas faktur pajak resmi.
+          </p>
+        </div>
+
+        <!-- Direct Answer Callout Box -->
+        <div class="desc-callout mb-5" data-aos="fade-up">
+          <div class="row align-items-center">
+            <div class="col-lg-12">
+              <h3 class="h5 fw-bold text-white mb-2"><i class="bi bi-info-circle text-warning me-2"></i>Apa yang Dimaksud dengan Merchandise Custom?</h3>
+              <p class="mb-2">
+                <strong>Merchandise custom</strong> adalah produk fisik yang dikustomisasi secara khusus dengan logo, desain visual, slogan perusahaan, atau pesan acara untuk mendukung aktivitas promosi brand, konferensi bisnis, gathering kantor, komunitas, serta program apresiasi relasi (corporate gifting). Pemilihan jenis produk dan teknik cetak yang tepat sangat ditentukan oleh tujuan distribusi, profil penerima, anggaran pengadaan, karakteristik bahan dasar, dan tenggat waktu (lead time) produksi.
+              </p>
+              <p class="mb-0 text-white-50 small">
+                Jika Anda telah menentukan estimasi jumlah unit dan kebutuhan acara, tim konsultan <strong>Seminarkits.id</strong> siap membantu pembuatan <em>free 3D digital mockup</em> dan estimasi biaya transparan sebelum masuk lini produksi massal.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Peran Strategis Merchandise bagi Brand -->
+        <div class="row g-4 mb-5">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="desc-card">
+              <div class="desc-icon-circle"><i class="bi bi-bullseye"></i></div>
+              <h3>Fungsi Strategis Merchandise Promosi</h3>
+              <p class="text-white-50">Pengadaan merchandise bukan sekadar membagikan barang gratis, melainkan investasi branding terukur dengan <em>cost-per-impression</em> terendah dibandingkan kanal iklan digital:</p>
+              <ul class="desc-feature-list">
+                <li>
+                  <strong>Brand Recall & Exposure Berkelanjutan:</strong> Produk fungsional harian seperti tumbler tahan panas dingin, tas tote bag kanvas, atau payung lipat digunakan berulang kali di ruang publik, menghadirkan paparan visual logo secara terus-menerus.
+                </li>
+                <li>
+                  <strong>Membangun Loyalitas & Engagement Komunitas:</strong> Apparel seperti kaos katun combed premium dan hoodie seragam menumbuhkan rasa memiliki (sense of belonging) serta kebanggaan antaranggota komunitas maupun karyawan kantor.
+                </li>
+                <li>
+                  <strong>Pembeda Profesional di Booth Expo & Pameran:</strong> Suvenir promosi berdaya guna tinggi menarik audiens potensial berkunjung ke booth Anda, sekaligus mempermudah konversi prospek B2B saat follow-up pasca-event.
+                </li>
+                <li>
+                  <strong>Sentuhan Emosional Onboarding & Welcome Kit:</strong> Menyambut karyawan baru dengan merchandise kit terorganisir menaikkan moral kerja dan mempercepat integrasi budaya perusahaan semenjak hari pertama.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="desc-card">
+              <div class="desc-icon-circle"><i class="bi bi-diagram-3"></i></div>
+              <h3>Perbedaan Merchandise, Souvenir, & Corporate Gift</h3>
+              <p class="text-white-50">Memahami batasan entity produk mempermudah Anda dalam menetapkan alokasi budget dan ekspektasi hasil cetak secara tepat sasaran:</p>
+              <ul class="desc-feature-list">
+                <li>
+                  <strong>Merchandise Promosi:</strong> Dirancang mengedepankan identitas brand yang tegas (logo kontras, slogan), bernilai guna harian tinggi, dan diproduksi dalam volume sedang hingga sangat besar (50 hingga ribuan pcs).
+                </li>
+                <li>
+                  <strong>Souvenir Acara:</strong> Lebih berorientasi sebagai tanda mata kenangan momen spesifik (misal: plakat wisuda, pin reuni, wedding favor) dengan fokus pada tanggal atau nama acara seremonial.
+                </li>
+                <li>
+                  <strong>Corporate Gift Eksklusif:</strong> Ditujukan untuk membina hubungan diplomatis bernilai tinggi (klien VVIP, investor, pimpinan direksi), dikemas dalam hardbox rigid magnetik elegan dengan branding yang lebih subtil dan berkelas.
+                </li>
+                <li>
+                  <strong>Merchandise Kit Terintegrasi:</strong> Paket gabungan beberapa item fungsional dalam satu kemasan terpadu, ideal untuk seminar kit, training kit dinas, maupun welcome kit karyawan baru.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Part 2: 5 Kategori Produk Merchandise Utama -->
+        <div class="mb-5" data-aos="fade-up">
+          <div class="text-center mb-4">
+            <span class="badge bg-outline-light text-warning px-3 py-2 text-uppercase fw-bold border border-warning">Katalog Dimensi Produk</span>
+            <h3 class="fw-bold text-white mt-2">5 Kategori Produk Merchandise Terpopuler & Pilihan Material</h3>
+            <p class="text-white-50 col-lg-8 mx-auto">Kami menyediakan kurasi produk unggulan dengan ketahanan fisik teruji, ramah pakai, dan sangat optimal untuk berbagai teknik aplikasi logo perusahaan.</p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Kategori 1: Apparel -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="desc-card">
+                <div class="desc-icon-circle"><i class="bi bi-person-badge"></i></div>
+                <h4>1. Apparel & Wearable Goods</h4>
+                <p class="small text-white-50 mb-3">Media identitas visual bergerak paling efektif untuk seragam komunitas, gathering, dan kepanitiaan event.</p>
+                <ul class="desc-feature-list mb-3">
+                  <li><strong>Kaos Cotton Combed 24s/30s:</strong> Adem, lembut menyerap keringat, rajutan rapat ideal untuk sablon discharge, plastisol, maupun DTF full color.</li>
+                  <li><strong>Polo Shirt Lacoste CVC / Pique:</strong> Rajutan bertekstur mewah dengan kerah kokoh, sangat cocok untuk aplikasi bordir komputer presisi logo instansi.</li>
+                  <li><strong>Hoodie, Jaket Windbreaker & Topi:</strong> Material fleece tebal atau taslan waterproof, pas untuk seragam outdoor, outing, dan komunitas motor/sepeda.</li>
+                </ul>
+                <a href="../katalog.html#kaos" class="text-warning text-decoration-none small fw-bold">Lihat Varian Apparel Custom <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Kategori 2: Drinkware -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="desc-card">
+                <div class="desc-icon-circle"><i class="bi bi-cup-hot"></i></div>
+                <h4>2. Drinkware & Tumbler Ramah Lingkungan</h4>
+                <p class="small text-white-50 mb-3">Mendukung gerakan pengurangan plastik sekali pakai sekaligus menjaga visibilitas logo di atas meja kerja kantor setiap hari.</p>
+                <ul class="desc-feature-list mb-3">
+                  <li><strong>Tumbler Vacuum Stainless SUS 304:</strong> Dinding ganda insulasi vakum, menjaga suhu panas/dingin 8-12 jam. Cocok untuk laser grafir atau UV print rotary 360°.</li>
+                  <li><strong>Tumbler Suhu LED Smart:</strong> Dilengkapi layar sentuh sensor temperatur pada tutup botol, modern dan futuristik untuk souvenir seminar teknologi.</li>
+                  <li><strong>Mug Keramik Coating SNI:</strong> Pilihan klasik berbiaya ekonomis untuk merchandise kantor, dicetak full color sublimasi tajam anti-pudar.</li>
+                </ul>
+                <a href="../katalog.html#tumbler" class="text-warning text-decoration-none small fw-bold">Lihat Model Tumbler Custom <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Kategori 3: Bags -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="desc-card">
+                <div class="desc-icon-circle"><i class="bi bi-handbag"></i></div>
+                <h4>3. Tas, Pouch & Tote Bag</h4>
+                <p class="small text-white-50 mb-3">Wadah fungsional multiguna yang fleksibel dibawa saat berbelanja, kuliah, hingga aktivitas kerja harian.</p>
+                <ul class="desc-feature-list mb-3">
+                  <li><strong>Tote Bag Kanvas & Blacu Tebal:</strong> Serat organik kokoh, jahitan tali silang kuat (tahan beban hingga 8 kg), permukaan lega untuk branding visual artistik.</li>
+                  <li><strong>Tas Spunbond Non-Woven:</strong> Opsi hemat anggaran untuk goodie bag pameran massal dengan ratusan hingga ribuan pengunjung.</li>
+                  <li><strong>Pouch Kosmetik & Organizer Cordura:</strong> Dilengkapi furing tahan air dan ritsleting YKK anti-macet, praktis untuk menyimpan kabel data dan alat mandi.</li>
+                </ul>
+                <a href="../katalog.html#tas" class="text-warning text-decoration-none small fw-bold">Lihat Pilihan Tas & Pouch <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Kategori 4: Stationery -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="desc-card">
+                <div class="desc-icon-circle"><i class="bi bi-journal-check"></i></div>
+                <h4>4. Alat Tulis & Stationery Kantor</h4>
+                <p class="small text-white-50 mb-3">Perlengkapan esensial pencatatan materi rapat, notulensi workshop, dan arsip harian para profesional.</p>
+                <ul class="desc-feature-list mb-3">
+                  <li><strong>Notebook Hardcover & Spiral:</strong> Cover laminasi doff elegan, jilid spiral kawat anti-rontok, kertas bookpaper cream lembut di mata.</li>
+                  <li><strong>Agenda Kulit Ring Binder:</strong> Sampul PU leather mewah dengan mekanisme binder lepas-pasang dan kompartemen kartu nama profesional.</li>
+                  <li><strong>Pulpen Metal & Eco Stylus:</strong> Pulpen bodi aluminium laser grafir mewah, atau pulpen daur ulang berbahan karton ramah lingkungan.</li>
+                </ul>
+                <a href="../katalog.html#agenda" class="text-warning text-decoration-none small fw-bold">Lihat Katalog Stationery <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Kategori 5: Tech Gadgets & Event Items -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="desc-card">
+                <div class="desc-icon-circle"><i class="bi bi-laptop"></i></div>
+                <h4>5. Gadget Teknologi & Aksesoris Event</h4>
+                <p class="small text-white-50 mb-3">Pilihan modern bernilai guna tinggi yang sangat digemari audiens milenial, teknisi IT, dan peserta seminar profesional.</p>
+                <ul class="desc-feature-list mb-3">
+                  <li><strong>Flashdisk Kartu USB 3.0:</strong> Area cetak lebar dua sisi full color UV flatbed, praktis disimpan dalam dompet kartu.</li>
+                  <li><strong>Powerbank Slim Kapasitas Nyata:</strong> Bersertifikasi proteksi overcharge aman masuk kabin pesawat (Flight Safe 10.000 mAh).</li>
+                  <li><strong>Lanyard Tissue & Gantungan Kunci:</strong> Tali lanyard serat tissue lembut tanpa iritasi leher dengan stopper lepas-pasang dan kait logam tebal.</li>
+                </ul>
+                <a href="../katalog.html#aksesoris" class="text-warning text-decoration-none small fw-bold">Lihat Aksesoris & Gadget <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- Kategori 6: Bundling Merchandise Kit -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="desc-card border-warning">
+                <div class="desc-icon-circle"><i class="bi bi-box-seam"></i></div>
+                <h4 class="text-warning">6. Bundling Merchandise Kit Custom</h4>
+                <p class="small text-white-50 mb-3">Paket komplit siap serah terima dalam satu kemasan terorganisir untuk efisiensi distribusi di lapangan.</p>
+                <ul class="desc-feature-list mb-3">
+                  <li><strong>Packaging Custom Box:</strong> Box karton kraft natural sablon logo, corrugated mailing box, atau hardbox rigid premium pita satin.</li>
+                  <li><strong>Kelengkapan Acara Terintegrasi:</strong> Mengombinasikan kaos, tumbler, lanyard, dan notebook berdesain selaras tanpa repot sortir manual.</li>
+                  <li><strong>Personalisasi Kartu Ucapan:</strong> Free thank you card beridentitas sponsor, sambutan direksi, atau barcode sertifikat digital.</li>
+                </ul>
+                <a href="seminar-kit.html" class="text-warning text-decoration-none small fw-bold">Lihat Pilihan Seminar Kit <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Part 3: Panduan Metode Cetak Custom Logo -->
+        <div class="mb-5" data-aos="fade-up">
+          <div class="text-center mb-4">
+            <span class="badge bg-outline-light text-warning px-3 py-2 text-uppercase fw-bold border border-warning">Teknologi Produksi</span>
+            <h3 class="fw-bold text-white mt-2">Panduan Memilih Metode Cetak Logo Sesuai Bahan & Anggaran</h3>
+            <p class="text-white-50 col-lg-8 mx-auto">Ketepatan memilih teknologi cetak menentukan ketajaman visual, daya tahan cuci, serta efisiensi biaya produksi massal Anda.</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="desc-card">
+                <h4 class="h5 text-warning fw-bold mb-2">Sablon Rubber & Plastisol</h4>
+                <p class="small text-white-50 mb-2">Teknik sablon screen printing manual/semi-otomatis legendaris untuk bahan kain tekstil.</p>
+                <ul class="small desc-feature-list">
+                  <li>Biaya paling ekonomis untuk pesanan kaos volume besar (>100 pcs).</li>
+                  <li>Warna solid pekat, elastis, dan daya rekat sangat kuat.</li>
+                  <li>Ideal untuk desain vektor 1–3 warna tanpa gradasi rumit.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="desc-card">
+                <h4 class="h5 text-warning fw-bold mb-2">DTF (Direct to Film)</h4>
+                <p class="small text-white-50 mb-2">Teknologi transfer film digital modern untuk detail visual tanpa batasan warna.</p>
+                <ul class="small desc-feature-list">
+                  <li>Mendukung logo full color bergradasi halus dan foto beresolusi tinggi.</li>
+                  <li>Bisa diaplikasikan pada kaos katun, polyester, kanvas, hingga topi.</li>
+                  <li>Tanpa minimum order warna dan proses setup cepat.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="desc-card">
+                <h4 class="h5 text-warning fw-bold mb-2">UV Flatbed & Rotary Print</h4>
+                <p class="small text-white-50 mb-2">Pencetakan tinta ultraviolet berdaya rekat tinggi langsung ke permukaan benda keras.</p>
+                <ul class="small desc-feature-list">
+                  <li>Sangat tajam pada media tumbler, powerbank, flashdisk kartu, dan pulpen.</li>
+                  <li>Hasil cetak tahan gores, tahan air, dan langsung kering seketika.</li>
+                  <li>Dapat mencetak efek timbul (embossed varnish) bernilai seni tinggi.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="desc-card">
+                <h4 class="h5 text-warning fw-bold mb-2">Laser Engraving & Grafir</h4>
+                <p class="small text-white-50 mb-2">Pengikisan lapisan terluar material menggunakan sinar laser presisi mikron.</p>
+                <ul class="small desc-feature-list">
+                  <li>Permanen seumur hidup: tidak akan pudar, luntur, atau terkelupas.</li>
+                  <li>Eksklusif pada tumbler stainless, pulpen metal, kayu, dan gantungan kunci.</li>
+                  <li>Memberikan kesan mewah monokrom yang sangat disukai eksekutif.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Part 4: Tabel Matriks Perbandingan Paket Merchandise & Estimasi Budget -->
+        <div class="mb-5" data-aos="fade-up">
+          <div class="text-center mb-4">
+            <span class="badge bg-warning text-dark px-3 py-2 text-uppercase fw-bold">Matriks Estimasi Biaya</span>
+            <h3 class="fw-bold text-white mt-2">Klasifikasi Paket Merchandise Berdasarkan Skala Kebutuhan & Budget</h3>
+            <p class="text-white-50 col-lg-8 mx-auto">Transparansi harga mempermudah perhitungan alokasi dana operasional divisi procurement, HRD, dan panitia pelaksana event.</p>
+          </div>
+
+          <!-- Desktop Table View -->
+          <div class="desc-table-responsive mb-4">
+            <table class="desc-table">
+              <thead>
+                <tr>
+                  <th style="width: 20%;">Kategori Paket</th>
+                  <th style="width: 32%;">Komposisi Produk & Spesifikasi Material</th>
+                  <th style="width: 28%;">Rekomendasi Penggunaan Acara</th>
+                  <th style="width: 20%;">Estimasi Harga / Unit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Row 1: Starter Kit -->
+                <tr>
+                  <td>
+                    <div class="pkg-title">Starter Promo Pack</div>
+                    <span class="badge bg-secondary text-white">Event Massal</span>
+                  </td>
+                  <td>
+                    <ul class="pkg-item-list">
+                      <li>Tote Bag Spunbond 75 gsm Sablon 1 Sisi</li>
+                      <li>Pulpen Boss Plastik Cetak Logo</li>
+                      <li>Pin Peniti Glossy 44 mm</li>
+                      <li>Stiker Vinyl Die Cut Tahan Air</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <p class="pkg-desc-text">Pameran expo B2B, roadshow kampus, kampanye publik, gathering akbar peserta di atas 500 orang.</p>
+                  </td>
+                  <td>
+                    <span class="pkg-price-val">Rp 12.000 – Rp 25.000</span>
+                    <span class="pkg-price-sub">Min. Order: 100 pcs (Nego volume >500 pcs)</span>
+                  </td>
+                </tr>
+
+                <!-- Row 2: Seminar & Training Pack -->
+                <tr>
+                  <td>
+                    <div class="pkg-title">Seminar & Training Pack</div>
+                    <span class="badge bg-primary text-white">Workshop & Diklat</span>
+                  </td>
+                  <td>
+                    <ul class="pkg-item-list">
+                      <li>Tote Bag Kanvas Blacu Jahit Silang Kuat</li>
+                      <li>Notebook Softcover Spiral Kawat + Sisipan Profil</li>
+                      <li>Pulpen Semi-Gel Cetak Sablon</li>
+                      <li>Lanyard Tissue 2 cm Stopper + Id Card Holder</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <p class="pkg-desc-text">Seminar nasional, pelatihan kedinasan kementerian, lokakarya universitas, onboarding bootcamp.</p>
+                  </td>
+                  <td>
+                    <span class="pkg-price-val">Rp 35.000 – Rp 65.000</span>
+                    <span class="pkg-price-sub">Min. Order: 50 pcs (Termasuk setting logo)</span>
+                  </td>
+                </tr>
+
+                <!-- Row 3: Corporate Lifestyle Pack -->
+                <tr>
+                  <td>
+                    <div class="pkg-title">Corporate Lifestyle Pack</div>
+                    <span class="badge bg-warning text-dark fw-bold">Paling Favorit</span>
+                  </td>
+                  <td>
+                    <ul class="pkg-item-list">
+                      <li>Kaos Cotton Combed 30s Sablon Plastisol/DTF</li>
+                      <li>Tumbler Vacuum Stainless SUS 304 Laser Grafir</li>
+                      <li>Notebook Hardcover Jilid Jahit Pita Pembatas</li>
+                      <li>Packaging Corrugated Box Sablon Logo Perusahaan</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <p class="pkg-desc-text">Annual employee gathering, apresiasi panitia, suvenir anniversary korporasi, welcome kit karyawan kantor.</p>
+                  </td>
+                  <td>
+                    <span class="pkg-price-val">Rp 95.000 – Rp 165.000</span>
+                    <span class="pkg-price-sub">Min. Order: 50 pcs (Free digital 3D mockup)</span>
+                  </td>
+                </tr>
+
+                <!-- Row 4: Executive Tech & VIP Pack -->
+                <tr>
+                  <td>
+                    <div class="pkg-title">Executive Tech & VIP Pack</div>
+                    <span class="badge bg-danger text-white">VIP & Partnership</span>
+                  </td>
+                  <td>
+                    <ul class="pkg-item-list">
+                      <li>Polo Shirt Lacoste CVC Bordir Komputer Rapat</li>
+                      <li>Smart LED Tumbler Temperatur UV Full Color</li>
+                      <li>Powerbank Slim 10.000 mAh Flight-Safe Cetak UV</li>
+                      <li>Hardbox Eksklusif Rigid Magnetik Spon Eva Presisi</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <p class="pkg-desc-text">Cinderamata narasumber utama, tamu kehormatan VVIP, relasi kemitraan strategis, cinderamata RUPS pemegang saham.</p>
+                  </td>
+                  <td>
+                    <span class="pkg-price-val">Rp 200.000 – Rp 380.000+</span>
+                    <span class="pkg-price-sub">Min. Order: 30 pcs (Free proofing & kartu pesan)</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Mobile Cards Alternative (Visible on <768px) -->
+          <div class="desc-table-cards">
+            <!-- Mobile Card 1 -->
+            <div class="pkg-card-mobile">
+              <div class="card-header-flex">
+                <div>
+                  <h4 class="pkg-title mb-1">Starter Promo Pack</h4>
+                  <span class="badge bg-secondary text-white">Event Massal</span>
+                </div>
+                <div class="text-end">
+                  <span class="pkg-price-val">Rp 12k–25k</span>
+                  <span class="pkg-price-sub">/ unit</span>
+                </div>
+              </div>
+              <span class="section-label">Komposisi Item Paket:</span>
+              <ul class="pkg-item-list mb-3">
+                <li>Tote Bag Spunbond 75 gsm Sablon 1 Sisi</li>
+                <li>Pulpen Boss Plastik Cetak Logo</li>
+                <li>Pin Peniti Glossy 44 mm</li>
+                <li>Stiker Vinyl Die Cut Tahan Air</li>
+              </ul>
+              <span class="section-label">Rekomendasi Penggunaan:</span>
+              <p class="pkg-desc-text mb-3">Pameran expo B2B, roadshow kampus, kampanye publik, gathering akbar peserta di atas 500 orang.</p>
+              <div class="text-white-50 small border-top pt-2 border-secondary">
+                <i class="bi bi-check-circle-fill text-warning me-1"></i> Min. order 100 pcs (Nego volume >500 pcs)
+              </div>
+            </div>
+
+            <!-- Mobile Card 2 -->
+            <div class="pkg-card-mobile">
+              <div class="card-header-flex">
+                <div>
+                  <h4 class="pkg-title mb-1">Seminar & Training Pack</h4>
+                  <span class="badge bg-primary text-white">Workshop & Diklat</span>
+                </div>
+                <div class="text-end">
+                  <span class="pkg-price-val">Rp 35k–65k</span>
+                  <span class="pkg-price-sub">/ unit</span>
+                </div>
+              </div>
+              <span class="section-label">Komposisi Item Paket:</span>
+              <ul class="pkg-item-list mb-3">
+                <li>Tote Bag Kanvas Blacu Jahit Silang Kuat</li>
+                <li>Notebook Softcover Spiral Kawat + Sisipan Profil</li>
+                <li>Pulpen Semi-Gel Cetak Sablon</li>
+                <li>Lanyard Tissue 2 cm Stopper + Id Card Holder</li>
+              </ul>
+              <span class="section-label">Rekomendasi Penggunaan:</span>
+              <p class="pkg-desc-text mb-3">Seminar nasional, pelatihan kedinasan kementerian, lokakarya universitas, onboarding bootcamp.</p>
+              <div class="text-white-50 small border-top pt-2 border-secondary">
+                <i class="bi bi-check-circle-fill text-warning me-1"></i> Min. order 50 pcs (Termasuk setting logo)
+              </div>
+            </div>
+
+            <!-- Mobile Card 3 (Highlight) -->
+            <div class="pkg-card-mobile highlight">
+              <div class="card-header-flex">
+                <div>
+                  <h4 class="pkg-title mb-1">Corporate Lifestyle Pack</h4>
+                  <span class="badge bg-warning text-dark fw-bold">Paling Favorit</span>
+                </div>
+                <div class="text-end">
+                  <span class="pkg-price-val">Rp 95k–165k</span>
+                  <span class="pkg-price-sub">/ unit</span>
+                </div>
+              </div>
+              <span class="section-label">Komposisi Item Paket:</span>
+              <ul class="pkg-item-list mb-3">
+                <li>Kaos Cotton Combed 30s Sablon Plastisol/DTF</li>
+                <li>Tumbler Vacuum Stainless SUS 304 Laser Grafir</li>
+                <li>Notebook Hardcover Jilid Jahit Pita Pembatas</li>
+                <li>Packaging Corrugated Box Sablon Logo Perusahaan</li>
+              </ul>
+              <span class="section-label">Rekomendasi Penggunaan:</span>
+              <p class="pkg-desc-text mb-3">Annual employee gathering, apresiasi panitia, suvenir anniversary korporasi, welcome kit karyawan kantor.</p>
+              <div class="text-white-50 small border-top pt-2 border-secondary">
+                <i class="bi bi-check-circle-fill text-warning me-1"></i> Min. order 50 pcs (Free digital 3D mockup)
+              </div>
+            </div>
+
+            <!-- Mobile Card 4 -->
+            <div class="pkg-card-mobile">
+              <div class="card-header-flex">
+                <div>
+                  <h4 class="pkg-title mb-1">Executive Tech & VIP Pack</h4>
+                  <span class="badge bg-danger text-white">VIP & Partnership</span>
+                </div>
+                <div class="text-end">
+                  <span class="pkg-price-val">Rp 200k–380k</span>
+                  <span class="pkg-price-sub">/ unit</span>
+                </div>
+              </div>
+              <span class="section-label">Komposisi Item Paket:</span>
+              <ul class="pkg-item-list mb-3">
+                <li>Polo Shirt Lacoste CVC Bordir Komputer Rapat</li>
+                <li>Smart LED Tumbler Temperatur UV Full Color</li>
+                <li>Powerbank Slim 10.000 mAh Flight-Safe Cetak UV</li>
+                <li>Hardbox Eksklusif Rigid Magnetik Spon Eva Presisi</li>
+              </ul>
+              <span class="section-label">Rekomendasi Penggunaan:</span>
+              <p class="pkg-desc-text mb-3">Cinderamata narasumber utama, tamu kehormatan VVIP, relasi kemitraan strategis, cinderamata RUPS pemegang saham.</p>
+              <div class="text-white-50 small border-top pt-2 border-secondary">
+                <i class="bi bi-check-circle-fill text-warning me-1"></i> Min. order 30 pcs (Free proofing & kartu pesan)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Part 5: Tata Kelola Operasional, QC, & Legalitas Pengadaan B2B -->
+        <div class="row g-4 mb-5">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="desc-card text-center">
+              <div class="desc-icon-circle mx-auto"><i class="bi bi-shield-check"></i></div>
+              <h4 class="fw-bold">Kontrol Kualitas 3 Lapis (QC)</h4>
+              <p class="small text-white-50">Setiap unit melewati inspeksi ketat: pengecekan bahan mentah, pengawasan presisi cetak logo saat running mesin, hingga uji fungsi item (fungsi ritsleting, segel vakum tumbler, dan kerapian jahitan apparel).</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="desc-card text-center">
+              <div class="desc-icon-circle mx-auto"><i class="bi bi-file-earmark-check"></i></div>
+              <h4 class="fw-bold">Legalitas PKP & Faktur PPN 11%</h4>
+              <p class="small text-white-50">Sebagai entitas berbadan hukum resmi, kami menyediakan kelengkapan administrasi pengadaan korporasi dan instansi pemerintah: SPK, BAST, Invoice bertanda tangan basah, dan Faktur Pajak elektronik (e-Faktur).</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="desc-card text-center">
+              <div class="desc-icon-circle mx-auto"><i class="bi bi-truck"></i></div>
+              <h4 class="fw-bold">Pengiriman Multi-Address</h4>
+              <p class="small text-white-50">Mendukung program kerja jarak jauh (work from anywhere) dan cabang multi-daerah melalui pengemasan individual berlapis bubble wrap tebal serta distribusi langsung ke puluhan alamat penerima di seluruh Indonesia.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Part 6: FAQ Interaktif Accordion (SEO & Schema Friendly) -->
+        <div class="mb-5" data-aos="fade-up">
+          <div class="text-center mb-4">
+            <span class="badge bg-outline-light text-warning px-3 py-2 text-uppercase fw-bold border border-warning">Tanya Jawab Seputar Pemesanan</span>
+            <h3 class="fw-bold text-white mt-2">Pertanyaan Umum Seputar Pengadaan Merchandise Custom</h3>
+            <p class="text-white-50 col-lg-8 mx-auto">Jawaban komprehensif atas pertanyaan mendasar seputar format desain, durasi pengerjaan, sampel fisik, dan prosedur pemesanan.</p>
+          </div>
+
+          <div class="col-lg-10 mx-auto">
+            <!-- FAQ 1 -->
+            <div class="desc-faq-item">
+              <button class="desc-faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#merch-faq-1" aria-expanded="false">
+                <span>1. Produk merchandise apa saja yang dapat dicetak logo custom?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div id="merch-faq-1" class="collapse">
+                <div class="desc-faq-body">
+                  Hampir seluruh produk promosi kami dapat dikustomisasi, meliputi pakaian (kaos, polo shirt, hoodie, jaket, topi), perlengkapan minum (tumbler stainless, mug keramik, botol sport), tas & pouch (tote bag kanvas, spunbond, ransel laptop, pouch serbaguna), alat tulis kantor (agenda kulit, notebook spiral, pulpen metal), gadget teknologi (flashdisk kartu USB, powerbank, wireless mouse), hingga perlengkapan event (lanyard tissue, ID card holder, gantungan kunci akrilik/karet, dan pin peniti).
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="desc-faq-item">
+              <button class="desc-faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#merch-faq-2" aria-expanded="false">
+                <span>2. Format file logo seperti apa yang diperlukan untuk proses cetak?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div id="merch-faq-2" class="collapse">
+                <div class="desc-faq-body">
+                  Untuk menghasilkan cetakan yang tajam tanpa pixel pecah, kami sangat menyarankan file berformat <strong>vektor</strong> seperti <strong>Adobe Illustrator (.AI), CorelDRAW (.CDR), atau Vector PDF</strong> dengan font yang sudah di-<em>convert to curves/outlines</em>. Jika Anda hanya memiliki format raster bitmap (PNG atau JPEG), pastikan beresolusi minimal 300 DPI dengan latar belakang transparan. Tim pra-cetak kami siap membantu proses penyesuaian file tanpa biaya tambahan.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="desc-faq-item">
+              <button class="desc-faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#merch-faq-3" aria-expanded="false">
+                <span>3. Berapa batas minimum order (MOQ) dan berapa lama proses produksi?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div id="merch-faq-3" class="collapse">
+                <div class="desc-faq-body">
+                  Batas minimum order (MOQ) fleksibel mulai dari <strong>30 hingga 50 pcs</strong> tergantung jenis item yang dipilih. Durasi produksi standar berkisar antara <strong>5 hingga 10 hari kerja</strong> setelah desain digital mockup 3D disetujui resmi dan pembayaran uang muka (DP) diterima. Tersedia pula layanan prioritas (Express Production) bagi Anda yang memiliki jadwal acara mendesak.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="desc-faq-item">
+              <button class="desc-faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#merch-faq-4" aria-expanded="false">
+                <span>4. Apakah pelanggan bisa mendapatkan approval sample fisik sebelum produksi massal?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div id="merch-faq-4" class="collapse">
+                <div class="desc-faq-body">
+                  Tentu saja. Untuk setiap pesanan kami selalu memberikan preview <strong>digital 3D mockup gratis</strong> untuk memvalidasi posisi, proporsi, dan kode warna Pantone/CMYK. Untuk pemesanan dalam kuantitas besar (skala korporat / tender pengadaan), kami dapat mencetak dan mengirimkan <strong>sampel fisik (sample proofing)</strong> ke kantor Anda untuk persetujuan material dan hasil akhir sebelum seluruh kuantitas diproduksi.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="desc-faq-item">
+              <button class="desc-faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#merch-faq-5" aria-expanded="false">
+                <span>5. Apakah pengadaan di Seminarkits.id dilengkapi dokumen legalitas B2B & Faktur Pajak?</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div id="merch-faq-5" class="collapse">
+                <div class="desc-faq-body">
+                  Ya, Seminarkits.id beroperasi di bawah badan hukum resmi dan berstatus Pengusaha Kena Pajak (PKP). Kami menerbitkan Faktur Pajak PPN 11% resmi, kwitansi bertanda tangan basah & cap perusahaan, Surat Perintah Kerja (SPK), serta Berita Acara Serah Terima (BAST) guna kelancaran audit dan pertanggungjawaban divisi procurement korporat maupun instansi pemerintah.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Part 7: Final CTA Banner -->
+        <div class="mt-5 p-4 p-md-5 rounded-4" style="background: linear-gradient(135deg, #0a406f 0%, #062540 100%); border: 1px solid rgba(241, 194, 50, 0.4);" data-aos="fade-up">
+          <div class="row align-items-center">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+              <span class="badge bg-warning text-dark fw-bold text-uppercase px-3 py-1 mb-2">Konsultasi Desain & Penawaran Cepat</span>
+              <h3 class="fw-bold text-white mb-2">Siap Mewujudkan Merchandise Custom Berkualitas untuk Brand Anda?</h3>
+              <p class="text-white-50 mb-0">Diskusikan rancangan desain, pilihan material, dan batas anggaran promosi Anda bersama tim konsultan ahli kami. Dapatkan penawaran harga terbaik (quotation resmi) dan preview mockup 3D tanpa dipungut biaya hari ini.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="https://wa.me/6288989643555?text=Halo%20Seminarkits.id%2C%20saya%20ingin%20konsultasi%20pengadaan%20Merchandise%20Custom%20untuk%20perusahaan%2Fevent." target="_blank" class="btn btn-warning text-dark fw-bold px-4 py-3 shadow-lg w-100 mb-2">
+                <i class="bi bi-whatsapp me-2"></i> Konsultasi via WhatsApp
+              </a>
+              <a href="../minta-penawaran.html" class="btn btn-outline-light fw-bold px-4 py-2 w-100 small">
+                <i class="bi bi-file-earmark-text me-2"></i> Minta Penawaran Formal (RFQ)
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.container -->
+    </section><!-- /#deskripsi-merchandise -->
+
+    <!-- ========== SECTION: KLASTER TOPIKAL PENDUKUNG MERCHANDISE (TOPICAL AUTHORITY) ========== -->
+    <section id="merchandise-pendukung" class="py-5 border-top">
+      <div class="container" data-aos="fade-up">
+        <div class="text-center mb-5">
+          <span class="badge bg-warning text-dark px-3 py-2 text-uppercase mb-2 fw-bold">Klaster Topikal & Panduan Lengkap</span>
+          <h2 class="fw-bold text-white">Eksplorasi Layanan & Solusi Merchandise Custom</h2>
+          <p class="text-white-50 col-lg-8 mx-auto">Pelajari lebih dalam panduan pemilihan produk promosi, perbandingan teknik cetak, solusi merchandise peruntukan event maupun korporat untuk memaksimalkan dampak branding Anda.</p>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Cluster Card 1: Merchandise Perusahaan & Kantor -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="topic-cluster-card">
+              <span class="topic-badge"><i class="bi bi-building me-1"></i> B2B Corporate</span>
+              <h4 class="mb-2">Merchandise Perusahaan & Kantor</h4>
+              <p class="small mb-3">Solusi pengadaan produk promosi profesional untuk kebutuhan internal korporasi, onboarding karyawan baru, apresiasi staf, serta souvenir seragam kantor beridentitas visual kuat.</p>
+              <ul class="topic-link-list">
+                <li><a href="merchandise-perusahaan.html"><i class="bi bi-arrow-right-circle text-warning"></i> Merchandise Perusahaan & B2B</a></li>
+                <li><a href="../vendor-souvenir-kantor.html"><i class="bi bi-arrow-right-circle text-warning"></i> Vendor Souvenir Kantor Resmi</a></li>
+                <li><a href="../souvenir-perusahaan.html"><i class="bi bi-arrow-right-circle text-warning"></i> Souvenir Promosi Perusahaan</a></li>
+              </ul>
+              <div class="mt-auto pt-2">
+                <a href="merchandise-perusahaan.html" class="btn btn-sm btn-outline-warning w-100 fw-bold">Lihat Solusi Corporate <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cluster Card 2: Merchandise Event & Seminar -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="topic-cluster-card">
+              <span class="topic-badge"><i class="bi bi-calendar-event me-1"></i> MICE & Event</span>
+              <h4 class="mb-2">Merchandise Event & Seminar</h4>
+              <p class="small mb-3">Paket perlengkapan seminar terintegrasi untuk workshop, konferensi nasional, diklat kedinasan, dan expo B2B yang praktis siap serah terima bagi ratusan hingga ribuan peserta.</p>
+              <ul class="topic-link-list">
+                <li><a href="seminar-kit.html"><i class="bi bi-arrow-right-circle text-warning"></i> Paket Seminar Kit Lengkap</a></li>
+                <li><a href="tote-bag-seminar.html"><i class="bi bi-arrow-right-circle text-warning"></i> Tote Bag & Goodie Bag Acara</a></li>
+                <li><a href="tumbler-custom.html"><i class="bi bi-arrow-right-circle text-warning"></i> Tumbler Custom Seminar</a></li>
+              </ul>
+              <div class="mt-auto pt-2">
+                <a href="seminar-kit.html" class="btn btn-sm btn-outline-warning w-100 fw-bold">Lihat Paket Event <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cluster Card 3: Apparel & Seragam Komunitas -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="topic-cluster-card">
+              <span class="topic-badge"><i class="bi bi-person-badge me-1"></i> Wearable Goods</span>
+              <h4 class="mb-2">Apparel & Kaos Custom Komunitas</h4>
+              <p class="small mb-3">Produksi kaos katun combed 24s/30s adem, polo shirt lacoste bordir rapat, dan hoodie komunitas berstandar distro dengan sablon plastisol atau direct-to-film (DTF) awet anti-retak.</p>
+              <ul class="topic-link-list">
+                <li><a href="../katalog.html#kaos"><i class="bi bi-arrow-right-circle text-warning"></i> Kaos Custom Sablon & DTF</a></li>
+                <li><a href="../katalog.html#polo"><i class="bi bi-arrow-right-circle text-warning"></i> Polo Shirt Seragam Bordir</a></li>
+                <li><a href="../katalog.html#hoodie"><i class="bi bi-arrow-right-circle text-warning"></i> Jaket & Topi Komunitas</a></li>
+              </ul>
+              <div class="mt-auto pt-2">
+                <a href="../katalog.html#kaos" class="btn btn-sm btn-outline-warning w-100 fw-bold">Lihat Katalog Apparel <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cluster Card 4: Merchandise Pendidikan & Kampus -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="topic-cluster-card">
+              <span class="topic-badge"><i class="bi bi-mortarboard me-1"></i> Akademik & Sekolah</span>
+              <h4 class="mb-2">Merchandise Pendidikan & Kampus</h4>
+              <p class="small mb-3">Spesialis pembuatan souvenir wisuda, welcoming kit mahasiswa baru (ospek), gathering alumni, dan cinderamata dies natalis universitas dengan harga kompetitif tangan pertama.</p>
+              <ul class="topic-link-list">
+                <li><a href="merchandise-pendidikan.html"><i class="bi bi-arrow-right-circle text-warning"></i> Merchandise Pendidikan & Kampus</a></li>
+                <li><a href="pulpen-seminar.html"><i class="bi bi-arrow-right-circle text-warning"></i> Pulpen Promosi & Stylus</a></li>
+                <li><a href="flashdisk-kartu-powerbank.html"><i class="bi bi-arrow-right-circle text-warning"></i> Flashdisk Kartu & Aksesoris IT</a></li>
+              </ul>
+              <div class="mt-auto pt-2">
+                <a href="merchandise-pendidikan.html" class="btn btn-sm btn-outline-warning w-100 fw-bold">Lihat Produk Kampus <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cluster Card 5: Corporate Gift & Suvenir Premium -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="topic-cluster-card">
+              <span class="topic-badge"><i class="bi bi-gift me-1"></i> VIP & Relasi</span>
+              <h4 class="mb-2">Corporate Gift & Suvenir VIP</h4>
+              <p class="small mb-3">Kombinasi hadiah eksklusif berkelas untuk cinderamata klien VVIP, investor, pimpinan direksi, dan relasi bisnis penting yang dikemas dalam kotak rigid magnetik bernuansa elegan.</p>
+              <ul class="topic-link-list">
+                <li><a href="corporate-gift.html"><i class="bi bi-arrow-right-circle text-warning"></i> Layanan Corporate Gift Premium</a></li>
+                <li><a href="corporate-gift-set.html"><i class="bi bi-arrow-right-circle text-warning"></i> Paket Executive Gift Set</a></li>
+                <li><a href="hampers.html"><i class="bi bi-arrow-right-circle text-warning"></i> Hampers Perusahaan Eksklusif</a></li>
+              </ul>
+              <div class="mt-auto pt-2">
+                <a href="corporate-gift.html" class="btn btn-sm btn-outline-warning w-100 fw-bold">Lihat Corporate Gift <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cluster Card 6: Panduan Pemesanan & RFQ Resmi -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <div class="topic-cluster-card">
+              <span class="topic-badge"><i class="bi bi-file-earmark-text me-1"></i> Pengadaan & Vendor</span>
+              <h4 class="mb-2">Panduan Pengadaan & Unduh Katalog</h4>
+              <p class="small mb-3">Pelajari alur pengadaan merchandise, konsultasi file desain vektor logo, minta penawaran harga formal (RFQ), serta unduh e-Katalog spesifikasi lengkap edisi terbaru.</p>
+              <ul class="topic-link-list">
+                <li><a href="../katalog.html"><i class="bi bi-arrow-right-circle text-warning"></i> Unduh e-Katalog PDF 2026</a></li>
+                <li><a href="../minta-penawaran.html"><i class="bi bi-arrow-right-circle text-warning"></i> Form Minta Penawaran (RFQ)</a></li>
+                <li><a href="../layanan.html"><i class="bi bi-arrow-right-circle text-warning"></i> Alur Kerja & Garansi Produksi</a></li>
+              </ul>
+              <div class="mt-auto pt-2">
+                <a href="../minta-penawaran.html" class="btn btn-sm btn-outline-warning w-100 fw-bold">Minta Penawaran B2B <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.row -->
+
+        <!-- Bottom Note Klaster -->
+        <div class="text-center mt-5">
+          <p class="text-white-50 small mb-2"><i class="bi bi-info-circle text-warning me-1"></i> Butuh rekomendasi paket merchandise kustom sesuai alokasi anggaran dan jadwal acara Anda?</p>
+          <a href="https://wa.me/6288989643555?text=Halo%20Seminarkits.id%2C%20saya%20ingin%20konsultasi%20paket%20merchandise%20custom%20sesuai%20budget%20kami." target="_blank" class="text-warning fw-bold text-decoration-none small">
+            Konsultasikan Kebutuhan Anda dengan Tim Ahli Kami <i class="bi bi-whatsapp ms-1"></i>
+          </a>
+        </div>
+
+      </div><!-- /.container -->
+    </section><!-- /#merchandise-pendukung -->
 
   </main>
 
