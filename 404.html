@@ -118,7 +118,8 @@
       text-transform: uppercase;
       margin-bottom: 20px;
     }
-    .hero-btn-group {
+    .hero-btn-group,
+    .cta-btn-group {
       display: flex;
       flex-wrap: wrap;
       gap: 14px;
@@ -129,14 +130,18 @@
       background-color: #f1c232 !important;
       color: #062540 !important;
       font-weight: 700;
-      padding: 12px 28px;
+      padding: 13px 28px;
       border-radius: 50px;
       border: 2px solid #f1c232;
       transition: all 0.3s ease;
       display: inline-flex;
       align-items: center;
+      justify-content: center;
+      text-align: center;
       gap: 8px;
       text-decoration: none;
+      font-size: 0.95rem;
+      line-height: 1.3;
     }
     .btn-main-gold:hover {
       background-color: #dfb227 !important;
@@ -146,36 +151,44 @@
       box-shadow: 0 8px 25px rgba(241, 194, 50, 0.35);
     }
     .btn-outline-white {
-      background: transparent;
+      background: rgba(255, 255, 255, 0.05);
       color: #ffffff !important;
       font-weight: 600;
-      padding: 12px 26px;
+      padding: 13px 26px;
       border-radius: 50px;
-      border: 2px solid rgba(255, 255, 255, 0.4);
+      border: 2px solid rgba(255, 255, 255, 0.35);
       transition: all 0.3s ease;
       display: inline-flex;
       align-items: center;
+      justify-content: center;
+      text-align: center;
       gap: 8px;
       text-decoration: none;
+      font-size: 0.95rem;
+      line-height: 1.3;
     }
     .btn-outline-white:hover {
       border-color: #f1c232;
       color: #f1c232 !important;
-      background: rgba(241, 194, 50, 0.08);
+      background: rgba(241, 194, 50, 0.1);
       transform: translateY(-2px);
     }
     .btn-whatsapp-cta {
       background: #25d366 !important;
       color: #ffffff !important;
       font-weight: 700;
-      padding: 12px 28px;
+      padding: 13px 28px;
       border-radius: 50px;
       border: 2px solid #25d366;
       transition: all 0.3s ease;
       display: inline-flex;
       align-items: center;
+      justify-content: center;
+      text-align: center;
       gap: 8px;
       text-decoration: none;
+      font-size: 0.95rem;
+      line-height: 1.3;
     }
     .btn-whatsapp-cta:hover {
       background: #20ba59 !important;
@@ -326,15 +339,70 @@
       border-color: #f1c232;
       font-weight: 600;
     }
+
+    /* Responsive Mobile Version Optimization */
     @media (max-width: 768px) {
       .page-404-hero {
-        padding: 110px 0 45px;
+        padding: 105px 0 40px;
       }
       .badge-error-code {
-        font-size: 3.5rem;
+        font-size: 3.8rem;
+        margin-bottom: 10px;
+      }
+      .hero-btn-group,
+      .cta-btn-group {
+        flex-direction: column;
+        width: 100%;
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 12px;
+      }
+      .hero-btn-group .btn-main-gold,
+      .hero-btn-group .btn-outline-white,
+      .hero-btn-group .btn-whatsapp-cta,
+      .cta-btn-group .btn-main-gold,
+      .cta-btn-group .btn-outline-white,
+      .cta-btn-group .btn-whatsapp-cta {
+        width: 100%;
+        padding: 13px 20px;
+        font-size: 0.95rem;
       }
       .cta-conversion-box {
-        padding: 30px 20px;
+        padding: 30px 18px;
+        border-radius: 16px;
+      }
+      .nav-dir-card {
+        padding: 22px 18px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .badge-error-code {
+        font-size: 3.2rem;
+      }
+      .page-404-hero h1 {
+        font-size: 1.45rem;
+      }
+      .page-404-hero p.lead-text {
+        font-size: 0.95rem;
+      }
+      .product-badge-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+      .product-badge-link {
+        padding: 10px 12px;
+        font-size: 0.82rem;
+        gap: 8px;
+      }
+      .product-badge-link i {
+        font-size: 1rem;
+      }
+      .city-chip {
+        font-size: 0.78rem;
+        padding: 5px 10px;
+        margin: 2px;
       }
     }
   </style>
@@ -735,7 +803,7 @@
           <p class="lead-text mx-auto mb-4" style="max-width: 680px; font-size: 1.05rem;">
             Tidak perlu repot mencari satu per satu. Konsultasikan kebutuhan seminar kit atau souvenir kantor Anda sekarang. Kami siap membantu pembuatan RAB, rekomendasi material, dan penyusunan <strong>Free 3D Digital Mockup</strong> dalam hitungan jam.
           </p>
-          <div class="d-flex flex-wrap gap-3 justify-content-center">
+          <div class="cta-btn-group d-flex flex-wrap gap-3 justify-content-center">
             <a href="https://wa.me/6288989643555?text=Halo%20Seminarkits.id%2C%20saya%20ingin%20konsultasi%20pengadaan%20paket%20seminar%20kit%20dan%20souvenir%20kantor." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-cta">
               <i class="bi bi-whatsapp"></i> Chat WhatsApp: 0889-8964-3555
             </a>
