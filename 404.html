@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>404 - Halaman Tidak Ditemukan | Seminarkits.id</title>
+  <title>404 — Halaman Tidak Ditemukan | Seminarkits.id</title>
   <meta name="description" content="Halaman yang Anda cari tidak ditemukan. Temukan panduan lengkap pengadaan Seminar Kit Custom, Corporate Gift Set, Merchandise Promosi, dan Souvenir Kantor B2B di Seminarkits.id.">
   <link rel="canonical" href="https://seminarkits.id/404">
   <meta name="author" content="Seminarkits.id">
@@ -18,7 +18,7 @@
 
   <!-- OpenGraph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="404 - Halaman Tidak Ditemukan | Seminarkits.id">
+  <meta property="og:title" content="404 — Halaman Tidak Ditemukan | Seminarkits.id">
   <meta property="og:description" content="Halaman tidak ditemukan. Jelajahi katalog lengkap Seminar Kit Custom, Corporate Gift Set, Merchandise Promosi, dan Souvenir Kantor B2B di Seminarkits.id.">
   <meta property="og:url" content="https://seminarkits.id/404">
   <meta property="og:site_name" content="Seminarkits.id">
@@ -66,156 +66,241 @@
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 
   <!-- Vendor CSS -->
-  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css?v=20260323">
-  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css?v=20260323" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css?v=20260323"></noscript>
-  <link rel="stylesheet" href="assets/vendor/aos/aos.css?v=20260323" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/vendor/aos/aos.css?v=20260323"></noscript>
-
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="assets/css/main.css?v=20260323">
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css?v=20260323">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/vendor/bootstrap-icons/bootstrap-icons.css?v=20260323">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/assets/vendor/aos/aos.css?v=20260323">
+  <link rel="stylesheet" href="/assets/css/main.css?v=20260323">
 
   <style>
+    :root {
+      --default-font: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      --heading-font: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      --nav-font: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+    }
     body {
       color: #ffffff !important;
       background-color: #062540 !important;
+      font-family: var(--default-font);
       font-size: 1rem;
       line-height: 1.6;
+      margin: 0;
+      padding: 0;
     }
     h1, h2, h3, h4, h5, h6 {
       color: #ffffff !important;
+      font-family: var(--heading-font);
       font-weight: 700;
     }
     p, .lead-text {
       color: #e2e8f0 !important;
     }
-    .page-404-hero {
-      padding: 140px 0 60px;
-      position: relative;
-      background: linear-gradient(180deg, rgba(10, 64, 111, 0.45) 0%, rgba(6, 37, 64, 1) 100%);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    a {
+      text-decoration: none;
+      transition: all 0.3s ease;
     }
-    .badge-error-code {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
+
+    /* Header & Navigation Standalone Styles */
+    .header {
+      background-color: transparent;
+      padding: 15px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 997;
+      transition: all 0.4s;
+    }
+    .header .header-container {
+      background: #060606;
+      border-radius: 50px;
+      padding: 6px 24px;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .header .logo img {
+      max-height: 38px;
+      width: auto;
+      display: block;
+    }
+    .header .btn-getstarted {
+      color: #062540 !important;
+      background-color: #f1c232 !important;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 8px 22px;
+      margin-left: 20px;
+      border-radius: 50px;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .header .btn-getstarted:hover {
+      background-color: #dfb227 !important;
+      color: #062540 !important;
+      transform: scale(1.04);
+    }
+
+    /* Desktop Navigation */
+    @media (min-width: 1200px) {
+      .navmenu { padding: 0; }
+      .navmenu ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        align-items: center;
+        gap: 4px;
+      }
+      .navmenu li { position: relative; }
+      .navmenu a {
+        color: #dcdcdc;
+        padding: 12px 14px;
+        font-size: 15px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+      }
+      .navmenu a:hover, .navmenu .active { color: #f1c232; }
+      .navmenu .dropdown ul {
+        margin: 0;
+        padding: 10px 0;
+        background: #0a406f;
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        left: 0;
+        top: 130%;
+        opacity: 0;
+        transition: 0.3s ease;
+        border-radius: 8px;
+        z-index: 999;
+        box-shadow: 0px 10px 30px rgba(0,0,0,0.35);
+        list-style: none;
+        min-width: 210px;
+        border: 1px solid rgba(255,255,255,0.15);
+      }
+      .navmenu .dropdown:hover > ul {
+        opacity: 1;
+        top: 100%;
+        visibility: visible;
+      }
+      .navmenu .dropdown ul a {
+        padding: 8px 18px;
+        font-size: 14px;
+        color: #e2e8f0;
+      }
+      .navmenu .dropdown ul a:hover {
+        color: #f1c232;
+        background: rgba(241, 194, 50, 0.08);
+      }
+      .mobile-nav-toggle { display: none; }
+    }
+
+    /* Mobile Navigation */
+    @media (max-width: 1199px) {
+      .header { padding: 10px 0; }
+      .header .header-container { margin: 0 10px; padding: 10px 18px; }
+      .header .logo { order: 1; }
+      .header .btn-getstarted { order: 2; margin: 0 10px 0 0; padding: 6px 16px; font-size: 13px; }
+      .header .navmenu { order: 3; }
+      .mobile-nav-toggle {
+        color: #ffffff;
+        font-size: 30px;
+        cursor: pointer;
+        line-height: 0;
+        display: block;
+      }
+      .navmenu ul {
+        display: none;
+        list-style: none;
+        position: fixed;
+        inset: 65px 15px 15px 15px;
+        padding: 15px 0;
+        margin: 0;
+        border-radius: 12px;
+        background-color: #0a406f;
+        overflow-y: auto;
+        z-index: 9998;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        border: 1px solid rgba(255,255,255,0.15);
+      }
+      .navmenu a {
+        color: #ffffff;
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+      }
+      .navmenu a:hover { color: #f1c232; }
+      .mobile-nav-active { overflow: hidden; }
+      .mobile-nav-active .navmenu { position: fixed; inset: 0; background: rgba(6, 37, 64, 0.95); z-index: 9997; }
+      .mobile-nav-active .navmenu > ul { display: block; }
+    }
+
+    /* Page Title & Hero */
+    .page-title {
+      padding-top: 130px;
+      padding-bottom: 20px;
+      background: linear-gradient(180deg, rgba(10, 64, 111, 0.4) 0%, rgba(6, 37, 64, 1) 100%);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      text-align: center;
+    }
+    .error-code-badge {
       font-size: 4.5rem;
       font-weight: 900;
+      color: #f1c232;
       line-height: 1;
-      color: #f1c232;
-      text-shadow: 0 4px 25px rgba(241, 194, 50, 0.4);
-      margin-bottom: 15px;
-      font-family: var(--heading-font);
+      text-shadow: 0 4px 20px rgba(241, 194, 50, 0.35);
+      margin-bottom: 12px;
     }
-    .badge-tag-pill {
-      display: inline-block;
-      padding: 6px 18px;
-      background: rgba(241, 194, 50, 0.15);
-      border: 1px solid rgba(241, 194, 50, 0.4);
-      color: #f1c232;
-      border-radius: 50px;
-      font-size: 0.85rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin-bottom: 20px;
+    .page-title .breadcrumbs {
+      padding: 15px 0;
+      margin-top: 25px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
-    .hero-btn-group,
-    .cta-btn-group {
+    .page-title .breadcrumbs ol {
       display: flex;
       flex-wrap: wrap;
-      gap: 14px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
       justify-content: center;
-      margin-top: 25px;
-    }
-    .btn-main-gold {
-      background-color: #f1c232 !important;
-      color: #062540 !important;
-      font-weight: 700;
-      padding: 13px 28px;
-      border-radius: 50px;
-      border: 2px solid #f1c232;
-      transition: all 0.3s ease;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
       gap: 8px;
-      text-decoration: none;
-      font-size: 0.95rem;
-      line-height: 1.3;
+      font-size: 0.92rem;
     }
-    .btn-main-gold:hover {
-      background-color: #dfb227 !important;
-      border-color: #dfb227 !important;
-      color: #062540 !important;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(241, 194, 50, 0.35);
-    }
-    .btn-outline-white {
-      background: rgba(255, 255, 255, 0.05);
-      color: #ffffff !important;
-      font-weight: 600;
-      padding: 13px 26px;
-      border-radius: 50px;
-      border: 2px solid rgba(255, 255, 255, 0.35);
-      transition: all 0.3s ease;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      gap: 8px;
-      text-decoration: none;
-      font-size: 0.95rem;
-      line-height: 1.3;
-    }
-    .btn-outline-white:hover {
-      border-color: #f1c232;
-      color: #f1c232 !important;
-      background: rgba(241, 194, 50, 0.1);
-      transform: translateY(-2px);
-    }
-    .btn-whatsapp-cta {
-      background: #25d366 !important;
-      color: #ffffff !important;
-      font-weight: 700;
-      padding: 13px 28px;
-      border-radius: 50px;
-      border: 2px solid #25d366;
-      transition: all 0.3s ease;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      gap: 8px;
-      text-decoration: none;
-      font-size: 0.95rem;
-      line-height: 1.3;
-    }
-    .btn-whatsapp-cta:hover {
-      background: #20ba59 !important;
-      border-color: #20ba59 !important;
-      color: #ffffff !important;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
-    }
-    .nav-dir-card {
+    .page-title .breadcrumbs ol li a { color: #a0aec0; }
+    .page-title .breadcrumbs ol li a:hover { color: #f1c232; }
+    .page-title .breadcrumbs ol li.current { color: #f1c232; }
+
+    /* Cards & Components */
+    .about-card {
       background: #0a406f !important;
       border: 1px solid rgba(255, 255, 255, 0.15) !important;
       border-radius: 16px;
-      padding: 28px 24px;
+      padding: 24px;
       height: 100%;
       transition: all 0.3s ease;
       display: flex;
       flex-direction: column;
-      text-decoration: none;
+      justify-content: space-between;
     }
-    .nav-dir-card:hover {
-      transform: translateY(-6px);
+    .about-card:hover {
+      transform: translateY(-4px);
       border-color: #f1c232 !important;
-      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.35);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
     }
-    .nav-dir-icon {
-      width: 54px;
-      height: 54px;
+    .about-icon {
+      width: 52px;
+      height: 52px;
       border-radius: 12px;
       background: rgba(241, 194, 50, 0.15);
       color: #f1c232;
@@ -223,113 +308,46 @@
       align-items: center;
       justify-content: center;
       font-size: 1.6rem;
-      margin-bottom: 18px;
-      transition: all 0.3s ease;
+      margin-bottom: 16px;
     }
-    .nav-dir-card:hover .nav-dir-icon {
+    .about-card:hover .about-icon {
       background: #f1c232;
       color: #062540;
     }
-    .nav-dir-title {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #ffffff !important;
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .nav-dir-card:hover .nav-dir-title {
-      color: #f1c232 !important;
-    }
-    .nav-dir-desc {
-      font-size: 0.92rem;
-      color: #cbd5e1 !important;
-      margin-bottom: 16px;
-      line-height: 1.55;
-      flex-grow: 1;
-    }
-    .nav-dir-link-text {
-      font-size: 0.88rem;
-      font-weight: 700;
-      color: #f1c232;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: gap 0.2s ease;
-    }
-    .nav-dir-card:hover .nav-dir-link-text {
-      gap: 10px;
-    }
-    .product-badge-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 14px;
-      margin-top: 25px;
-    }
-    .product-badge-link {
+    .product-badge-card {
       background: #09345a;
       border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 12px;
-      padding: 14px 18px;
+      padding: 14px 16px;
       display: flex;
       align-items: center;
       gap: 12px;
       color: #ffffff !important;
-      text-decoration: none;
       font-weight: 600;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       transition: all 0.25s ease;
+      height: 100%;
     }
-    .product-badge-link i {
+    .product-badge-card i {
       color: #f1c232;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
+      flex-shrink: 0;
     }
-    .product-badge-link:hover {
+    .product-badge-card:hover {
       background: #0d4b82;
       border-color: #f1c232;
       color: #f1c232 !important;
-      transform: translateY(-3px);
+      transform: translateY(-2px);
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-    }
-    .about-feature-box {
-      background: #09345a;
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 14px;
-      padding: 22px;
-      height: 100%;
-    }
-    .about-feature-box i {
-      font-size: 1.8rem;
-      color: #f1c232;
-      margin-bottom: 12px;
-      display: inline-block;
-    }
-    .about-feature-box h5 {
-      font-size: 1.1rem;
-      margin-bottom: 8px;
-    }
-    .about-feature-box p {
-      font-size: 0.88rem;
-      color: #cbd5e1 !important;
-      margin: 0;
-    }
-    .cta-conversion-box {
-      background: linear-gradient(135deg, #0a406f 0%, #062540 100%);
-      border: 2px solid rgba(241, 194, 50, 0.4);
-      border-radius: 20px;
-      padding: 45px 35px;
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
     }
     .city-chip {
       display: inline-block;
       background: rgba(255, 255, 255, 0.08);
       border: 1px solid rgba(255, 255, 255, 0.15);
-      padding: 6px 14px;
+      padding: 7px 16px;
       border-radius: 30px;
-      font-size: 0.85rem;
+      font-size: 0.88rem;
       color: #e2e8f0;
-      text-decoration: none;
       margin: 4px;
       transition: all 0.2s ease;
     }
@@ -339,113 +357,144 @@
       border-color: #f1c232;
       font-weight: 600;
     }
-
-    /* Responsive Mobile Version Optimization */
-    @media (max-width: 768px) {
-      .page-404-hero {
-        padding: 105px 0 40px;
-      }
-      .badge-error-code {
-        font-size: 3.8rem;
-        margin-bottom: 10px;
-      }
-      .hero-btn-group,
-      .cta-btn-group {
-        flex-direction: column;
-        width: 100%;
-        max-width: 380px;
-        margin-left: auto;
-        margin-right: auto;
-        gap: 12px;
-      }
-      .hero-btn-group .btn-main-gold,
-      .hero-btn-group .btn-outline-white,
-      .hero-btn-group .btn-whatsapp-cta,
-      .cta-btn-group .btn-main-gold,
-      .cta-btn-group .btn-outline-white,
-      .cta-btn-group .btn-whatsapp-cta {
-        width: 100%;
-        padding: 13px 20px;
-        font-size: 0.95rem;
-      }
-      .cta-conversion-box {
-        padding: 30px 18px;
-        border-radius: 16px;
-      }
-      .nav-dir-card {
-        padding: 22px 18px;
-      }
+    .cta-banner {
+      background: linear-gradient(135deg, #0a406f 0%, #062540 100%);
+      border: 2px solid rgba(241, 194, 50, 0.4);
+      border-radius: 20px;
+      padding: 40px 30px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
     }
 
-    @media (max-width: 576px) {
-      .badge-error-code {
-        font-size: 3.2rem;
-      }
-      .page-404-hero h1 {
-        font-size: 1.45rem;
-      }
-      .page-404-hero p.lead-text {
-        font-size: 0.95rem;
-      }
-      .product-badge-grid {
-        grid-template-columns: repeat(2, 1fr);
+    /* Footer */
+    .footer {
+      color: #dcdcdc;
+      background-color: #01020e;
+      font-size: 14px;
+    }
+    .footer .footer-top {
+      padding: 50px 0 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .footer .social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      margin-right: 8px;
+    }
+    .footer .social-links a:hover { color: #f1c232; border-color: #f1c232; }
+    .footer h4 { font-size: 16px; font-weight: 700; margin-bottom: 15px; color: #ffffff; }
+    .footer .footer-links ul { list-style: none; padding: 0; margin: 0; }
+    .footer .footer-links ul li { padding: 6px 0; }
+    .footer .footer-links ul a { color: #a0aec0; }
+    .footer .footer-links ul a:hover { color: #f1c232; }
+    .footer .copyright {
+      padding: 20px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .whatsapp-float {
+      position: fixed;
+      width: 55px;
+      height: 55px;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      box-shadow: 2px 4px 15px rgba(0,0,0,0.35);
+      z-index: 1000;
+    }
+    .whatsapp-float:hover { color: #fff; transform: scale(1.08); }
+    .scroll-top {
+      position: fixed;
+      visibility: hidden;
+      opacity: 0;
+      right: 25px;
+      bottom: 90px;
+      z-index: 999;
+      background-color: #f1c232;
+      width: 42px;
+      height: 42px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #062540;
+      transition: all 0.3s;
+    }
+    .scroll-top.active { visibility: visible; opacity: 1; }
+
+    @media (max-width: 768px) {
+      .error-code-badge { font-size: 3.5rem; }
+      .page-title { padding-top: 100px; }
+      .btn-responsive-group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
         gap: 10px;
       }
-      .product-badge-link {
-        padding: 10px 12px;
-        font-size: 0.82rem;
-        gap: 8px;
+      .btn-responsive-group .btn {
+        width: 100%;
+        padding: 12px 18px;
+        font-size: 0.95rem;
       }
-      .product-badge-link i {
-        font-size: 1rem;
-      }
-      .city-chip {
-        font-size: 0.78rem;
-        padding: 5px 10px;
-        margin: 2px;
-      }
+      .cta-banner { padding: 28px 18px; }
+      .product-badge-card { padding: 10px 12px; font-size: 0.82rem; gap: 8px; }
+      .product-badge-card i { font-size: 1rem; }
+      .city-chip { font-size: 0.78rem; padding: 5px 10px; margin: 2px; }
     }
   </style>
 </head>
 
-<body class="page-404">
+<body class="about-page">
 
   <!-- ========== HEADER ========== -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/logo-seminar-kits.webp" alt="Logo Seminarkits.id" width="160" height="40" decoding="sync">
+      <a href="/index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="/assets/img/logo-seminar-kits.webp" alt="Logo Seminarkits.id" width="160" height="40" decoding="sync">
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="tentang-kami.html">Tentang Kami</a></li>
-          <li><a href="layanan.html">Layanan</a></li>
-          <li><a href="katalog.html">Katalog</a></li>
-          <li><a href="portofolio.html">Portofolio</a></li>
-          <li class="dropdown"><a href="produk.html"><span>Produk</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="/index.html">Beranda</a></li>
+          <li><a href="/tentang-kami.html">Tentang Kami</a></li>
+          <li><a href="/layanan.html">Layanan</a></li>
+          <li><a href="/katalog.html">Katalog</a></li>
+          <li><a href="/portofolio.html">Portofolio</a></li>
+          <li class="dropdown"><a href="/produk.html"><span>Produk</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="produk/seminar-kit.html">Seminar Kit</a></li>
-              <li><a href="produk/souvenir.html">Souvenir</a></li>
-              <li><a href="produk/hampers.html">Hampers</a></li>
-              <li><a href="produk/corporate-gift.html">Corporate Gift</a></li>
-              <li><a href="produk/merchandise.html">Merchandise</a></li>
-              <li><a href="produk/tumbler-custom.html">Tumbler Custom</a></li>
-              <li><a href="produk/lanyard-custom.html">Lanyard Custom</a></li>
-              <li><a href="produk/pulpen-promosi.html">Pulpen Promosi</a></li>
-              <li><a href="produk/agenda-custom.html">Agenda Custom</a></li>
-              <li><a href="produk/kalender-custom.html">Kalender Custom</a></li>
+              <li><a href="/produk/seminar-kit.html">Seminar Kit</a></li>
+              <li><a href="/produk/souvenir.html">Souvenir</a></li>
+              <li><a href="/produk/hampers.html">Hampers</a></li>
+              <li><a href="/produk/corporate-gift.html">Corporate Gift</a></li>
+              <li><a href="/produk/merchandise.html">Merchandise</a></li>
+              <li><a href="/produk/tumbler-custom.html">Tumbler Custom</a></li>
+              <li><a href="/produk/lanyard-custom.html">Lanyard Custom</a></li>
+              <li><a href="/produk/pulpen-promosi.html">Pulpen Promosi</a></li>
+              <li><a href="/produk/agenda-custom.html">Agenda Custom</a></li>
+              <li><a href="/produk/kalender-custom.html">Kalender Custom</a></li>
             </ul>
           </li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/galeri.html">Galeri</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="minta-penawaran.html">Penawaran</a>
+      <a class="btn-getstarted" href="/minta-penawaran.html">Penawaran</a>
 
     </div>
   </header>
@@ -453,46 +502,54 @@
   <!-- ========== MAIN CONTENT ========== -->
   <main class="main">
 
-    <!-- ========== HERO 404 SECTION ========== -->
-    <section class="page-404-hero text-center">
-      <div class="container" data-aos="fade-up">
-        <div class="badge-tag-pill">
-          <i class="bi bi-exclamation-triangle-fill me-1"></i> Navigasi Halaman
-        </div>
-        <div class="badge-error-code">
-          <span>404</span>
-        </div>
-        <h1 class="h2 mb-3">Oops! Halaman Tidak Ditemukan</h1>
-        <p class="lead-text mx-auto" style="max-width: 720px; font-size: 1.1rem;">
-          Tautan yang Anda tuju mungkin telah dipindahkan, berganti nama, atau belum tersedia. Jangan khawatir, Anda tetap berada di platform resmi <strong>Seminarkits.id</strong>. Silakan temukan informasi lengkap pengadaan seminar kit, corporate gift, dan souvenir kantor melalui direktori di bawah ini.
-        </p>
-
-        <div class="hero-btn-group">
-          <a href="index.html" class="btn-main-gold">
-            <i class="bi bi-house-door-fill"></i> Kembali ke Beranda
-          </a>
-          <a href="https://wa.me/6288989643555?text=Halo%20Seminarkits.id%2C%20saya%20mencari%20informasi%20pengadaan%20seminar%20kit%20dan%20souvenir%20kantor." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-cta">
-            <i class="bi bi-whatsapp"></i> Tanya CS WhatsApp
-          </a>
-          <a href="minta-penawaran.html" class="btn-outline-white">
-            <i class="bi bi-file-earmark-text-fill"></i> Minta Penawaran (SPH)
-          </a>
-          <a href="katalog.html" class="btn-outline-white">
-            <i class="bi bi-download"></i> Unduh e-Katalog
-          </a>
+    <!-- ========== HERO 404 / PAGE TITLE ========== -->
+    <div class="page-title">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-9" data-aos="fade-up" data-aos-delay="100">
+              <div class="error-code-badge">404</div>
+              <h1 class="heading-title mb-3">Oops! Halaman Tidak Ditemukan</h1>
+              <p class="mb-4 lead-text">
+                Tautan yang Anda tuju mungkin telah dipindahkan, berganti nama, atau belum tersedia. Jangan khawatir, Anda tetap berada di platform resmi <strong>Seminarkits.id</strong>. Silakan temukan informasi lengkap pengadaan seminar kit, corporate gift, dan souvenir kantor melalui direktori di bawah ini.
+              </p>
+              <div class="btn-responsive-group d-flex flex-wrap justify-content-center gap-3 mt-3">
+                <a href="/index.html" class="btn btn-warning fw-bold text-dark px-4 py-2 shadow-sm rounded-pill">
+                  <i class="bi bi-house-door-fill me-1"></i>Kembali ke Beranda
+                </a>
+                <a href="https://wa.me/6288989643555?text=Halo%20Seminarkits.id%2C%20saya%20mencari%20informasi%20pengadaan%20seminar%20kit%20dan%20souvenir%20kantor." target="_blank" rel="noopener noreferrer" class="btn btn-success fw-bold px-4 py-2 shadow-sm rounded-pill">
+                  <i class="bi bi-whatsapp me-1"></i>Tanya CS WhatsApp
+                </a>
+                <a href="/minta-penawaran.html" class="btn btn-outline-light border-2 fw-semibold px-4 py-2 rounded-pill">
+                  <i class="bi bi-file-earmark-text me-1"></i>Minta Penawaran
+                </a>
+                <a href="/katalog.html" class="btn btn-outline-light border-2 fw-semibold px-4 py-2 rounded-pill">
+                  <i class="bi bi-download me-1"></i>Unduh e-Katalog
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+      <nav class="breadcrumbs" data-aos="fade-up" data-aos-delay="200">
+        <div class="container">
+          <ol>
+            <li><a href="/index.html"><i class="bi bi-house-door"></i> Beranda</a></li>
+            <li class="current">404 Tidak Ditemukan</li>
+          </ol>
+        </div>
+      </nav>
+    </div>
 
     <!-- ========== SECTION 1: MENGENAL SEMINARKITS.ID ========== -->
-    <section class="py-5" style="background-color: #062540;">
+    <section class="section py-5">
       <div class="container" data-aos="fade-up">
         <div class="section-title text-center mb-5">
           <h2>Mengenal Seminarkits.id</h2>
           <p class="text-white-50">Produsen Manufaktur & Vendor Pengadaan Seminar Kit, Corporate Gift, dan Souvenir Kantor B2B Terpercaya di Indonesia</p>
         </div>
 
-        <div class="row align-items-center g-4 mb-5">
+        <div class="row align-items-center g-4 mb-4">
           <div class="col-lg-6" data-aos="fade-right">
             <h3 class="h4 text-warning mb-3">Solusi Pengadaan B2B Tangan Pertama Langsung Pabrik</h3>
             <p>
@@ -511,31 +568,31 @@
           <div class="col-lg-6" data-aos="fade-left">
             <div class="row g-3">
               <div class="col-sm-6">
-                <div class="about-feature-box">
-                  <i class="bi bi-tag-fill"></i>
-                  <h5>Harga Produsen Pabrik</h5>
-                  <p>Produksi workshop sendiri di Malang tanpa markup perantara/reseller untuk efisiensi anggaran maksimal.</p>
+                <div class="p-3 rounded-3 h-100" style="background: #0a406f; border: 1px solid rgba(255,255,255,0.12);">
+                  <i class="bi bi-tag-fill text-warning fs-3 mb-2 d-inline-block"></i>
+                  <h5 class="h6 text-white mb-2">Harga Produsen Pabrik</h5>
+                  <p class="small text-white-50 mb-0">Produksi workshop sendiri di Malang tanpa markup perantara untuk efisiensi anggaran maksimal.</p>
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="about-feature-box">
-                  <i class="bi bi-clock-history"></i>
-                  <h5>SLA Garansi H-3 Acara</h5>
-                  <p>Jaminan barang tiba di alamat pemesan minimal H-3 sebelum jadwal acara berlangsung.</p>
+                <div class="p-3 rounded-3 h-100" style="background: #0a406f; border: 1px solid rgba(255,255,255,0.12);">
+                  <i class="bi bi-clock-history text-warning fs-3 mb-2 d-inline-block"></i>
+                  <h5 class="h6 text-white mb-2">SLA Garansi H-3 Acara</h5>
+                  <p class="small text-white-50 mb-0">Jaminan barang tiba di alamat pemesan minimal H-3 sebelum jadwal acara berlangsung.</p>
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="about-feature-box">
-                  <i class="bi bi-palette-fill"></i>
-                  <h5>Free Desain & Mockup 3D</h5>
-                  <p>Layanan visualisasi mockup 3D digital gratis dengan penempatan logo instansi Anda sebelum cetak massal.</p>
+                <div class="p-3 rounded-3 h-100" style="background: #0a406f; border: 1px solid rgba(255,255,255,0.12);">
+                  <i class="bi bi-palette-fill text-warning fs-3 mb-2 d-inline-block"></i>
+                  <h5 class="h6 text-white mb-2">Free Desain & Mockup 3D</h5>
+                  <p class="small text-white-50 mb-0">Layanan visualisasi mockup 3D digital gratis dengan penempatan logo instansi Anda sebelum cetak.</p>
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="about-feature-box">
-                  <i class="bi bi-truck"></i>
-                  <h5>Distribusi Multi-Kota</h5>
-                  <p>Pengiriman aman via KALOG kargo kereta, tol Trans-Jawa, dan kargo udara ke seluruh nusantara.</p>
+                <div class="p-3 rounded-3 h-100" style="background: #0a406f; border: 1px solid rgba(255,255,255,0.12);">
+                  <i class="bi bi-truck text-warning fs-3 mb-2 d-inline-block"></i>
+                  <h5 class="h6 text-white mb-2">Distribusi Multi-Kota</h5>
+                  <p class="small text-white-50 mb-0">Pengiriman aman via KALOG kargo kereta, tol Trans-Jawa, dan kargo udara ke seluruh nusantara.</p>
                 </div>
               </div>
             </div>
@@ -545,7 +602,7 @@
     </section>
 
     <!-- ========== SECTION 2: DIREKTORI NAVIGASI HALAMAN UTAMA ========== -->
-    <section class="py-5" style="background-color: #051d32;">
+    <section class="section py-5" style="background-color: #051d32;">
       <div class="container" data-aos="fade-up">
         <div class="section-title text-center mb-5">
           <h2>Direktori Halaman Website</h2>
@@ -555,153 +612,129 @@
         <div class="row g-4">
           <!-- 1. Beranda -->
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <a href="index.html" class="nav-dir-card">
-              <div class="nav-dir-icon">
-                <i class="bi bi-house-door"></i>
+            <a href="/index.html" class="about-card text-decoration-none">
+              <div>
+                <div class="about-icon">
+                  <i class="bi bi-house-door"></i>
+                </div>
+                <h5 class="text-white mb-2">Beranda</h5>
+                <p class="small text-white-50 mb-3">
+                  Halaman utama pengenalan Seminarkits.id, solusi pengadaan, paket unggulan terpopuler, dan ulasan instansi rekanan.
+                </p>
               </div>
-              <div class="nav-dir-title">
-                <span>Beranda</span>
-                <i class="bi bi-arrow-right-short text-warning"></i>
-              </div>
-              <p class="nav-dir-desc">
-                Halaman utama pengenalan Seminarkits.id, solusi pengadaan, paket unggulan terpopuler, dan ulasan instansi rekanan.
-              </p>
-              <div class="nav-dir-link-text">
-                Buka Beranda <i class="bi bi-arrow-right"></i>
-              </div>
+              <span class="text-warning fw-bold small">Buka Beranda <i class="bi bi-arrow-right"></i></span>
             </a>
           </div>
 
           <!-- 2. Tentang Kami -->
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="150">
-            <a href="tentang-kami.html" class="nav-dir-card">
-              <div class="nav-dir-icon">
-                <i class="bi bi-building"></i>
+            <a href="/tentang-kami.html" class="about-card text-decoration-none">
+              <div>
+                <div class="about-icon">
+                  <i class="bi bi-building"></i>
+                </div>
+                <h5 class="text-white mb-2">Tentang Kami</h5>
+                <p class="small text-white-50 mb-3">
+                  Profil workshop manufaktur, legalitas PKP resmi, kapasitas mesin produksi modern, dan standar quality control kami.
+                </p>
               </div>
-              <div class="nav-dir-title">
-                <span>Tentang Kami</span>
-                <i class="bi bi-arrow-right-short text-warning"></i>
-              </div>
-              <p class="nav-dir-desc">
-                Profil workshop manufaktur, legalitas PKP resmi, kapasitas mesin produksi modern, dan standar quality control kami.
-              </p>
-              <div class="nav-dir-link-text">
-                Baca Profil <i class="bi bi-arrow-right"></i>
-              </div>
+              <span class="text-warning fw-bold small">Baca Profil <i class="bi bi-arrow-right"></i></span>
             </a>
           </div>
 
           <!-- 3. Layanan Pengadaan -->
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <a href="layanan.html" class="nav-dir-card">
-              <div class="nav-dir-icon">
-                <i class="bi bi-briefcase"></i>
+            <a href="/layanan.html" class="about-card text-decoration-none">
+              <div>
+                <div class="about-icon">
+                  <i class="bi bi-briefcase"></i>
+                </div>
+                <h5 class="text-white mb-2">Layanan B2B</h5>
+                <p class="small text-white-50 mb-3">
+                  Prosedur kerja sama pengadaan institusi, faktur pajak PPN 11%, SPK, kemudahan tender, dan garansi retur 100%.
+                </p>
               </div>
-              <div class="nav-dir-title">
-                <span>Layanan B2B</span>
-                <i class="bi bi-arrow-right-short text-warning"></i>
-              </div>
-              <p class="nav-dir-desc">
-                Prosedur kerja sama pengadaan institusi, faktur pajak PPN 11%, SPK, kemudahan tender, dan garansi retur 100%.
-              </p>
-              <div class="nav-dir-link-text">
-                Lihat Layanan <i class="bi bi-arrow-right"></i>
-              </div>
+              <span class="text-warning fw-bold small">Lihat Layanan <i class="bi bi-arrow-right"></i></span>
             </a>
           </div>
 
           <!-- 4. Katalog Produk -->
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
-            <a href="katalog.html" class="nav-dir-card">
-              <div class="nav-dir-icon">
-                <i class="bi bi-journal-album"></i>
+            <a href="/katalog.html" class="about-card text-decoration-none">
+              <div>
+                <div class="about-icon">
+                  <i class="bi bi-journal-album"></i>
+                </div>
+                <h5 class="text-white mb-2">Katalog Produk</h5>
+                <p class="small text-white-50 mb-3">
+                  Unduh e-Katalog PDF resmi berisi spesifikasi material, opsi teknik branding (grafir/sablon/emboss), dan panduan harga.
+                </p>
               </div>
-              <div class="nav-dir-title">
-                <span>Katalog Produk</span>
-                <i class="bi bi-arrow-right-short text-warning"></i>
-              </div>
-              <p class="nav-dir-desc">
-                Unduh e-Katalog PDF resmi berisi spesifikasi material, opsi teknik branding (grafir/sablon/emboss), dan panduan harga.
-              </p>
-              <div class="nav-dir-link-text">
-                Unduh Katalog <i class="bi bi-arrow-right"></i>
-              </div>
+              <span class="text-warning fw-bold small">Unduh Katalog <i class="bi bi-arrow-right"></i></span>
             </a>
           </div>
 
           <!-- 5. Portofolio Proyek -->
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <a href="portofolio.html" class="nav-dir-card">
-              <div class="nav-dir-icon">
-                <i class="bi bi-award"></i>
+            <a href="/portofolio.html" class="about-card text-decoration-none">
+              <div>
+                <div class="about-icon">
+                  <i class="bi bi-award"></i>
+                </div>
+                <h5 class="text-white mb-2">Portofolio</h5>
+                <p class="small text-white-50 mb-3">
+                  Galeri dokumentasi hasil pengerjaan ratusan proyek seminar kit, gift set VIP, dan souvenir kantor di seluruh Indonesia.
+                </p>
               </div>
-              <div class="nav-dir-title">
-                <span>Portofolio</span>
-                <i class="bi bi-arrow-right-short text-warning"></i>
-              </div>
-              <p class="nav-dir-desc">
-                Galeri dokumentasi hasil pengerjaan ratusan proyek seminar kit, gift set VIP, dan souvenir kantor di seluruh Indonesia.
-              </p>
-              <div class="nav-dir-link-text">
-                Lihat Portofolio <i class="bi bi-arrow-right"></i>
-              </div>
+              <span class="text-warning fw-bold small">Lihat Portofolio <i class="bi bi-arrow-right"></i></span>
             </a>
           </div>
 
           <!-- 6. Produk & Merchandise -->
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="350">
-            <a href="produk.html" class="nav-dir-card">
-              <div class="nav-dir-icon">
-                <i class="bi bi-box-seam"></i>
+            <a href="/produk.html" class="about-card text-decoration-none">
+              <div>
+                <div class="about-icon">
+                  <i class="bi bi-box-seam"></i>
+                </div>
+                <h5 class="text-white mb-2">Daftar Produk</h5>
+                <p class="small text-white-50 mb-3">
+                  Katalog lengkap produk mulai dari tumbler stainless, lanyard tisu, buku agenda, pulpen, hampers, tas, hingga plakat.
+                </p>
               </div>
-              <div class="nav-dir-title">
-                <span>Daftar Produk</span>
-                <i class="bi bi-arrow-right-short text-warning"></i>
-              </div>
-              <p class="nav-dir-desc">
-                Katalog lengkap produk mulai dari tumbler stainless, lanyard tisu, buku agenda, pulpen, hampers, tas, hingga plakat.
-              </p>
-              <div class="nav-dir-link-text">
-                Jelajahi Produk <i class="bi bi-arrow-right"></i>
-              </div>
+              <span class="text-warning fw-bold small">Jelajahi Produk <i class="bi bi-arrow-right"></i></span>
             </a>
           </div>
 
           <!-- 7. Blog & Edukasi -->
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <a href="blog.html" class="nav-dir-card">
-              <div class="nav-dir-icon">
-                <i class="bi bi-newspaper"></i>
+            <a href="/blog.html" class="about-card text-decoration-none">
+              <div>
+                <div class="about-icon">
+                  <i class="bi bi-newspaper"></i>
+                </div>
+                <h5 class="text-white mb-2">Blog & Panduan</h5>
+                <p class="small text-white-50 mb-3">
+                  Artikel edukasi pengadaan, panduan menyusun RAB seminar kit, tips memilih material souvenir, dan tren merchandise 2026.
+                </p>
               </div>
-              <div class="nav-dir-title">
-                <span>Blog & Panduan</span>
-                <i class="bi bi-arrow-right-short text-warning"></i>
-              </div>
-              <p class="nav-dir-desc">
-                Artikel edukasi pengadaan, panduan menyusun RAB seminar kit, tips memilih material souvenir, dan tren merchandise 2026.
-              </p>
-              <div class="nav-dir-link-text">
-                Baca Artikel <i class="bi bi-arrow-right"></i>
-              </div>
+              <span class="text-warning fw-bold small">Baca Artikel <i class="bi bi-arrow-right"></i></span>
             </a>
           </div>
 
           <!-- 8. Minta Penawaran -->
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="450">
-            <a href="minta-penawaran.html" class="nav-dir-card" style="border-color: rgba(241, 194, 50, 0.4) !important;">
-              <div class="nav-dir-icon" style="background: #f1c232; color: #062540;">
-                <i class="bi bi-send-check"></i>
+            <a href="/minta-penawaran.html" class="about-card text-decoration-none" style="border-color: rgba(241, 194, 50, 0.4) !important;">
+              <div>
+                <div class="about-icon" style="background: #f1c232; color: #062540;">
+                  <i class="bi bi-send-check"></i>
+                </div>
+                <h5 class="text-warning mb-2">Minta Penawaran</h5>
+                <p class="small text-white-50 mb-3">
+                  Formulir pengajuan Surat Penawaran Harga (SPH) resmi dan permintaan Free 3D Mockup sesuai anggaran Anda.
+                </p>
               </div>
-              <div class="nav-dir-title">
-                <span class="text-warning">Minta Penawaran</span>
-                <i class="bi bi-arrow-right-short text-warning"></i>
-              </div>
-              <p class="nav-dir-desc">
-                Formulir pengajuan Surat Penawaran Harga (SPH) resmi dan permintaan Free 3D Mockup sesuai anggaran Anda.
-              </p>
-              <div class="nav-dir-link-text text-warning">
-                Isi Form Penawaran <i class="bi bi-arrow-right"></i>
-              </div>
+              <span class="text-warning fw-bold small">Isi Form Penawaran <i class="bi bi-arrow-right"></i></span>
             </a>
           </div>
         </div>
@@ -709,68 +742,92 @@
     </section>
 
     <!-- ========== SECTION 3: KATEGORI PRODUK UNGGULAN ========== -->
-    <section class="py-5" style="background-color: #062540;">
+    <section class="section py-5">
       <div class="container" data-aos="fade-up">
         <div class="section-title text-center mb-4">
           <h2>Kategori Produk & Souvenir Unggulan</h2>
           <p class="text-white-50">Akses langsung ke kategori produk seminar kit dan merchandise custom paling diminati</p>
         </div>
 
-        <div class="product-badge-grid">
-          <a href="produk/seminar-kit.html" class="product-badge-link">
-            <i class="bi bi-bag-check-fill"></i>
-            <span>Paket Seminar Kit</span>
-          </a>
-          <a href="produk/tumbler-custom.html" class="product-badge-link">
-            <i class="bi bi-cup-straw"></i>
-            <span>Tumbler Stainless SUS304</span>
-          </a>
-          <a href="produk/lanyard-custom.html" class="product-badge-link">
-            <i class="bi bi-person-badge-fill"></i>
-            <span>Lanyard & ID Card</span>
-          </a>
-          <a href="produk/agenda-custom.html" class="product-badge-link">
-            <i class="bi bi-book-half"></i>
-            <span>Buku Agenda & Notebook</span>
-          </a>
-          <a href="produk/pulpen-promosi.html" class="product-badge-link">
-            <i class="bi bi-pen-fill"></i>
-            <span>Pulpen Promosi Laser</span>
-          </a>
-          <a href="produk/corporate-gift.html" class="product-badge-link">
-            <i class="bi bi-gift-fill"></i>
-            <span>Corporate Gift Set VIP</span>
-          </a>
-          <a href="produk/hampers.html" class="product-badge-link">
-            <i class="bi bi-box2-heart-fill"></i>
-            <span>Hampers Perusahaan</span>
-          </a>
-          <a href="produk/merchandise.html" class="product-badge-link">
-            <i class="bi bi-trophy-fill"></i>
-            <span>Merchandise Kantor</span>
-          </a>
-          <a href="produk/kalender-custom.html" class="product-badge-link">
-            <i class="bi bi-calendar-event-fill"></i>
-            <span>Kalender Meja & Dinding</span>
-          </a>
-          <a href="produk/plakat-custom.html" class="product-badge-link">
-            <i class="bi bi-gem"></i>
-            <span>Plakat Akrilik & Kayu</span>
-          </a>
-          <a href="produk/kaos-polo-tshirt-custom.html" class="product-badge-link">
-            <i class="bi bi-person-workspace"></i>
-            <span>Kaos Polo & T-Shirt</span>
-          </a>
-          <a href="produk/payung-lipat-custom.html" class="product-badge-link">
-            <i class="bi bi-umbrella-fill"></i>
-            <span>Payung Golf & Lipat</span>
-          </a>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+          <div class="col">
+            <a href="/produk/seminar-kit.html" class="product-badge-card">
+              <i class="bi bi-bag-check-fill"></i>
+              <span>Paket Seminar Kit</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="/produk/tumbler-custom.html" class="product-badge-card">
+              <i class="bi bi-cup-straw"></i>
+              <span>Tumbler Stainless SUS304</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="/produk/lanyard-custom.html" class="product-badge-card">
+              <i class="bi bi-person-badge-fill"></i>
+              <span>Lanyard & ID Card</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="/produk/agenda-custom.html" class="product-badge-card">
+              <i class="bi bi-book-half"></i>
+              <span>Buku Agenda Custom</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="/produk/pulpen-promosi.html" class="product-badge-card">
+              <i class="bi bi-pen-fill"></i>
+              <span>Pulpen Promosi Laser</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="/produk/corporate-gift.html" class="product-badge-card">
+              <i class="bi bi-gift-fill"></i>
+              <span>Corporate Gift VIP</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="/produk/hampers.html" class="product-badge-card">
+              <i class="bi bi-box2-heart-fill"></i>
+              <span>Hampers Perusahaan</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="/produk/merchandise.html" class="product-badge-card">
+              <i class="bi bi-trophy-fill"></i>
+              <span>Merchandise Kantor</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="/produk/kalender-custom.html" class="product-badge-card">
+              <i class="bi bi-calendar-event-fill"></i>
+              <span>Kalender Meja & Dinding</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="/produk/plakat-custom.html" class="product-badge-card">
+              <i class="bi bi-gem"></i>
+              <span>Plakat Akrilik & Kayu</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="/produk/kaos-polo-tshirt-custom.html" class="product-badge-card">
+              <i class="bi bi-person-workspace"></i>
+              <span>Kaos Polo & T-Shirt</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="/produk/payung-lipat-custom.html" class="product-badge-card">
+              <i class="bi bi-umbrella-fill"></i>
+              <span>Payung Golf & Lipat</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ========== SECTION 4: DISTRIBUSI KOTA STRATEGIS ========== -->
-    <section class="py-5" style="background-color: #051d32;">
+    <section class="section py-5" style="background-color: #051d32;">
       <div class="container" data-aos="fade-up">
         <div class="section-title text-center mb-4">
           <h2>Jangkauan Layanan Pengadaan Multi-Kota</h2>
@@ -778,40 +835,40 @@
         </div>
 
         <div class="text-center">
-          <a href="produk/seminar-kit-malang.html" class="city-chip"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Malang (Workshop Pusat)</a>
-          <a href="produk/seminar-kit-surabaya.html" class="city-chip"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Surabaya (Ekspres 1 Hari)</a>
-          <a href="produk/seminar-kit-jakarta.html" class="city-chip"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Jakarta (KALOG Kereta & Truk)</a>
-          <a href="produk/seminar-kit-jogja.html" class="city-chip"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Yogyakarta</a>
-          <a href="produk/seminar-kit-semarang.html" class="city-chip"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Semarang</a>
-          <a href="produk/seminar-kit-bandung.html" class="city-chip"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Bandung</a>
-          <a href="produk/seminar-kit-denpasar.html" class="city-chip"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Denpasar (Bali)</a>
-          <a href="produk/seminar-kit-makassar.html" class="city-chip"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Makassar</a>
-          <a href="produk/seminar-kit-balikpapan.html" class="city-chip"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Balikpapan (IKN Kaltim)</a>
-          <a href="produk/seminar-kit-palembang.html" class="city-chip"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Palembang</a>
+          <a href="/produk/seminar-kit-malang.html" class="city-chip"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Malang (Workshop Pusat)</a>
+          <a href="/produk/seminar-kit-surabaya.html" class="city-chip"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Surabaya (Ekspres 1 Hari)</a>
+          <a href="/produk/seminar-kit-jakarta.html" class="city-chip"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Jakarta (KALOG Kereta & Truk)</a>
+          <a href="/produk/seminar-kit-jogja.html" class="city-chip"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Yogyakarta</a>
+          <a href="/produk/seminar-kit-semarang.html" class="city-chip"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Semarang</a>
+          <a href="/produk/seminar-kit-bandung.html" class="city-chip"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Bandung</a>
+          <a href="/produk/seminar-kit-denpasar.html" class="city-chip"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Denpasar (Bali)</a>
+          <a href="/produk/seminar-kit-makassar.html" class="city-chip"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Makassar</a>
+          <a href="/produk/seminar-kit-balikpapan.html" class="city-chip"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Balikpapan (IKN Kaltim)</a>
+          <a href="/produk/seminar-kit-palembang.html" class="city-chip"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Palembang</a>
         </div>
       </div>
     </section>
 
     <!-- ========== SECTION 5: HIGH CONVERSION CTA BANNER ========== -->
-    <section class="py-5" style="background-color: #062540;">
+    <section class="section py-5">
       <div class="container" data-aos="zoom-in">
-        <div class="cta-conversion-box text-center">
-          <div class="badge-tag-pill mb-2">
-            <i class="bi bi-headset me-1"></i> Respon Cepat 24/7
+        <div class="cta-banner text-center">
+          <div class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-3">
+            <i class="bi bi-headset me-1"></i> Konsultasi Respon Cepat 24/7
           </div>
           <h2 class="h3 mb-3 text-white">Butuh Bantuan Langsung dari Tim Sales & Desain Kami?</h2>
           <p class="lead-text mx-auto mb-4" style="max-width: 680px; font-size: 1.05rem;">
             Tidak perlu repot mencari satu per satu. Konsultasikan kebutuhan seminar kit atau souvenir kantor Anda sekarang. Kami siap membantu pembuatan RAB, rekomendasi material, dan penyusunan <strong>Free 3D Digital Mockup</strong> dalam hitungan jam.
           </p>
-          <div class="cta-btn-group d-flex flex-wrap gap-3 justify-content-center">
-            <a href="https://wa.me/6288989643555?text=Halo%20Seminarkits.id%2C%20saya%20ingin%20konsultasi%20pengadaan%20paket%20seminar%20kit%20dan%20souvenir%20kantor." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-cta">
-              <i class="bi bi-whatsapp"></i> Chat WhatsApp: 0889-8964-3555
+          <div class="btn-responsive-group d-flex flex-wrap gap-3 justify-content-center">
+            <a href="https://wa.me/6288989643555?text=Halo%20Seminarkits.id%2C%20saya%20ingin%20konsultasi%20pengadaan%20paket%20seminar%20kit%20dan%20souvenir%20kantor." target="_blank" rel="noopener noreferrer" class="btn btn-success fw-bold px-4 py-3 rounded-pill shadow">
+              <i class="bi bi-whatsapp me-1"></i> Chat WhatsApp: 0889-8964-3555
             </a>
-            <a href="minta-penawaran.html" class="btn-main-gold">
-              <i class="bi bi-file-earmark-check-fill"></i> Minta Penawaran Resmi
+            <a href="/minta-penawaran.html" class="btn btn-warning fw-bold text-dark px-4 py-3 rounded-pill shadow">
+              <i class="bi bi-file-earmark-check-fill me-1"></i> Minta Penawaran Resmi
             </a>
-            <a href="katalog.html" class="btn-outline-white">
-              <i class="bi bi-file-earmark-pdf-fill"></i> Unduh e-Katalog 2026
+            <a href="/katalog.html" class="btn btn-outline-light border-2 fw-semibold px-4 py-3 rounded-pill">
+              <i class="bi bi-file-earmark-pdf-fill me-1"></i> Unduh e-Katalog 2026
             </a>
           </div>
         </div>
@@ -826,8 +883,8 @@
       <div class="row gy-4">
 
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/logo-seminar-kits.webp" alt="Logo Seminarkits.id" width="160" height="40" decoding="sync">
+          <a href="/index.html" class="logo d-flex align-items-center">
+            <img src="/assets/img/logo-seminar-kits.webp" alt="Logo Seminarkits.id" width="160" height="40" decoding="sync">
           </a>
           <div class="footer-contact pt-3">
             <p><strong>Seminarkits.id</strong></p>
@@ -846,52 +903,52 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Tautan Penting</h4>
           <ul>
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="tentang-kami.html">Tentang Kami</a></li>
-            <li><a href="layanan.html">Layanan</a></li>
-            <li><a href="katalog.html">Katalog</a></li>
-            <li><a href="ketentuan-layanan.html">Ketentuan Layanan</a></li>
-            <li><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
+            <li><a href="/index.html">Beranda</a></li>
+            <li><a href="/tentang-kami.html">Tentang Kami</a></li>
+            <li><a href="/layanan.html">Layanan</a></li>
+            <li><a href="/katalog.html">Katalog</a></li>
+            <li><a href="/ketentuan-layanan.html">Ketentuan Layanan</a></li>
+            <li><a href="/kebijakan-privasi.html">Kebijakan Privasi</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Layanan Kami</h4>
           <ul>
-            <li><a href="produk/merchandise-perusahaan.html">Merchandise Perusahaan</a></li>
-            <li><a href="produk/merchandise-pendidikan.html">Merchandise Pendidikan</a></li>
-            <li><a href="produk/corporate-gift.html">Corporate Gift</a></li>
-            <li><a href="souvenir-perusahaan.html">Souvenir Perusahaan</a></li>
-            <li><a href="vendor-souvenir-kantor.html">Vendor Souvenir</a></li>
-            <li><a href="minta-penawaran.html">Minta Penawaran</a></li>
+            <li><a href="/produk/merchandise-perusahaan.html">Merchandise Perusahaan</a></li>
+            <li><a href="/produk/merchandise-pendidikan.html">Merchandise Pendidikan</a></li>
+            <li><a href="/produk/corporate-gift.html">Corporate Gift</a></li>
+            <li><a href="/souvenir-perusahaan.html">Souvenir Perusahaan</a></li>
+            <li><a href="/vendor-souvenir-kantor.html">Vendor Souvenir</a></li>
+            <li><a href="/minta-penawaran.html">Minta Penawaran</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Kategori</h4>
           <ul>
-            <li><a href="produk/seminar-kit.html">Seminar Kit</a></li>
-              <li><a href="produk/souvenir.html">Souvenir</a></li>
-            <li><a href="produk/merchandise.html">Merchandise</a></li>
-            <li><a href="produk/corporate-gift.html">Corporate Gift</a></li>
-            <li><a href="produk/hampers.html">Hampers</a></li>
+            <li><a href="/produk/seminar-kit.html">Seminar Kit</a></li>
+              <li><a href="/produk/souvenir.html">Souvenir</a></li>
+            <li><a href="/produk/merchandise.html">Merchandise</a></li>
+            <li><a href="/produk/corporate-gift.html">Corporate Gift</a></li>
+            <li><a href="/produk/hampers.html">Hampers</a></li>
           </ul>
         </div>
 
-                <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-2 col-md-3 footer-links">
           <h4>Area Multi-Kota</h4>
           <ul>
-            <li><a href="produk/seminar-kit-jakarta.html">Jakarta</a></li>
-            <li><a href="produk/seminar-kit-surabaya.html">Surabaya</a></li>
-            <li><a href="produk/seminar-kit-bandung.html">Bandung</a></li>
-            <li><a href="produk/seminar-kit-jogja.html">Yogyakarta</a></li>
-            <li><a href="produk/seminar-kit-semarang.html">Semarang</a></li>
-            <li><a href="produk/seminar-kit-malang.html">Malang</a></li>
-            <li><a href="produk/seminar-kit-denpasar.html">Denpasar (Bali)</a></li>
-            <li><a href="produk/seminar-kit-makassar.html">Makassar</a></li>
-            <li><a href="produk/seminar-kit-balikpapan.html">Balikpapan</a></li>
-            <li><a href="produk/seminar-kit-samarinda.html">Samarinda</a></li>
-            <li><a href="produk/seminar-kit-palembang.html">Palembang</a></li>
+            <li><a href="/produk/seminar-kit-jakarta.html">Jakarta</a></li>
+            <li><a href="/produk/seminar-kit-surabaya.html">Surabaya</a></li>
+            <li><a href="/produk/seminar-kit-bandung.html">Bandung</a></li>
+            <li><a href="/produk/seminar-kit-jogja.html">Yogyakarta</a></li>
+            <li><a href="/produk/seminar-kit-semarang.html">Semarang</a></li>
+            <li><a href="/produk/seminar-kit-malang.html">Malang</a></li>
+            <li><a href="/produk/seminar-kit-denpasar.html">Denpasar (Bali)</a></li>
+            <li><a href="/produk/seminar-kit-makassar.html">Makassar</a></li>
+            <li><a href="/produk/seminar-kit-balikpapan.html">Balikpapan</a></li>
+            <li><a href="/produk/seminar-kit-samarinda.html">Samarinda</a></li>
+            <li><a href="/produk/seminar-kit-palembang.html">Palembang</a></li>
           </ul>
         </div>
 
@@ -912,10 +969,42 @@
   <a href="#header" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Kembali ke atas">
     <i class="bi bi-arrow-up-short"></i>
   </a>
-  <script src="assets/vendor/aos/aos.js?v=20260323" defer></script>
+  <script src="/assets/vendor/aos/aos.js?v=20260323" defer></script>
 
   <!-- Main JS -->
-  <script src="assets/js/main.js?v=20260323" defer></script>
+  <script src="/assets/js/main.js?v=20260323" defer></script>
+
+  <!-- Standalone Fail-safe Script for Mobile Nav Toggle & Scroll-Top -->
+  <script>
+    (function() {
+      const toggleBtn = document.querySelector('.mobile-nav-toggle');
+      if (toggleBtn) {
+        toggleBtn.addEventListener('click', function() {
+          document.body.classList.toggle('mobile-nav-active');
+          this.classList.toggle('bi-list');
+          this.classList.toggle('bi-x');
+        });
+      }
+      document.querySelectorAll('.navmenu .toggle-dropdown').forEach(item => {
+        item.addEventListener('click', function(e) {
+          e.preventDefault();
+          this.parentNode.classList.toggle('active');
+          const dropdown = this.parentNode.nextElementSibling;
+          if (dropdown) dropdown.classList.toggle('dropdown-active');
+        });
+      });
+      const scrollTop = document.querySelector('.scroll-top');
+      if (scrollTop) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 100) {
+            scrollTop.classList.add('active');
+          } else {
+            scrollTop.classList.remove('active');
+          }
+        });
+      }
+    })();
+  </script>
 
 </body>
 </html>
