@@ -271,7 +271,7 @@ HTML
         "@id": "\[https://seminarkits.id/\](https://seminarkits.id/){{article\_slug}}.html\#breadcrumb",  
         "itemListElement": \[  
           { "@type": "ListItem", "position": 1, "name": "Beranda", "item": "\[https://seminarkits.id/\](https://seminarkits.id/)" },  
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "\[https://seminarkits.id/blog.html\](https://seminarkits.id/blog.html)" },  
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "\[https://seminarkits.id/blog\](https://seminarkits.id/blog)" },  
           { "@type": "ListItem", "position": 3, "name": "{{article\_title}}", "item": "\[https://seminarkits.id/\](https://seminarkits.id/){{article\_slug}}.html" }  
         \]  
       },  
