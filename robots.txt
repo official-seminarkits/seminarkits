@@ -1,9 +1,85 @@
+# ==============================================================================
+# ROBOTS.TXT - SEMINARKITS.ID
+# Search Engine & Generative AI / LLM Optimization (GEO & AIO Ready)
+# Official Website: https://seminarkits.id
+# ==============================================================================
+
+# 1. DEFAULT DIRECTIVE FOR ALL SEARCH ENGINES & CRAWLERS
 User-agent: *
 Allow: /
-
-# Disallow utility/non-content paths
-Disallow: /forms/
 Allow: /assets/
+Disallow: /forms/
 
-# Sitemap
+# ------------------------------------------------------------------------------
+# 2. GENERATIVE AI & LLM SEARCH ENGINE CRAWLERS (EXPLICITLY ALLOWED)
+# Membantu AI Overview, Perplexity, ChatGPT Search, Claude, dan Gemini
+# untuk mengindeks dan mereferensikan produk, katalog, harga, dan artikel.
+# ------------------------------------------------------------------------------
+
+# OpenAI (SearchGPT, ChatGPT Web Search, GPT-4o & Foundation Models)
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+Allow: /
+Allow: /assets/
+Disallow: /forms/
+
+# Google (Gemini, Google AI Overview & Vertex AI)
+User-agent: Google-Extended
+User-agent: Googlebot
+Allow: /
+Allow: /assets/
+Disallow: /forms/
+
+# Anthropic (Claude 3.5 / 3.7 Sonnet & Claude Search)
+User-agent: ClaudeBot
+User-agent: Claude-Web
+User-agent: anthropic-ai
+Allow: /
+Allow: /assets/
+Disallow: /forms/
+
+# Perplexity AI (Conversational Answer Engine)
+User-agent: PerplexityBot
+Allow: /
+Allow: /assets/
+Disallow: /forms/
+
+# Microsoft (Copilot & Bing Generative Search)
+User-agent: Bingbot
+Allow: /
+Allow: /assets/
+Disallow: /forms/
+
+# Apple (Apple Intelligence & Siri Knowledge Retrieval)
+User-agent: Applebot
+User-agent: Applebot-Extended
+Allow: /
+Allow: /assets/
+Disallow: /forms/
+
+# Meta (Meta AI & Llama Web Retrieval)
+User-agent: Meta-ExternalAgent
+User-agent: FacebookBot
+Allow: /
+Allow: /assets/
+Disallow: /forms/
+
+# Cohere, Common Crawl, Diffbot & ByteDance AI
+User-agent: cohere-ai
+User-agent: CCBot
+User-agent: Diffbot
+User-agent: Bytespider
+Allow: /
+Allow: /assets/
+Disallow: /forms/
+
+# ------------------------------------------------------------------------------
+# 3. SITEMAP & MACHINE-READABLE LLM CONTEXT
+# ------------------------------------------------------------------------------
+
+# XML Sitemap Resmi
 Sitemap: https://seminarkits.id/sitemap.xml
+
+# LLM / AI Context Standard (llms.txt)
+# https://seminarkits.id/llms.txt
