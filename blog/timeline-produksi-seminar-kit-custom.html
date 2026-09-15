@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id" itemscope itemtype="https://schema.org/WebPage">
 <head>
   <meta charset="utf-8">
@@ -201,138 +201,210 @@
   }
   </script>
 
-  <!-- Vendor & Template CSS -->
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../assets/css/main.css" rel="stylesheet">
-
-  <!-- Favicon -->
+  <!-- Favicons -->
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="shortcut icon" href="../favicon.ico">
   <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap"></noscript>
+
+  <!-- Vendor CSS -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css?v=20260323" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/vendor/bootstrap-icons/bootstrap-icons.css?v=20260323" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="../assets/vendor/bootstrap-icons/bootstrap-icons.css?v=20260323"></noscript>
+  <link rel="stylesheet" href="../assets/vendor/aos/aos.css?v=20260323" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="../assets/vendor/aos/aos.css?v=20260323"></noscript>
+
+  <!-- Main CSS -->
+  <link href="../assets/css/main.css?v=20260323" rel="stylesheet">
+
   <style>
-    .aeo-quick-answer {
-      background: linear-gradient(135deg, #f0fdf4 0%, #e6f9ed 100%);
-      border-left: 5px solid #22c55e;
-      border-radius: 8px;
-      padding: 24px;
-      margin: 28px 0;
-      box-shadow: 0 4px 14px rgba(34, 197, 94, 0.08);
+    .article-wrapper { max-width: 900px; margin: 0 auto; }
+    .article-main-img { border-radius: 12px; width: 100%; height: auto; max-width: 100%; display: block; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .article-section,
+    .article section {
+      padding: 0 !important;
+      margin-top: 0 !important;
+      margin-bottom: 22px !important;
+      background: transparent !important;
+      overflow: visible !important;
     }
-    .aeo-quick-answer h3 {
-      color: #15803d;
-      font-size: 1.18rem;
+    .article-section:last-of-type { margin-bottom: 16px !important; }
+    .article-section:last-of-type { margin-bottom: 24px; }
+    .article figure { margin: 24px 0 28px 0; display: block; clear: both; }
+    .img-caption { font-size: 0.88rem; color: #64748b; text-align: center; margin-top: 10px; margin-bottom: 16px; font-style: italic; line-height: 1.5; display: block; clear: both; }
+    
+    .article h2 {
+      color: #062540;
+      font-size: 1.48rem;
       font-weight: 700;
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      margin-top: 38px;
+      margin-bottom: 14px;
+      line-height: 1.35;
+      clear: both;
+    }
+    .article h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-top: 22px;
+      margin-bottom: 10px;
+      color: #0a406f;
+      clear: both;
+    }
+    .article p {
+      margin-bottom: 14px;
+      line-height: 1.75;
+    }
+
+    .aeo-quick-answer {
+      background: linear-gradient(135deg, #f0fdf4 0%, #e6f9ed 100%) !important;
+      border-left: 6px solid #22c55e !important;
+      border-radius: 0 10px 10px 0 !important;
+      padding: 20px 24px 20px 28px !important;
+      margin: 20px 0 22px 0 !important;
+      box-shadow: 0 2px 12px rgba(34, 197, 94, 0.08) !important;
+      display: block !important;
+    }
+    .aeo-quick-answer h2 {
+      font-size: 1.12rem !important;
+      color: #15803d !important;
+      font-weight: 700 !important;
+      margin-top: 0 !important;
+      margin-bottom: 8px !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 8px !important;
     }
     .aeo-quick-answer p {
-      color: #166534;
-      font-size: 1.02rem;
-      line-height: 1.7;
-      margin-bottom: 0;
+      font-size: 1.02rem !important;
+      color: #166534 !important;
+      line-height: 1.7 !important;
+      margin-bottom: 0 !important;
+      font-weight: 500 !important;
     }
 
     .key-takeaways-box {
-      background: #eff6ff;
-      border: 1px solid #bfdbfe;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
       border-radius: 10px;
-      padding: 22px 24px;
-      margin: 28px 0;
+      padding: 18px 22px;
+      margin-bottom: 24px;
     }
-    .key-takeaways-box h4 {
-      color: #1e40af;
-      font-size: 1.15rem;
+    .key-takeaways-title {
+      font-size: 1.02rem;
       font-weight: 700;
-      margin-bottom: 14px;
+      color: #062540;
+      margin-bottom: 10px;
       display: flex;
       align-items: center;
       gap: 8px;
     }
-    .key-takeaways-box ul {
-      margin-bottom: 0;
-      padding-left: 20px;
+    .key-takeaways-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
-    .key-takeaways-box li {
-      color: #1e3a8a;
+    .key-takeaways-list li {
+      position: relative;
+      padding-left: 22px;
       margin-bottom: 8px;
-      line-height: 1.6;
+      font-size: 0.94rem;
+      color: #334155;
+      line-height: 1.55;
+    }
+    .key-takeaways-list li:last-child { margin-bottom: 0; }
+    .key-takeaways-list li::before {
+      content: "âœ“";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #0284c7;
+      font-weight: 800;
     }
 
     .toc-box {
       background: #f8fafc;
       border: 1px solid #e2e8f0;
       border-radius: 10px;
-      padding: 22px 26px;
-      margin: 30px 0;
+      margin: 22px 0 26px 0;
+      overflow: hidden;
     }
-    .toc-box h4 {
-      color: #062540;
-      font-size: 1.12rem;
+    .toc-header {
+      padding: 12px 18px;
+      background: #062540;
+      color: #ffffff;
       font-weight: 700;
-      margin-bottom: 14px;
+      font-size: 0.98rem;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: 8px;
+      cursor: pointer;
     }
-    .toc-box ol {
+    .toc-body {
+      padding: 16px 20px;
+      background: #ffffff;
+    }
+    .toc-list {
+      list-style: none;
+      padding-left: 0;
       margin-bottom: 0;
-      padding-left: 20px;
     }
-    .toc-box li {
-      margin-bottom: 7px;
-      color: #475569;
+    .toc-list li {
+      margin-bottom: 8px;
+      line-height: 1.45;
     }
-    .toc-box a {
-      color: #0d6efd;
+    .toc-list li a {
+      color: #0f172a;
       text-decoration: none;
+      font-size: 0.93rem;
+      font-weight: 500;
       transition: color 0.2s ease;
     }
-    .toc-box a:hover {
-      color: #062540;
+    .toc-list li a:hover {
+      color: #0284c7;
       text-decoration: underline;
     }
 
     .table-spec {
       width: 100%;
       border-collapse: collapse;
-      margin: 26px 0;
-      background: #ffffff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      margin: 20px 0;
+      font-size: 0.92rem;
       border-radius: 8px;
       overflow: hidden;
     }
     .table-spec th {
       background: #062540;
       color: #ffffff;
-      padding: 14px 16px;
+      padding: 12px 14px;
       text-align: left;
       font-weight: 600;
-      font-size: 0.95rem;
+      border: 1px solid #062540;
     }
     .table-spec td {
-      padding: 13px 16px;
-      border-bottom: 1px solid #e2e8f0;
+      padding: 11px 14px;
+      border: 1px solid #e2e8f0;
       color: #334155;
-      font-size: 0.93rem;
-      vertical-align: middle;
+      vertical-align: top;
+      line-height: 1.55;
     }
-    .table-spec tr:nth-child(even) td { background: #f8fafc; }
-    .table-spec tr:hover td { background: #f1f5f9; }
+    .table-spec tr:nth-child(even) { background-color: #f8fafc; }
 
     .faq-item-blog {
       border: 1px solid #e2e8f0;
       border-radius: 8px;
-      margin-bottom: 14px;
+      margin-bottom: 10px;
+      background: #ffffff;
       overflow: hidden;
     }
     .faq-q-blog {
-      padding: 16px 18px;
-      font-weight: 600;
-      color: #062540;
+      padding: 14px 18px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #0f172a;
       background: #f8fafc;
       cursor: pointer;
       display: flex;
@@ -364,9 +436,9 @@
     .cta-blog-box {
       background: linear-gradient(135deg, #062540 0%, #0c3e66 100%) !important;
       border-radius: 14px !important;
-      padding: 38px 28px !important;
+      padding: 36px 28px !important;
       color: #ffffff !important;
-      margin: 38px 0 !important;
+      margin: 36px 0 !important;
       text-align: center !important;
       border: 1px solid rgba(255,255,255,0.2) !important;
       box-shadow: 0 10px 28px rgba(6,37,64,0.22) !important;
@@ -382,7 +454,7 @@
     }
     .cta-blog-box p {
       font-size: 1.05rem !important;
-      margin-bottom: 24px !important;
+      margin-bottom: 22px !important;
       line-height: 1.75 !important;
       color: #ffffff !important;
       opacity: 1 !important;
@@ -443,34 +515,34 @@
       justify-content: center;
       font-size: 2rem;
       flex-shrink: 0;
+      border: 2px solid #f1c232;
     }
     .author-info h4 {
-      margin: 0 0 4px;
-      color: #062540;
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       font-weight: 700;
+      color: #062540;
+      margin-bottom: 2px;
     }
     .author-badge {
-      display: inline-block;
-      background: #e0f2fe;
-      color: #0369a1;
-      font-size: 0.78rem;
-      font-weight: 600;
-      padding: 2px 10px;
-      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #0284c7;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
       margin-bottom: 6px;
+      display: inline-block;
     }
     .author-desc {
-      margin: 0;
-      color: #64748b;
-      font-size: 0.88rem;
-      line-height: 1.5;
+      font-size: 0.9rem;
+      color: #475569;
+      margin-bottom: 0;
+      line-height: 1.55;
     }
 
     .related-articles-section {
-      margin-top: 45px;
-      padding-top: 30px;
-      border-top: 2px solid #e2e8f0;
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid #e2e8f0;
     }
     .related-card {
       background: #ffffff;
@@ -480,16 +552,19 @@
       height: 100%;
       display: flex;
       flex-direction: column;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      transition: all 0.25s ease;
     }
     .related-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(6,37,64,0.08);
+      border-color: #0284c7;
     }
     .related-card-img {
+      height: auto;
       width: 100%;
-      height: 160px;
-      object-fit: cover;
+      max-width: 100%;
+      display: block;
     }
     .related-card-body {
       padding: 16px;
@@ -498,33 +573,58 @@
       flex-grow: 1;
     }
     .related-card-title {
-      font-size: 1rem;
+      font-size: 0.98rem;
       font-weight: 700;
-      margin-bottom: 8px;
-      line-height: 1.4;
-    }
-    .related-card-title a {
       color: #062540;
-      text-decoration: none;
+      line-height: 1.35;
+      margin-bottom: 6px;
     }
-    .related-card-title a:hover { color: #0d6efd; }
+    .related-card-title a { color: #062540; text-decoration: none; }
+    .related-card-title a:hover { color: #0284c7; }
     .related-card-desc {
-      color: #64748b;
       font-size: 0.85rem;
-      line-height: 1.5;
+      color: #64748b;
+      line-height: 1.55;
       margin-bottom: 12px;
-      flex-grow: 1;
     }
     .related-card-btn {
-      color: #0d6efd;
-      font-weight: 600;
-      font-size: 0.85rem;
+      margin-top: auto;
+      color: #0284c7;
+      font-weight: 700;
+      font-size: 0.88rem;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
       gap: 4px;
+      padding: 4px 0;
+      min-height: 36px;
     }
-    .related-card-btn:hover { text-decoration: underline; }
+    .related-card-btn:hover { color: #062540; text-decoration: underline; }
+
+    @media (max-width: 768px) {
+      .article-wrapper { padding: 0; }
+      .article { padding: 20px 16px !important; border-radius: 10px !important; }
+      h1.title { font-size: 1.5rem !important; line-height: 1.3 !important; }
+      .page-title .heading-title { font-size: 1.7rem !important; }
+      .article h2 { font-size: 1.28rem !important; margin-top: 24px !important; margin-bottom: 10px !important; }
+      .article h3 { font-size: 1.1rem !important; }
+      .content { font-size: 0.98rem !important; line-height: 1.7 !important; }
+      .aeo-quick-answer { padding: 16px 18px 16px 22px !important; }
+      .cta-blog-box { padding: 24px 18px !important; }
+      .cta-blog-box .d-flex { flex-direction: column !important; gap: 10px !important; }
+      .cta-blog-box .btn { width: 100% !important; min-height: 46px !important; }
+      .author-box { flex-direction: column !important; text-align: center !important; }
+      .author-avatar { margin: 0 auto !important; }
+      .author-desc { text-align: justify !important; }
+    }
+
+    .page-title { background-color: #062540 !important; }
+    .page-title .breadcrumbs { padding: 16px 0 !important; border-top: 1px solid rgba(255, 255, 255, 0.12) !important; }
+    .page-title .breadcrumbs ol { display: flex !important; flex-wrap: wrap !important; list-style: none !important; margin: 0 !important; padding: 0 !important; gap: 8px !important; font-size: 0.92rem !important; }
+    .page-title .breadcrumbs ol li { display: flex !important; align-items: center !important; color: #94a3b8 !important; }
+    .page-title .breadcrumbs ol li a { color: #cbd5e1 !important; text-decoration: none !important; transition: color 0.3s ease !important; }
+    .page-title .breadcrumbs ol li a:hover { color: #f1c232 !important; }
+    .page-title .breadcrumbs ol li.current { color: #f1c232 !important; font-weight: 600 !important; }
   </style>
 </head>
 <body class="blog-details-page">
@@ -569,7 +669,7 @@
   </header>
 
 
-  <main class="main">
+  <main class="main" id="main-content" role="main">
 
     <!-- Page Title & Breadcrumb Header -->
     <header class="page-title">
@@ -594,26 +694,37 @@
       </nav>
     </header>
 
-    <!-- Blog Details Section -->
-    <section id="blog-details" class="blog-details section">
-      <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center">
-          <article class="article col-lg-10">
+        <!-- Article Section -->
+    <section id="post-details" class="post-details section light-background">
+      <div class="container">
+        <div class="article-wrapper">
+          <article class="article bg-white p-3 p-md-4 rounded shadow-sm" itemscope itemtype="https://schema.org/Article">
 
-            <div class="post-img">
-              <figure class="my-0">
-                <img src="../assets/img/blog/vendor-seminar-kit.webp" alt="Timeline Produksi Seminar Kit Custom Pabrik Seminarkits.id" class="img-fluid rounded shadow-sm w-100" width="1200" height="675" loading="lazy">
-                <figcaption class="text-center text-muted small mt-2">Alur kerja terintegrasi pabrik manufaktur Seminarkits.id: Memastikan setiap pesanan tiba tepat waktu sebelum jadwal acara dibuka.</figcaption>
-              </figure>
-            </div>
+            <!-- Hero Image with Semantic Figure -->
+            <figure class="post-img mb-4 text-center">
+              <img src="../assets/img/blog/vendor-seminar-kit.webp" alt="Timeline Produksi Seminar Kit Custom Pabrik Seminarkits.id" class="img-fluid article-main-img" width="850" height="460" fetchpriority="high" decoding="sync" itemprop="image">
+              <figcaption class="img-caption mt-2 mb-0">Alur kerja terintegrasi pabrik manufaktur Seminarkits.id: Memastikan setiap pesanan tiba tepat waktu sebelum jadwal acara dibuka.</figcaption>
+            </figure>
 
-            <h1 class="title mt-4" style="color: #062540; font-weight: 800; font-size: 2.1rem; line-height: 1.3;">Berapa Lama Produksi Seminar Kit Custom? Panduan Timeline dari Desain hingga Pengiriman</h1>
+            <!-- Semantic H1 Title -->
+            <h1 class="title fw-bold mb-3 mt-0" style="color: #062540; font-size: 2rem; line-height: 1.3;" itemprop="headline">Berapa Lama Produksi Seminar Kit Custom? Panduan Timeline dari Desain hingga Pengiriman</h1>
 
-            <div class="meta-top my-3 d-flex flex-wrap gap-3 text-muted small border-bottom pb-2">
-              <span><i class="bi bi-person me-1"></i> Natasya ZW</span>
-              <span><i class="bi bi-calendar-event me-1"></i> 15 September 2026</span>
-              <span><i class="bi bi-clock me-1"></i> 8 Menit Baca</span>
-              <span><i class="bi bi-tag me-1"></i> Manajemen Proyek &amp; Pengadaan</span>
+            <!-- Meta Top (Semantic Time & Author) -->
+            <div class="meta-top mb-3 border-bottom pb-2">
+              <ul class="d-flex flex-wrap gap-3 list-unstyled text-muted mb-0" style="font-size: 0.92rem;">
+                <li class="d-flex align-items-center" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                  <i class="bi bi-person-circle me-2 text-primary" aria-hidden="true"></i> <a href="../penulis.html#natasya-zw" class="text-decoration-none text-muted" itemprop="url"><span itemprop="name">Natasya ZW</span></a>
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="bi bi-calendar3 me-2 text-primary" aria-hidden="true"></i> <time datetime="2026-09-15T15:00:00+07:00" itemprop="datePublished">15 September 2026</time>
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="bi bi-tag me-2 text-primary" aria-hidden="true"></i> <span itemprop="articleSection">Manajemen Proyek &amp; Pengadaan</span>
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="bi bi-clock me-2 text-primary" aria-hidden="true"></i> <span>8 Menit Baca</span>
+                </li>
+              </ul>
             </div>
 
             <!-- AEO Direct Answer Box -->
@@ -647,7 +758,7 @@
               </ol>
             </div>
 
-            <div class="content">
+            <div class="content" itemprop="articleBody">
 
               <h2 id="tahapan-produksi" class="fw-bold mt-4 mb-3" style="color: #062540;">1. 8 Tahapan Produksi Seminar Kit Custom dari Nol hingga Diterima Panitia</h2>
               <p>Di balik kerapian paket suvenir yang dibagikan pada meja registrasi, terdapat rantai proses manufaktur terkoordinasi. Mengetahui alur ini membantu panitia memahami mengapa vendor membutuhkan jendela waktu kerja yang wajar:</p>
@@ -661,7 +772,7 @@
                 <li><strong>Inspeksi Quality Control (QC) &amp; Perakitan Paket (Hari ke-11):</strong> Setiap item diperiksa kerapian jahitannya, kepekatan cetaknya, dan dibersihkan dari sisa benang, lalu dikemas ke dalam polybag atau hardbox.</li>
                 <li><strong>Ekspedisi Pengiriman Kargo (Hari ke-12 s.d 14):</strong> Paket yang telah dipacking kayu atau dus tebal diserahkan ke jasa logistik kargo darat/udara menuju alamat panitia.</li>
               </ol>
-              <p>Untuk melihat ragam portofolio paket yang telah berhasil diproduksi melalui alur ini, Anda dapat merujuk ke <a href="paket-seminar-kit-custom.html" class="fw-semibold text-primary">halaman pilar paket seminar kit custom</a>.</p>
+              <p>Untuk melihat ragam portofolio paket yang telah berhasil diproduksi melalui alur ini, Anda dapat merujuk ke panduan <a href="paket-seminar-kit-custom.html" class="fw-semibold text-primary">Paket Seminar Kit Custom: Panduan Lengkap Pengadaan B2B</a>.</p>
 
               <h2 id="faktor-leadtime" class="fw-bold mt-4 mb-3" style="color: #062540;">2. 9 Faktor Penentu Lead Time Produksi di Workshop Manufaktur</h2>
               <p>Durasi pengerjaan seminar kit bukan angka mati yang sama untuk semua pelanggan. Lead time di workshop dipengaruhi oleh 9 variabel teknis berikut:</p>

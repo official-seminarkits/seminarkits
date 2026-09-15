@@ -207,7 +207,15 @@
   <style>
     .article-wrapper { max-width: 900px; margin: 0 auto; }
     .article-main-img { border-radius: 12px; width: 100%; height: auto; max-width: 100%; display: block; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
-    .article-section { margin-bottom: 36px; clear: both; }
+        .article-section,
+    .article section {
+      padding: 0 !important;
+      margin-top: 0 !important;
+      margin-bottom: 22px !important;
+      background: transparent !important;
+      overflow: visible !important;
+    }
+    .article-section:last-of-type { margin-bottom: 16px !important; }
     .article-section:last-of-type { margin-bottom: 24px; }
     .article figure { margin: 24px 0 28px 0; display: block; clear: both; }
     .img-caption { font-size: 0.88rem; color: #64748b; text-align: center; margin-top: 10px; margin-bottom: 16px; font-style: italic; line-height: 1.5; display: block; clear: both; }
@@ -728,11 +736,11 @@
                 <span>Ringkasan Eksekutif untuk Pejabat Pengadaan &amp; Panitia</span>
               </div>
               <ul class="key-takeaways-list">
-                <li><strong>Variabilitas Biaya:</strong> Harga tidak bisa disamaratakan karena dipengaruhi oleh 5 pilar biaya: produk mentah, teknik branding, kemasan, proofing desain, dan kargo.</li>
+                <li><strong>Variabilitas Biaya:</strong> Harga tidak bisa disamaratakan karena dipengaruhi oleh 5 faktor biaya: produk mentah, teknik branding, kemasan, proofing desain, dan kargo.</li>
                 <li><strong>Skala Ekonomis (Volume Tiering):</strong> Pemesanan 300 pax dapat menghemat biaya satuan hingga 25% - 35% dibandingkan pemesanan batch kecil 50 pax karena terbaginya biaya setup mesin.</li>
                 <li><strong>4 Tier Anggaran B2B:</strong> Tersedia paket Basic (Rp 25rb - Rp 45rb), Standard (Rp 50rb - Rp 95rb), Executive Corporate (Rp 100rb - Rp 195rb), hingga Exclusive VIP (Rp 200rb - Rp 450rb+).</li>
                 <li><strong>Transparansi Pajak:</strong> Pengadaan resmi instansi wajib memperhitungkan faktur pajak e-Faktur PPN 11% dan bukti potong PPh Pasal 22/23 agar akuntabel secara hukum.</li>
-                <li><strong>Efisiensi Cerdas:</strong> Hindari pemborosan dengan membatasi titik logo pada 1-2 item utama (*hero item*) ketimbang memaksakan logo ramai di semua pernak-pernik kecil.</li>
+                <li><strong>Efisiensi Cerdas:</strong> Hindari pemborosan dengan membatasi titik logo pada 1-2 item utama (<strong>hero item</strong>) ketimbang memaksakan logo ramai di semua pernak-pernik kecil.</li>
               </ul>
             </div>
 
@@ -740,10 +748,10 @@
             <div class="content" itemprop="articleBody">
 
               <p class="lead">
-                Menyusun Rencana Anggaran Biaya (RAB) untuk pengadaan suvenir acara sering kali menjadi tantangan tersendiri bagi panitia seminar, bagian umum perkantoran, maupun Pejabat Pembuat Komitmen (PPK). Di satu sisi, panitia menginginkan suvenir yang berkesan elegan dan representatif bagi citra instansi. Namun di sisi lain, batasan pagu anggaran dari bendahara menuntut efisiensi ketat tanpa ada pembengkakan biaya (*cost overrun*).
+                Menyusun Rencana Anggaran Biaya (RAB) untuk pengadaan suvenir acara sering kali menjadi tantangan tersendiri bagi panitia seminar, bagian umum perkantoran, maupun Pejabat Pembuat Komitmen (PPK). Di satu sisi, panitia menginginkan suvenir yang berkesan elegan dan representatif bagi citra instansi. Namun di sisi lain, batasan pagu anggaran dari bendahara menuntut efisiensi ketat tanpa ada pembengkakan biaya (<strong>cost overrun</strong>).
               </p>
               <p>
-                Sebagai bagian dari panduan induk di halaman pilar <a href="paket-seminar-kit-custom.html" class="fw-bold text-decoration-none text-primary">Paket Seminar Kit Custom: Panduan Lengkap Pengadaan B2B</a>, artikel ini membedah secara transparan bagaimana struktur biaya seminar kit dibentuk oleh vendor manufaktur, faktor-faktor apa saja yang menyebabkan harga naik-turun, serta simulasi riil anggaran untuk berbagai skala event.
+                Sebagai bagian dari panduan <a href="paket-seminar-kit-custom.html" class="fw-bold text-decoration-none text-primary">Paket Seminar Kit Custom: Panduan Lengkap Pengadaan B2B</a>, artikel ini membedah secara transparan bagaimana struktur biaya seminar kit dibentuk oleh vendor manufaktur, faktor-faktor apa saja yang menyebabkan harga naik-turun, serta simulasi riil anggaran untuk berbagai skala event.
               </p>
 
               <!-- Table of Contents (TOC) -->
@@ -764,7 +772,7 @@
               </div>
 
               <!-- Section 1 -->
-              <section id="mengapa-harga-berbeda" class="article-section">
+              <div id="mengapa-harga-berbeda" class="article-section">
                 <h2>1. Mengapa Harga Seminar Kit Custom Tidak Bisa Disamaratakan?</h2>
                 <p>
                   Banyak panitia pemula bertanya: <em>"Berapa harga 1 paket seminar kit?"</em> tanpa menyertakan spesifikasi. Pertanyaan ini serupa dengan menanyakan harga sebuah rumah tanpa menyebutkan tipe bangunan dan lokasinya. Seminar kit custom bukanlah komoditas siap pakai yang harganya statis, melainkan produk manufaktur kustomisasi yang harganya sangat dinamis.
@@ -775,13 +783,13 @@
                 <ul>
                   <li><strong>Spesifikasi Material yang Berbeda Jauh:</strong> Tas seminar berbahan spunbond 75 gsm tentu memiliki rentang harga yang jauh berbeda dibandingkan tas kanvas drill tebal atau ransel laptop berbusa tebal, meskipun sama-sama berfungsi sebagai tas jinjing. Begitu juga buku catatan cover kertas tipis vs agenda hardcover kulit sintetis jilid jahit.</li>
                   <li><strong>Kuantitas Pesanan (Hukum Skala Ekonomis):</strong> Vendor memiliki biaya tetap (fixed cost) pada proses setting mesin, afdruk sablon, dan cetak film. Pada pesanan <a href="seminar-kit-custom-minimum-order-rendah.html" class="text-decoration-none text-primary fw-semibold">seminar kit custom minimum order rendah</a> (misal 25 - 50 pcs), biaya setup tersebut dibebankan ke sedikit produk sehingga harga per pax lebih tinggi. Sebaliknya pada pesanan 500 pax, biaya setup terbagi rata hingga nilai per unitnya menjadi sangat murah.</li>
-                  <li><strong>Kompleksitas Desain dan Teknik Branding:</strong> Sablon manual 1 warna pada satu sisi tas biayanya sangat terjangkau. Namun jika logo klien memiliki gradasi 6 warna yang menuntut teknologi digital print DTF atau tumbler stainless yang di-grafir laser keliling (*rotary laser*), biaya produksinya akan mengikuti durasi kerja mesin.</li>
+                  <li><strong>Kompleksitas Desain dan Teknik Branding:</strong> Sablon manual 1 warna pada satu sisi tas biayanya sangat terjangkau. Namun jika logo klien memiliki gradasi 6 warna yang menuntut teknologi digital print DTF atau tumbler stainless yang di-grafir laser keliling (<strong>rotary laser</strong>), biaya produksinya akan mengikuti durasi kerja mesin.</li>
                   <li><strong>Deadline Pengerjaan (Lead Time):</strong> Pesanan terencana dengan waktu produksi standar (10 - 14 hari) memungkinkan vendor mengoptimalkan efisiensi rute bahan dan jadwal pabrik. Pesanan ekspres (rush order 3 - 5 hari) sering kali membutuhkan lembur operator dan kargo udara kilat yang menambah komponen biaya tambahan.</li>
                 </ul>
-              </section>
+              </div>
 
               <!-- Section 2 -->
-              <section id="komponen-biaya" class="article-section">
+              <div id="komponen-biaya" class="article-section">
                 <h2>2. Lima Komponen Utama Pembentuk Harga Seminar Kit</h2>
                 <p>
                   Untuk memahami ke mana alokasi dana pengadaan mengalir, tim procurement perlu mengetahui 5 komponen pembentuk harga dalam rincian quotation vendor resmi:
@@ -833,10 +841,10 @@
                     <div class="baca-juga-title">Isi Paket Seminar Kit Profesional: Rekomendasi 8 Komponen Produk untuk Peserta &amp; Pejabat</div>
                   </div>
                 </a>
-              </section>
+              </div>
 
               <!-- Section 3 -->
-              <section id="tier-anggaran" class="article-section">
+              <div id="tier-anggaran" class="article-section">
                 <h2>3. Tabel Matriks 4 Tier Anggaran Pengadaan Seminar Kit B2B</h2>
                 <p>
                   Untuk mempermudah bendahara atau bagian keuangan mengalokasikan anggaran, Seminarkits.id mengelompokkan spesifikasi paket ke dalam 4 tier anggaran realistis berdasarkan data ratusan pengadaan instansi di Indonesia:
@@ -879,10 +887,10 @@
                     </tbody>
                   </table>
                 </div>
-              </section>
+              </div>
 
               <!-- Section 4 -->
-              <section id="simulasi-skala" class="article-section">
+              <div id="simulasi-skala" class="article-section">
                 <h2>4. Simulasi Kalkulasi Anggaran Berdasarkan Skala Peserta (50 - 500 Pax)</h2>
                 <p>
                   Untuk memberikan gambaran riil mengenai efek kuantitas terhadap total biaya pengadaan, perhatikan tabel simulasi pengadaan paket kategori <strong>Standard Corporate</strong> (Komposisi: Tote Bag Kanvas + Agenda Spiral Hardcover + Pulpen Metal Grafir + Tumbler Stainless SUS304):
@@ -931,12 +939,12 @@
                   </table>
                 </div>
                 <p class="small text-muted">
-                  <em>*Catatan: Estimasi di atas merupakan ilustrasi harga acuan. Ongkos kirim bervariasi bergantung pada kota tujuan kargo di Jawa vs Luar Jawa. Pembelian resmi B2B/instansi pemerintah dapat disertakan faktur pajak e-Faktur PPN 11%.</em>
+                  <em>Catatan: Estimasi di atas merupakan ilustrasi harga acuan. Ongkos kirim bervariasi bergantung pada kota tujuan kargo di Jawa vs Luar Jawa. Pembelian resmi B2B/instansi pemerintah dapat disertakan faktur pajak e-Faktur PPN 11%.</em>
                 </p>
-              </section>
+              </div>
 
               <!-- Section 5 -->
-              <section id="tips-hemat" class="article-section">
+              <div id="tips-hemat" class="article-section">
                 <h2>5. Lima Cara Efisiensi Anggaran Tanpa Menurunkan Kualitas Produk</h2>
                 <p>
                   Banyak panitia terjebak memangkas budget dengan cara membeli barang murahan yang mudah rusak (seperti pulpen macet atau tumbler berbau kimia). Cara ini justru mencoreng reputasi instansi di mata peserta. Terapkan 5 strategi efisiensi cerdas berikut:
@@ -948,10 +956,10 @@
                   <li><strong>Pesan Jauh-Jauh Hari (Hindari Rush Order):</strong> Memesan seminar kit minimal 2 hingga 3 minggu sebelum acara memberikan ruang bagi vendor untuk menggunakan pengiriman kargo darat/kereta yang tarif per kilogramnya sangat murah (Rp 2.000 - Rp 5.000/kg) ketimbang kargo udara darurat (Rp 35.000 - Rp 60.000/kg). Pelajari lebih lanjut pada panduan <a href="timeline-produksi-seminar-kit-custom.html" class="text-decoration-none text-primary fw-semibold">timeline produksi seminar kit custom</a>.</li>
                   <li><strong>Konsolidasi Pengadaan Lintas Divisi:</strong> Jika kantor Anda memiliki beberapa agenda pelatihan dalam satu semester, gabungkan kuota pemesanan tote bag atau tumbler polos dalam satu SPK besar untuk mendapatkan potongan harga kuantitas, lalu pisahkan cetakan agenda sesuai tema acara masing-masing.</li>
                 </ol>
-              </section>
+              </div>
 
               <!-- Section 6 -->
-              <section id="checklist-sph" class="article-section">
+              <div id="checklist-sph" class="article-section">
                 <h2>6. Checklist Data Sebelum Meminta Surat Penawaran Harga (SPH) Resmi</h2>
                 <p>
                   Agar tim estimator Seminarkits.id dapat menerbitkan Surat Penawaran Harga (SPH) resmi dan proposal anggaran B2B secara akurat dalam waktu cepat, siapkan 5 rincian informasi berikut:
@@ -963,7 +971,7 @@
                   <li><strong>Alamat Lengkap Pengiriman:</strong> Kota dan kecamatan tujuan untuk pengecekan rute tarif kargo terbaik.</li>
                   <li><strong>File Logo &amp; Teks Acara:</strong> Logo vektor format PDF, AI, CDR, atau PNG resolusi tinggi untuk pembuatan mockup digital 3D gratis. Baca panduan <a href="jenis-cetak-logo-untuk-seminar-kit.html" class="text-decoration-none text-primary fw-semibold">jenis cetak logo untuk seminar kit</a> untuk penyiapan format file yang benar.</li>
                 </ul>
-              </section>
+              </div>
 
               <!-- High Contrast CTA Box -->
               <div class="cta-blog-box" data-aos="fade-up">
@@ -984,7 +992,7 @@
               </div>
 
               <!-- FAQ Accordion Section -->
-              <section id="faq-section" class="article-section">
+              <div id="faq-section" class="article-section">
                 <h2>Pertanyaan Seputar Harga &amp; Budgeting Seminar Kit</h2>
                 <div class="faq-list-blog mt-3">
 
@@ -1029,7 +1037,7 @@
                   </div>
 
                 </div>
-              </section>
+              </div>
 
               <!-- Social Share Box -->
               <div class="social-share-box">
