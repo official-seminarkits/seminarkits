@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -221,6 +221,246 @@
       box-shadow: 0 4px 12px rgba(241, 194, 50, 0.35) !important;
       transform: translateY(-1px);
     }
+
+    /* ================= Modern Interactive Blog Search Bar ================= */
+    .blog-search-wrapper {
+      max-width: 720px;
+      margin: 20px auto 0 auto;
+      text-align: left;
+    }
+    .blog-search-form {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(10, 64, 111, 0.45);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1.5px solid rgba(241, 194, 50, 0.35);
+      border-radius: 60px;
+      padding: 6px 7px 6px 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .blog-search-form:hover {
+      border-color: rgba(241, 194, 50, 0.6);
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4), 0 0 15px rgba(241, 194, 50, 0.15);
+    }
+    .blog-search-form:focus-within {
+      background: rgba(10, 64, 111, 0.7);
+      border-color: #f1c232;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45), 0 0 25px rgba(241, 194, 50, 0.32);
+      transform: translateY(-2px);
+    }
+    .search-input-group {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      position: relative;
+      min-width: 0;
+    }
+    .search-input-group .search-icon {
+      color: #f1c232;
+      font-size: 1.15rem;
+      margin-right: 12px;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+    .blog-search-form:focus-within .search-icon {
+      transform: scale(1.1);
+    }
+    .blog-search-input {
+      width: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #ffffff;
+      font-size: 0.98rem;
+      font-family: inherit;
+    }
+    .blog-search-input::placeholder {
+      color: #94a3b8;
+    }
+    .search-clear-btn {
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      font-size: 1.15rem;
+      padding: 0 6px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: color 0.2s ease, transform 0.2s ease;
+      line-height: 1;
+    }
+    .search-clear-btn:hover {
+      color: #f1c232;
+      transform: scale(1.15);
+    }
+    
+    /* Dynamic Glowing Search Button */
+    .blog-search-btn {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #fcd34d 0%, #f1c232 50%, #d99b0c 100%);
+      color: #062540;
+      font-family: var(--nav-font), sans-serif;
+      font-weight: 700;
+      font-size: 0.92rem;
+      letter-spacing: 0.3px;
+      border: none;
+      border-radius: 50px;
+      padding: 11px 24px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      flex-shrink: 0;
+      min-height: 44px;
+      box-shadow: 0 4px 16px rgba(241, 194, 50, 0.4);
+    }
+    .blog-search-btn i {
+      font-size: 1rem;
+      transition: transform 0.3s ease;
+    }
+    .blog-search-btn::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -80%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+      transform: skewX(-25deg);
+      transition: left 0.75s ease;
+    }
+    .blog-search-btn:hover::before {
+      left: 130%;
+    }
+    .blog-search-btn:hover {
+      background: linear-gradient(135deg, #fef08a 0%, #f1c232 50%, #eab308 100%);
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 8px 24px rgba(241, 194, 50, 0.55), 0 0 12px rgba(241, 194, 50, 0.35);
+      color: #031422;
+    }
+    .blog-search-btn:hover i {
+      transform: rotate(-12deg) scale(1.18);
+    }
+    .blog-search-btn:active {
+      transform: translateY(0) scale(0.98);
+      box-shadow: 0 2px 10px rgba(241, 194, 50, 0.35);
+    }
+
+    /* Search Result Status Badge */
+    .blog-search-status {
+      margin-top: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .status-badge {
+      background: rgba(241, 194, 50, 0.12);
+      border: 1px solid rgba(241, 194, 50, 0.35);
+      color: #ffffff;
+      padding: 5px 16px;
+      border-radius: 50px;
+      font-size: 0.86rem;
+    }
+    .status-badge strong {
+      color: #f1c232;
+    }
+    .status-reset-link {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #94a3b8;
+      border-radius: 50px;
+      padding: 5px 14px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+    .status-reset-link:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: #f1c232;
+      color: #f1c232;
+    }
+
+    /* Fallback No-Results Box */
+    .blog-no-results {
+      padding: 60px 20px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px dashed rgba(255, 255, 255, 0.18);
+      border-radius: 12px;
+      margin: 10px 0 40px 0;
+    }
+    .blog-no-results .no-results-icon {
+      font-size: 3.2rem;
+      color: #f1c232;
+      margin-bottom: 14px;
+    }
+    .blog-no-results h3 {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+    .blog-no-results p {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      max-width: 620px;
+      margin: 0 auto 22px auto;
+      line-height: 1.6;
+    }
+    .blog-no-results .btn-blog-read {
+      margin: 0 auto !important;
+      display: inline-block !important;
+    }
+
+    /* Mobile Responsive Adjustments */
+    @media (max-width: 768px) {
+      .blog-search-wrapper {
+        margin: 12px auto 0 auto;
+        padding: 0 4px;
+      }
+      .blog-search-form {
+        padding: 5px 6px 5px 16px;
+      }
+      .blog-search-input {
+        font-size: 0.92rem;
+      }
+      .blog-search-btn {
+        padding: 9px 18px;
+        font-size: 0.86rem;
+        min-height: 40px;
+      }
+    }
+    @media (max-width: 480px) {
+      .blog-search-form {
+        padding: 4px 5px 4px 14px;
+        gap: 6px;
+      }
+      .search-input-group .search-icon {
+        margin-right: 8px;
+        font-size: 1rem;
+      }
+      .blog-search-input {
+        font-size: 0.88rem;
+      }
+      .blog-search-btn {
+        padding: 8px 14px;
+        font-size: 0.82rem;
+        min-height: 38px;
+      }
+    }
   </style>
 </head>
 
@@ -286,11 +526,42 @@
           </ol>
         </nav>
       </div>
+
+      <!-- Blog Search Bar -->
+      <div class="container" data-aos="fade-up" data-aos-delay="250">
+        <div class="blog-search-wrapper">
+          <form id="blogSearchForm" class="blog-search-form" onsubmit="event.preventDefault(); return false;">
+            <div class="search-input-group">
+              <i class="bi bi-search search-icon" aria-hidden="true"></i>
+              <input type="text" id="blogSearchInput" class="blog-search-input" placeholder="Cari topik artikel (contoh: souvenir, pensiun, onboarding)..." aria-label="Cari judul artikel blog" autocomplete="off">
+              <button type="button" id="blogSearchClear" class="search-clear-btn" aria-label="Reset pencarian" style="display: none;">
+                <i class="bi bi-x-circle-fill" aria-hidden="true"></i>
+              </button>
+            </div>
+            <button type="submit" id="blogSearchBtn" class="blog-search-btn" aria-label="Tombol cari artikel">
+              <i class="bi bi-search" aria-hidden="true"></i>
+              <span>Cari Artikel</span>
+            </button>
+          </form>
+
+          <div id="blogSearchStatus" class="blog-search-status" style="display: none;" aria-live="polite"></div>
+        </div>
+      </div>
     </section>
 
     <!-- Post List Section -->
     <section id="post-list" class="post-list-dark">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- No Results Fallback -->
+        <div id="blogNoResults" class="blog-no-results text-center" style="display: none;">
+          <div class="no-results-icon">
+            <i class="bi bi-search"></i>
+          </div>
+          <h3>Artikel Tidak Ditemukan</h3>
+          <p>Maaf, kami tidak menemukan artikel dengan kata kunci "<span id="noResultsQuery"></span>". Silakan coba kata kunci lain atau tampilkan seluruh artikel.</p>
+          <button type="button" class="btn-blog-read" onclick="clearBlogSearch()">Tampilkan Semua Artikel</button>
+        </div>
 
         <div class="row gy-4">
           <!-- Card: Souvenir Kantor Custom (Pillar Page) -->
@@ -1637,9 +1908,104 @@
     <i class="bi bi-arrow-up-short"></i>
   </a>
   <script src="assets/vendor/aos/aos.js?v=20260323" defer></script>
-
   <!-- Main JS -->
   <script src="assets/js/main.js?v=20260323" defer></script>
+
+  <!-- Blog Search Filter Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.getElementById('blogSearchInput');
+      const searchClear = document.getElementById('blogSearchClear');
+      const searchForm = document.getElementById('blogSearchForm');
+      const searchStatus = document.getElementById('blogSearchStatus');
+      const noResultsBox = document.getElementById('blogNoResults');
+      const noResultsQuery = document.getElementById('noResultsQuery');
+      const cardColumns = document.querySelectorAll('#post-list .row.gy-4 > div[class*="col-"]');
+
+      if (!searchInput || cardColumns.length === 0) return;
+
+      function performSearch() {
+        const rawQuery = searchInput.value.trim();
+        const query = rawQuery.toLowerCase();
+
+        if (rawQuery.length > 0) {
+          searchClear.style.display = 'flex';
+        } else {
+          searchClear.style.display = 'none';
+        }
+
+        if (query === '') {
+          cardColumns.forEach(function(col) {
+            col.style.display = '';
+          });
+          if (searchStatus) searchStatus.style.display = 'none';
+          if (noResultsBox) noResultsBox.style.display = 'none';
+          return;
+        }
+
+        let matchCount = 0;
+        cardColumns.forEach(function(col) {
+          const headingEl = col.querySelector('.blog-card-heading');
+          const descEl = col.querySelector('.blog-card-paragraph');
+          const title = headingEl ? headingEl.textContent.toLowerCase() : '';
+          const desc = descEl ? descEl.textContent.toLowerCase() : '';
+
+          if (title.indexOf(query) !== -1 || desc.indexOf(query) !== -1) {
+            col.style.display = '';
+            matchCount++;
+          } else {
+            col.style.display = 'none';
+          }
+        });
+
+        if (searchStatus) {
+          searchStatus.style.display = 'flex';
+          searchStatus.innerHTML = '<span class="status-badge"><i class="bi bi-funnel-fill text-warning me-1"></i> Menemukan <strong>' + matchCount + '</strong> artikel untuk "<strong>' + escapeHtml(rawQuery) + '</strong>"</span><button type="button" class="status-reset-link" onclick="clearBlogSearch()"><i class="bi bi-arrow-counterclockwise"></i> Tampilkan Semua</button>';
+        }
+
+        if (matchCount === 0) {
+          if (noResultsBox) {
+            noResultsBox.style.display = 'block';
+            if (noResultsQuery) noResultsQuery.textContent = rawQuery;
+          }
+        } else {
+          if (noResultsBox) noResultsBox.style.display = 'none';
+        }
+      }
+
+      function escapeHtml(str) {
+        return str.replace(/[&<>"']/g, function(m) {
+          return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[m];
+        });
+      }
+
+      window.clearBlogSearch = function() {
+        if (searchInput) {
+          searchInput.value = '';
+          performSearch();
+          searchInput.focus();
+        }
+      };
+
+      window.applyQuickSearch = function(tag) {
+        if (searchInput) {
+          searchInput.value = tag;
+          performSearch();
+          const target = document.getElementById('post-list');
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      };
+
+      searchInput.addEventListener('input', performSearch);
+      searchClear.addEventListener('click', window.clearBlogSearch);
+      searchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        performSearch();
+      });
+    });
+  </script>
 
 </body>
 </html>
