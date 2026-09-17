@@ -634,6 +634,26 @@
     .article li { color: #334155 !important; line-height: 1.72 !important; }
     .article figure.my-4 { margin: 36px 0 28px 0 !important; clear: both !important; display: block !important; position: relative !important; }
     .table-responsive { margin: 28px 0 36px 0 !important; overflow-x: auto !important; clear: both !important; }
+    /* Bulletproof CTA Box High Contrast Override */
+    .article .cta-blog-box,
+    .article .cta-blog-box h3,
+    .article .cta-blog-box p,
+    .article .cta-mid-box,
+    .article .cta-mid-box h3,
+    .article .cta-mid-box p,
+    .content .cta-blog-box,
+    .content .cta-blog-box h3,
+    .content .cta-blog-box p,
+    .content .cta-mid-box,
+    .content .cta-mid-box h3,
+    .content .cta-mid-box p,
+    body.blog-details-page .article .cta-blog-box p,
+    body.blog-details-page .article .cta-mid-box p,
+    body.blog-details-page .content .cta-blog-box p,
+    body.blog-details-page .content .cta-mid-box p {
+      color: #ffffff !important;
+      opacity: 1 !important;
+    }
   </style>
 </head>
 
@@ -887,8 +907,8 @@
 
               <!-- Mid-Article Conversion CTA -->
               <div class="cta-blog-box">
-                <h3>Konsultasikan Skema Anggaran Hampers Perusahaan Anda</h3>
-                <p>Beri tahu kami target pagu anggaran per paket dan jumlah penerima Anda. Tim Seminarkits.id akan menyusun simulasi kombinasi produk terbaik yang memaksimalkan persepsi kemewahan tanpa over-budget.</p>
+                <h3 class="text-white" style="color: #ffffff !important;">Konsultasikan Skema Anggaran Hampers Perusahaan Anda</h3>
+                <p class="text-white" style="color: #ffffff !important;">Beri tahu kami target pagu anggaran per paket dan jumlah penerima Anda. Tim Seminarkits.id akan menyusun simulasi kombinasi produk terbaik yang memaksimalkan persepsi kemewahan tanpa over-budget.</p>
                 <div class="d-flex justify-content-center gap-3 flex-wrap">
                   <a href="../minta-penawaran.html" class="btn btn-warning fw-bold px-4 py-2 text-dark">Simulasi Anggaran Resmi</a>
                   <a href="https://wa.me/6288989643555?text=Halo%20Seminarkits.id,%20saya%20ingin%20konsultasi%20hampers%20sesuai%20budget" class="btn btn-outline-light fw-bold px-4 py-2" target="_blank" rel="noopener">Konsultasi via WhatsApp</a>
@@ -1043,8 +1063,8 @@
 
               <!-- Final Conversion CTA Section -->
               <div class="cta-blog-box">
-                <h3>Wujudkan Paket Hampers Elegan Tanpa Khawatir Melebihi Anggaran</h3>
-                <p>Konsultasikan plafon anggaran instansi Anda bersama tim kurator profesional Seminarkits.id. Dapatkan kurasi produk fungsional, kemasan boks presisi, sampel mockup visual, serta penawaran harga pabrik terjamin legalitasnya.</p>
+                <h3 class="text-white" style="color: #ffffff !important;">Wujudkan Paket Hampers Elegan Tanpa Khawatir Melebihi Anggaran</h3>
+                <p class="text-white" style="color: #ffffff !important;">Konsultasikan plafon anggaran instansi Anda bersama tim kurator profesional Seminarkits.id. Dapatkan kurasi produk fungsional, kemasan boks presisi, sampel mockup visual, serta penawaran harga pabrik terjamin legalitasnya.</p>
                 <div class="d-flex justify-content-center gap-3 flex-wrap">
                   <a href="../minta-penawaran.html" class="btn btn-warning fw-bold px-4 py-2 text-dark">Minta Penawaran Resmi</a>
                   <a href="https://wa.me/6288989643555?text=Halo%20Seminarkits.id,%20saya%20ingin%20konsultasi%20hampers%20mewah%20budget%20terjangkau" class="btn btn-outline-light fw-bold px-4 py-2" target="_blank" rel="noopener">Hubungi WhatsApp Kami</a>
@@ -1119,81 +1139,80 @@
   </main>
 
   <!-- ========== FOOTER ========== -->
-  <footer id="footer" class="footer dark-background" role="contentinfo">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 footer-about">
-            <a href="../index.html" class="logo d-flex align-items-center">
-              <img src="../assets/img/logo-seminar-kits.webp" alt="Logo Seminarkits.id" width="160" height="40" decoding="sync">
-            </a>
-            <div class="footer-contact pt-3">
-              <p><strong>Seminarkits.id</strong></p>
-              <p>Perum Bulan Terang Utama, Kota Malang. Kodepos 65132</p>
-              <p class="mt-3"><strong>Telepon:</strong> <span>+62 889-8964-3555</span></p>
-              <p><strong>Email:</strong> <span>officialseminarkits@gmail.com</span></p>
-            </div>
-            <div class="social-links d-flex mt-4">
-              <a href="https://www.facebook.com/officialseminarkits" aria-label="Facebook Seminarkits.id"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/officialseminarkits" aria-label="Instagram Seminarkits.id"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.youtube.com/@officialseminarkits" aria-label="YouTube Seminarkits.id TV"><i class="bi bi-youtube"></i></a>
-              <a href="https://www.tiktok.com/@officialseminarkits" aria-label="TikTok Seminarkits.id TV"><i class="bi bi-tiktok"></i></a>
-            </div>
-          </div>
+  <footer id="footer" class="footer dark-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
 
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Tautan Penting</h4>
-            <ul>
-              <li><a href="../index.html">Beranda</a></li>
-              <li><a href="../tentang-kami.html">Tentang Kami</a></li>
-              <li><a href="../penulis.html">Tim Penulis</a></li>
-              <li><a href="../layanan.html">Layanan</a></li>
-              <li><a href="../katalog.html">Katalog</a></li>
-              <li><a href="../ketentuan-layanan.html">Ketentuan Layanan</a></li>
-              <li><a href="../kebijakan-privasi.html">Kebijakan Privasi</a></li>
-            </ul>
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="../index.html" class="logo d-flex align-items-center">
+            <img src="../assets/img/logo-seminar-kits.webp" alt="Logo Seminarkits.id" width="160" height="40" decoding="sync">
+          </a>
+          <div class="footer-contact pt-3">
+            <p><strong>Seminarkits.id</strong></p>
+            <p>Perum Bulan Terang Utama, Kota Malang. Kodepos 65132</p>
+            <p class="mt-3"><strong>Telepon:</strong> <span>+62 889-8964-3555</span></p>
+            <p><strong>Email:</strong> <span>officialseminarkits@gmail.com</span></p>
           </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Layanan Kami</h4>
-            <ul>
-              <li><a href="../produk/merchandise-perusahaan.html">Merchandise Perusahaan</a></li>
-              <li><a href="../produk/merchandise-pendidikan.html">Merchandise Pendidikan</a></li>
-              <li><a href="../produk/corporate-gift.html">Corporate Gift</a></li>
-              <li><a href="../souvenir-perusahaan.html">Souvenir Perusahaan</a></li>
-              <li><a href="../vendor-souvenir-kantor.html">Vendor Souvenir</a></li>
-              <li><a href="../minta-penawaran.html">Minta Penawaran</a></li>
-            </ul>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.facebook.com/officialseminarkits" aria-label="Facebook Seminarkits.id"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/officialseminarkits" aria-label="Instagram Seminarkits.id"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@officialseminarkits" aria-label="YouTube Seminarkits.id TV"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.tiktok.com/@officialseminarkits" aria-label="TikTok Seminarkits.id TV"><i class="bi bi-tiktok"></i></a>
           </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Kategori</h4>
-            <ul>
-              <li><a href="../produk/seminar-kit.html">Seminar Kit</a></li>
-              <li><a href="../produk/hampers.html">Hampers</a></li>
-              <li><a href="../produk/corporate-gift.html">Corporate Gift</a></li>
-              <li><a href="../produk/merchandise.html">Merchandise</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Area Multi-Kota</h4>
-            <ul>
-              <li><a href="../produk/seminar-kit-jakarta.html">Jakarta</a></li>
-              <li><a href="../produk/seminar-kit-surabaya.html">Surabaya</a></li>
-              <li><a href="../produk/seminar-kit-bandung.html">Bandung</a></li>
-              <li><a href="../produk/seminar-kit-jogja.html">Yogyakarta</a></li>
-              <li><a href="../produk/seminar-kit-semarang.html">Semarang</a></li>
-              <li><a href="../produk/seminar-kit-malang.html">Malang</a></li>
-              <li><a href="../produk/seminar-kit-denpasar.html">Denpasar (Bali)</a></li>
-              <li><a href="../produk/seminar-kit-makassar.html">Makassar</a></li>
-              <li><a href="../produk/seminar-kit-balikpapan.html">Balikpapan</a></li>
-              <li><a href="../produk/seminar-kit-samarinda.html">Samarinda</a></li>
-              <li><a href="../produk/seminar-kit-palembang.html">Palembang</a></li>
-            </ul>
-          </div>
-
         </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Tautan Penting</h4>
+          <ul>
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="../tentang-kami.html">Tentang Kami</a></li>
+            <li><a href="../layanan.html">Layanan</a></li>
+            <li><a href="../katalog.html">Katalog</a></li>
+            <li><a href="../ketentuan-layanan.html">Ketentuan Layanan</a></li>
+            <li><a href="../kebijakan-privasi.html">Kebijakan Privasi</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Layanan Kami</h4>
+          <ul>
+            <li><a href="../produk/merchandise-perusahaan.html">Merchandise Perusahaan</a></li>
+            <li><a href="../produk/merchandise-pendidikan.html">Merchandise Pendidikan</a></li>
+            <li><a href="../produk/corporate-gift.html">Corporate Gift</a></li>
+            <li><a href="../souvenir-perusahaan.html">Souvenir Perusahaan</a></li>
+            <li><a href="../vendor-souvenir-kantor.html">Vendor Souvenir</a></li>
+            <li><a href="../minta-penawaran.html">Minta Penawaran</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Kategori</h4>
+          <ul>
+            <li><a href="../produk/seminar-kit.html">Seminar Kit</a></li>
+            <li><a href="../produk/souvenir.html">Souvenir</a></li>
+            <li><a href="../produk/merchandise.html">Merchandise</a></li>
+            <li><a href="../produk/corporate-gift.html">Corporate Gift</a></li>
+            <li><a href="../produk/hampers.html">Hampers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Area Multi-Kota</h4>
+          <ul>
+            <li><a href="../produk/seminar-kit-jakarta.html">Jakarta</a></li>
+            <li><a href="../produk/seminar-kit-surabaya.html">Surabaya</a></li>
+            <li><a href="../produk/seminar-kit-bandung.html">Bandung</a></li>
+            <li><a href="../produk/seminar-kit-jogja.html">Yogyakarta</a></li>
+            <li><a href="../produk/seminar-kit-semarang.html">Semarang</a></li>
+            <li><a href="../produk/seminar-kit-malang.html">Malang</a></li>
+            <li><a href="../produk/seminar-kit-denpasar.html">Denpasar (Bali)</a></li>
+            <li><a href="../produk/seminar-kit-makassar.html">Makassar</a></li>
+            <li><a href="../produk/seminar-kit-balikpapan.html">Balikpapan</a></li>
+            <li><a href="../produk/seminar-kit-samarinda.html">Samarinda</a></li>
+            <li><a href="../produk/seminar-kit-palembang.html">Palembang</a></li>
+          </ul>
+        </div>
+
       </div>
     </div>
 
