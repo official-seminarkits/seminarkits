@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- ========== 1. HALAMAN UTAMA (Priority 1.0) ========== -->
@@ -1221,6 +1221,54 @@
   <url>
     <loc>https://seminarkits.id/blog/estimasi-anggaran-merchandise-promosi-perusahaan</loc>
     <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seminarkits.id/blog/hampers-gift-box-perusahaan</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://seminarkits.id/blog/rekomendasi-hampers-perusahaan-untuk-karyawan-dan-klien</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seminarkits.id/blog/isi-hampers-perusahaan-akhir-tahun</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seminarkits.id/blog/gift-box-perusahaan-custom-logo</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seminarkits.id/blog/hampers-perusahaan-mewah-dengan-budget-terjangkau</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seminarkits.id/blog/hampers-lebaran-perusahaan-custom</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seminarkits.id/blog/hadiah-tahun-baru-untuk-klien-perusahaan</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seminarkits.id/blog/cara-memilih-kemasan-hampers-perusahaan</loc>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
