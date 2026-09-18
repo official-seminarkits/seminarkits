@@ -211,6 +211,120 @@
       min-height: 320px;
       border: 0;
     }
+
+    /* Related Products & Navigation Cards */
+    .ev-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background: #0a406f !important;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.15) !important;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      transition: all 0.3s ease;
+    }
+    .ev-card:hover {
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+      border-color: #f1c232 !important;
+      transform: translateY(-4px);
+    }
+    .ev-card-image {
+      overflow: hidden;
+      position: relative;
+      background: #04192b;
+    }
+    .ev-card-image img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .ev-card:hover .ev-card-image img {
+      transform: scale(1.05);
+    }
+    .ev-card-body {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      background: #0a406f !important;
+    }
+    .ev-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      line-height: 1.35;
+      color: #ffffff !important;
+    }
+    .ev-title a {
+      color: #ffffff !important;
+      text-decoration: none;
+    }
+    .ev-title a:hover {
+      color: #f1c232 !important;
+    }
+    .ev-desc {
+      font-size: 0.92rem;
+      color: #cbd5e1 !important;
+      line-height: 1.6;
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+    .ev-footer {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      margin-bottom: 14px;
+    }
+    .ev-price {
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: #f1c232 !important;
+    }
+    .ev-actions {
+      display: flex;
+      gap: 10px;
+    }
+    .ev-btn-pesan {
+      flex: 1;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1) !important;
+      color: #ffffff !important;
+      border: 1px solid rgba(255, 255, 255, 0.3) !important;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+    .ev-btn-pesan:hover {
+      background: #f1c232 !important;
+      color: #062540 !important;
+      border-color: #f1c232 !important;
+    }
+    .ev-type-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: #f1c232 !important;
+      color: #062540 !important;
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 999px;
+      letter-spacing: 0.3px;
+    }
   </style>
 </head>
 
@@ -406,6 +520,83 @@
         </div>
       </div>
     </section>
+
+    <!-- ======= Section: Navigasi Produk, Layanan & Portofolio ======= -->
+    <section class="section py-5" style="background: rgba(4, 27, 48, 0.7); border-top: 1px solid rgba(255, 255, 255, 0.1);">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <span class="badge bg-outline-light text-warning px-3 py-2 text-uppercase fw-bold border border-warning">Eksplorasi Solusi B2B</span>
+          <h2 class="fw-bold text-white mt-2">Jelajahi Produk, Layanan &amp; Portofolio Kami</h2>
+          <p class="text-white-50 col-lg-7 mx-auto">Sambil menunggu respon dari tim kami, Anda dapat mempelajari katalog produk terpopuler, alur layanan pengadaan resmi, atau melihat rekam jejak portofolio kami.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1: Katalog Produk & Seminar Kit -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="ev-card">
+              <div class="ev-card-image">
+                <img src="assets/img/index/Seminar-Kits-Lengkap.webp" alt="Katalog Produk Seminar Kit" loading="lazy" decoding="async">
+                <div class="ev-type-badge">Katalog Produk</div>
+              </div>
+              <div class="ev-card-body">
+                <h3 class="ev-title"><a href="/produk">Katalog Seminar Kit &amp; Souvenir</a></h3>
+                <p class="ev-desc">Temukan ratusan pilihan paket seminar kit custom, corporate gift set, totebag kanvas, tumbler stainless, dan cinderamata kantor resmi.</p>
+                <div class="ev-footer">
+                  <span class="text-white-50 small fw-semibold">Pilihan Terlengkap</span>
+                  <div class="ev-price">Mulai Rp 15.000</div>
+                </div>
+                <div class="ev-actions">
+                  <a href="/produk" class="ev-btn-pesan w-100"><i class="bi bi-grid-fill me-1"></i> Buka Katalog Produk</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 2: Layanan Pengadaan B2B -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article class="ev-card">
+              <div class="ev-card-image">
+                <img src="assets/img/services/seminar-kit-diklat-bimtek.webp" alt="Layanan Pengadaan B2B" loading="lazy" decoding="async">
+                <div class="ev-type-badge">Solusi B2B</div>
+              </div>
+              <div class="ev-card-body">
+                <h3 class="ev-title"><a href="/layanan">Layanan Pengadaan &amp; Fasilitas</a></h3>
+                <p class="ev-desc">Dapatkan kemudahan proses pemesanan dengan gratis desain 3D mockup, faktur pajak PPN 11% resmi, garansi tepat waktu, dan pengiriman multi-kota.</p>
+                <div class="ev-footer">
+                  <span class="text-white-50 small fw-semibold">Legalitas Resmi</span>
+                  <div class="ev-price text-success">PKP &amp; PPN 11%</div>
+                </div>
+                <div class="ev-actions">
+                  <a href="/layanan" class="ev-btn-pesan w-100"><i class="bi bi-gear-wide-connected me-1"></i> Pelajari Layanan</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 3: Portofolio & Rekam Jejak Klien -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <article class="ev-card">
+              <div class="ev-card-image">
+                <img src="assets/img/services/corporate-gift-set.webp" alt="Portofolio Klien Seminarkits.id" loading="lazy" decoding="async">
+                <div class="ev-type-badge">Bukti Kualitas</div>
+              </div>
+              <div class="ev-card-body">
+                <h3 class="ev-title"><a href="/portofolio">Portofolio &amp; Klien Korporat</a></h3>
+                <p class="ev-desc">Lihat dokumentasi nyata ratusan proyek pengadaan yang telah kami selesaikan untuk kementerian, BUMN, perbankan nasional, dan universitas ternama.</p>
+                <div class="ev-footer">
+                  <span class="text-white-50 small fw-semibold">Dipercaya 500+ Klien</span>
+                  <div class="ev-price text-warning">Rating 4.9/5.0</div>
+                </div>
+                <div class="ev-actions">
+                  <a href="/portofolio" class="ev-btn-pesan w-100"><i class="bi bi-images me-1"></i> Lihat Portofolio</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Navigasi Produk, Layanan & Portofolio -->
 
   </main>
 
