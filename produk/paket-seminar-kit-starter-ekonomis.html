@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -390,6 +390,120 @@
       border-radius: 2px;
       margin-bottom: 16px;
     }
+
+    /* Related Products & Navigation Cards */
+    .ev-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background: #0a406f !important;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.15) !important;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      transition: all 0.3s ease;
+    }
+    .ev-card:hover {
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+      border-color: #f1c232 !important;
+      transform: translateY(-4px);
+    }
+    .ev-card-image {
+      overflow: hidden;
+      position: relative;
+      background: #04192b;
+    }
+    .ev-card-image img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .ev-card:hover .ev-card-image img {
+      transform: scale(1.05);
+    }
+    .ev-card-body {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      background: #0a406f !important;
+    }
+    .ev-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      line-height: 1.35;
+      color: #ffffff !important;
+    }
+    .ev-title a {
+      color: #ffffff !important;
+      text-decoration: none;
+    }
+    .ev-title a:hover {
+      color: #f1c232 !important;
+    }
+    .ev-desc {
+      font-size: 0.92rem;
+      color: #cbd5e1 !important;
+      line-height: 1.6;
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+    .ev-footer {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      margin-bottom: 14px;
+    }
+    .ev-price {
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: #f1c232 !important;
+    }
+    .ev-actions {
+      display: flex;
+      gap: 10px;
+    }
+    .ev-btn-pesan {
+      flex: 1;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1) !important;
+      color: #ffffff !important;
+      border: 1px solid rgba(255, 255, 255, 0.3) !important;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+    .ev-btn-pesan:hover {
+      background: #f1c232 !important;
+      color: #062540 !important;
+      border-color: #f1c232 !important;
+    }
+    .ev-type-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: #f1c232 !important;
+      color: #062540 !important;
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 999px;
+      letter-spacing: 0.3px;
+    }
   </style>
 </head>
 
@@ -659,6 +773,81 @@
           </div>
         </div>
         <!-- End Info Canvas -->
+
+        <!-- ======= Section: Rekomendasi Produk Lainnya ======= -->
+        <div class="my-5" data-aos="fade-up">
+          <div class="text-center mb-4">
+            <span class="badge bg-outline-light text-warning px-3 py-2 text-uppercase fw-bold border border-warning">Rekomendasi Terkait</span>
+            <h2 class="fw-bold text-white mt-2">Pilihan Paket &amp; Produk Seminar Kit Lainnya</h2>
+            <p class="text-white-50 col-lg-8 mx-auto">Lengkapi kebutuhan event dan pelatihan instansi Anda dengan pilihan paket seminar kit dan souvenir pendukung lainnya.</p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Card 1: Paket Seminar Kit Diklat & Bimtek -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <article class="ev-card">
+                <div class="ev-card-image">
+                  <img src="../assets/img/services/seminar-kit-diklat-bimtek.webp" alt="Paket Seminar Kit Diklat Bimtek" loading="lazy" decoding="async">
+                  <div class="ev-type-badge">Upgrade Populer</div>
+                </div>
+                <div class="ev-card-body">
+                  <h3 class="ev-title"><a href="/produk/paket-seminar-kit-diklat-bimtek">Paket Diklat &amp; Bimtek</a></h3>
+                  <p class="ev-desc">Paket seminar kit tingkat menengah berisi tas seminar, tumbler, blocknote, dan pulpen untuk diklat profesional dinas &amp; instansi.</p>
+                  <div class="ev-footer">
+                    <span class="text-white-50 small fw-semibold">Min. Order 50 Paket</span>
+                    <div class="ev-price">Mulai Rp 45.000</div>
+                  </div>
+                  <div class="ev-actions">
+                    <a href="/produk/paket-seminar-kit-diklat-bimtek" class="ev-btn-pesan w-100"><i class="bi bi-eye"></i> Lihat Detail Paket</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Card 2: Blocknote Spiral Custom -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <article class="ev-card">
+                <div class="ev-card-image">
+                  <img src="../assets/img/services/seminar-kit-lanyar-notebook-pulpen.webp" alt="Blocknote Spiral Custom" loading="lazy" decoding="async">
+                  <div class="ev-type-badge">Komponen Kit</div>
+                </div>
+                <div class="ev-card-body">
+                  <h3 class="ev-title"><a href="/produk/blocknote-custom">Blocknote Spiral Custom</a></h3>
+                  <p class="ev-desc">Buku catatan spiral kustom ukuran A5/A6 dengan cover art carton full color dan isi bergaris cetak watermark logo instansi.</p>
+                  <div class="ev-footer">
+                    <span class="text-white-50 small fw-semibold">Min. Order 100 Pcs</span>
+                    <div class="ev-price">Mulai Rp 5.000</div>
+                  </div>
+                  <div class="ev-actions">
+                    <a href="/produk/blocknote-custom" class="ev-btn-pesan w-100"><i class="bi bi-eye"></i> Lihat Detail Produk</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Card 3: Tumbler Stainless SUS304 Laser Grafir -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <article class="ev-card">
+                <div class="ev-card-image">
+                  <img src="../assets/img/services/tumbler-stainless-sus304-custom-grafir.webp" alt="Tumbler Stainless SUS304 Laser Grafir" loading="lazy" decoding="async">
+                  <div class="ev-type-badge">Souvenir Favorit</div>
+                </div>
+                <div class="ev-card-body">
+                  <h3 class="ev-title"><a href="/produk/tumbler-stainless-sus304-grafir">Tumbler SUS304 Laser Grafir</a></h3>
+                  <p class="ev-desc">Termos vacuum tahan panas/dingin 12 jam dengan branding laser grafir presisi permanen dan food grade bebas BPA.</p>
+                  <div class="ev-footer">
+                    <span class="text-white-50 small fw-semibold">Min. Order 50 Pcs</span>
+                    <div class="ev-price">Mulai Rp 28.000</div>
+                  </div>
+                  <div class="ev-actions">
+                    <a href="/produk/tumbler-stainless-sus304-grafir" class="ev-btn-pesan w-100"><i class="bi bi-eye"></i> Lihat Detail Produk</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <!-- End Rekomendasi Produk Lainnya -->
 
         <!-- ======= CTA Action Banner ======= -->
         <div class="row" data-aos="zoom-in" data-aos-delay="200">

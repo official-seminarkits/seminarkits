@@ -74,6 +74,121 @@
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="../assets/css/main.css?v=20260323">
+  <style>
+    /* Related Products & Navigation Cards */
+    .ev-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background: #0a406f !important;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.15) !important;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      transition: all 0.3s ease;
+    }
+    .ev-card:hover {
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+      border-color: #f1c232 !important;
+      transform: translateY(-4px);
+    }
+    .ev-card-image {
+      overflow: hidden;
+      position: relative;
+      background: #04192b;
+    }
+    .ev-card-image img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .ev-card:hover .ev-card-image img {
+      transform: scale(1.05);
+    }
+    .ev-card-body {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      background: #0a406f !important;
+    }
+    .ev-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      line-height: 1.35;
+      color: #ffffff !important;
+    }
+    .ev-title a {
+      color: #ffffff !important;
+      text-decoration: none;
+    }
+    .ev-title a:hover {
+      color: #f1c232 !important;
+    }
+    .ev-desc {
+      font-size: 0.92rem;
+      color: #cbd5e1 !important;
+      line-height: 1.6;
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+    .ev-footer {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      margin-bottom: 14px;
+    }
+    .ev-price {
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: #f1c232 !important;
+    }
+    .ev-actions {
+      display: flex;
+      gap: 10px;
+    }
+    .ev-btn-pesan {
+      flex: 1;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1) !important;
+      color: #ffffff !important;
+      border: 1px solid rgba(255, 255, 255, 0.3) !important;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+    .ev-btn-pesan:hover {
+      background: #f1c232 !important;
+      color: #062540 !important;
+      border-color: #f1c232 !important;
+    }
+    .ev-type-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: #f1c232 !important;
+      color: #062540 !important;
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 999px;
+      letter-spacing: 0.3px;
+    }
+  </style>
 </head>
 
 <body class="project-details-page">
@@ -357,6 +472,81 @@
             </div>
           </div>
         </div>
+
+        <!-- ======= Section: Rekomendasi Produk Lainnya ======= -->
+        <div class="my-5" data-aos="fade-up">
+          <div class="text-center mb-4">
+            <span class="badge bg-outline-light text-warning px-3 py-2 text-uppercase fw-bold border border-warning">Rekomendasi Terkait</span>
+            <h2 class="fw-bold text-white mt-2">Pilihan Produk Seminar Kit &amp; Notulen Lainnya</h2>
+            <p class="text-white-50 col-lg-8 mx-auto">Kombinasikan blocknote spiral kustom dengan paket seminar kit lengkap dan perlengkapan tulis berlogo instansi Anda.</p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Card 1: Paket Seminar Kit Starter Ekonomis -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <article class="ev-card">
+                <div class="ev-card-image">
+                  <img src="../assets/img/services/seminar-kit-diklat-bimtek.webp" alt="Paket Seminar Kit Starter Ekonomis" loading="lazy" decoding="async">
+                  <div class="ev-type-badge">Paket Lengkap</div>
+                </div>
+                <div class="ev-card-body">
+                  <h3 class="ev-title"><a href="/produk/paket-seminar-kit-starter-ekonomis">Seminar Kit Starter Ekonomis</a></h3>
+                  <p class="ev-desc">Paket hemat tas spunbond, blocknote spiral A5, pulpen promosi, dan tali lanyard ID card hemat biaya untuk pelatihan masal.</p>
+                  <div class="ev-footer">
+                    <span class="text-white-50 small fw-semibold">Min. Order 50 Paket</span>
+                    <div class="ev-price">Mulai Rp 22.000</div>
+                  </div>
+                  <div class="ev-actions">
+                    <a href="/produk/paket-seminar-kit-starter-ekonomis" class="ev-btn-pesan w-100"><i class="bi bi-eye"></i> Lihat Detail Paket</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Card 2: Pulpen Promosi Custom -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <article class="ev-card">
+                <div class="ev-card-image">
+                  <img src="../assets/img/services/seminar-kit-lanyar-notebook-pulpen.webp" alt="Pulpen Promosi Custom" loading="lazy" decoding="async">
+                  <div class="ev-type-badge">Pasangan Notulen</div>
+                </div>
+                <div class="ev-card-body">
+                  <h3 class="ev-title"><a href="/produk/pulpen-promosi">Pulpen Promosi Custom</a></h3>
+                  <p class="ev-desc">Pulpen promosi sablon logo dan pulpen metal laser engraving halus sebagai pelengkap praktis blocknote peserta.</p>
+                  <div class="ev-footer">
+                    <span class="text-white-50 small fw-semibold">Min. Order 100 Pcs</span>
+                    <div class="ev-price">Mulai Rp 2.500</div>
+                  </div>
+                  <div class="ev-actions">
+                    <a href="/produk/pulpen-promosi" class="ev-btn-pesan w-100"><i class="bi bi-eye"></i> Lihat Detail Produk</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Card 3: Agenda Kulit Custom -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <article class="ev-card">
+                <div class="ev-card-image">
+                  <img src="../assets/img/index/agenda-seminar.webp" alt="Agenda Kulit Custom" loading="lazy" decoding="async">
+                  <div class="ev-type-badge">Executive Note</div>
+                </div>
+                <div class="ev-card-body">
+                  <h3 class="ev-title"><a href="/produk/agenda-custom">Agenda Kulit Custom</a></h3>
+                  <p class="ev-desc">Buku agenda cover kulit sintetis premium dengan emboss logo hotprint emas dan binder organizer elegan untuk eksekutif.</p>
+                  <div class="ev-footer">
+                    <span class="text-white-50 small fw-semibold">Min. Order 50 Pcs</span>
+                    <div class="ev-price">Mulai Rp 35.000</div>
+                  </div>
+                  <div class="ev-actions">
+                    <a href="/produk/agenda-custom" class="ev-btn-pesan w-100"><i class="bi bi-eye"></i> Lihat Detail Produk</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <!-- End Rekomendasi Produk Lainnya -->
 
         <!-- ======= CTA Banner ======= -->
         <div class="row mt-5">
