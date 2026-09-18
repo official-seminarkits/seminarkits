@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <!-- ========== 1. HALAMAN UTAMA (Priority 1.0) ========== -->
   <url>
     <loc>https://seminarkits.id/</loc>
@@ -80,7 +79,6 @@
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
-
   <!-- ========== 2. KATEGORI PRODUK UTAMA (Priority 0.9) ========== -->
   <url>
     <loc>https://seminarkits.id/produk/seminar-kit</loc>
@@ -202,7 +200,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <!-- ========== 2.1 SEMINAR KIT KOTA TARGET & AREA LAYANAN (Priority 0.9) ========== -->
   <url>
     <loc>https://seminarkits.id/produk/seminar-kit-bekasi</loc>
@@ -714,84 +711,14 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <!-- ========== 3. HALAMAN MULTI-KOTA (Priority 0.8) ========== -->
-  <url>
-    <loc>https://seminarkits.id/produk/seminar-kit-jakarta</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://seminarkits.id/produk/seminar-kit-surabaya</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://seminarkits.id/produk/seminar-kit-bandung</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://seminarkits.id/produk/seminar-kit-jogja</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://seminarkits.id/produk/seminar-kit-malang</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://seminarkits.id/produk/seminar-kit-semarang</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://seminarkits.id/produk/seminar-kit-denpasar</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://seminarkits.id/produk/seminar-kit-makassar</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://seminarkits.id/produk/seminar-kit-balikpapan</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://seminarkits.id/produk/seminar-kit-samarinda</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://seminarkits.id/produk/seminar-kit-palembang</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
   <url>
     <loc>https://seminarkits.id/produk/tote-bag-seminar</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <!-- ========== 4. ARTIKEL BLOG & PANDUAN PENGADAAN (Priority 0.6) ========== -->
-  
-
   <!-- ========== 5. PORTOFOLIO & STUDI KASUS (Priority 0.6) ========== -->
   <url>
     <loc>https://seminarkits.id/portofolio/seminar-kit-simposium-nasional</loc>
@@ -871,7 +798,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://seminarkits.id/produk</loc>
     <lastmod>2026-08-31</lastmod>
@@ -1024,7 +950,7 @@
   </url>
   <url>
     <loc>https://seminarkits.id/blog/kalender-libur-nasional-2027-desain-kalender-kantor</loc>
-    <lastmod>2026-09-05</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1051,7 +977,8 @@
     <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>  <url>
+  </url>
+  <url>
     <loc>https://seminarkits.id/blog/studi-kasus-pengadaan-seminar-kit-untuk-kampus-negeri-di-malang</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -1309,19 +1236,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://seminarkits.id/ketentuan-layanan</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://seminarkits.id/kebijakan-privasi</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
   <url>
     <loc>https://seminarkits.id/produk/pulpen-seminar</loc>
     <lastmod>2026-09-18</lastmod>
