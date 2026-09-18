@@ -718,60 +718,7 @@
   </url>
 
   <!-- ========== 4. ARTIKEL BLOG & PANDUAN PENGADAAN (Priority 0.6) ========== -->
-  <url>
-    <loc>https://seminarkits.id/blog-cara-membuat-rab-pengadaan</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://seminarkits.id/blog-ide-paket-seminar-kit-unik</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://seminarkits.id/blog-jenis-bahan-tas-spunbond</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://seminarkits.id/blog-jenis-stainless-tumbler-sus304</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://seminarkits.id/blog-laminasi-doff-vs-glossy</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://seminarkits.id/blog-memilih-bahan-lanyard-terbaik</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://seminarkits.id/blog-panduan-cetak-pulpen-promosi</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://seminarkits.id/blog-tips-menghemat-rab-souvenir</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://seminarkits.id/blog-ukuran-binder-a5-vs-b5</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
+  
 
   <!-- ========== 5. PORTOFOLIO & STUDI KASUS (Priority 0.6) ========== -->
   <url>
