@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -183,11 +183,118 @@
       background-color: #062540 !important;
       font-family: 'Poppins', sans-serif;
     }
-    .hero-section {
-      padding: 120px 0 60px;
-      background: linear-gradient(135deg, #062540 0%, #0a406f 100%);
-      position: relative;
+    /* Hero Page Title Styles */
+    .page-title {
+      background: linear-gradient(180deg, #041b30 0%, #062540 100%);
+      padding: 0 !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
+    .page-title .heading {
+      padding: 125px 0 30px 0 !important;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      .page-title .heading {
+        padding: 100px 0 25px 0 !important;
+      }
+    }
+    .heading-title {
+      font-size: 2.3rem;
+      font-weight: 800;
+      color: #ffffff !important;
+      line-height: 1.25;
+      margin-bottom: 14px;
+    }
+    .page-title p {
+      color: #cbd5e1 !important;
+      font-size: 1.05rem;
+      line-height: 1.65;
+    }
+    .page-title .breadcrumbs ol {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 0 0;
+      font-size: 0.9rem;
+      justify-content: center;
+      gap: 8px;
+    }
+    .page-title .breadcrumbs a {
+      color: #f1c232 !important;
+      text-decoration: none;
+    }
+    .page-title .breadcrumbs a:hover {
+      text-decoration: underline;
+    }
+    .page-title .breadcrumbs li.current {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    /* Buttons */
+    .btn-main-cta {
+      background: #f1c232;
+      color: #062540 !important;
+      font-weight: 700;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s;
+      border: 1px solid #f1c232;
+    }
+    .btn-main-cta:hover {
+      background: #e5b323;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(241, 194, 50, 0.4);
+    }
+    .btn-outline-cta {
+      background: transparent;
+      color: #ffffff !important;
+      font-weight: 600;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .btn-outline-cta:hover {
+      border-color: #f1c232;
+      color: #f1c232 !important;
+      background: rgba(241, 194, 50, 0.08);
+      transform: translateY(-2px);
+    }
+
+    /* Lead Overview Callout */
+    .desc-callout {
+      background: rgba(241, 194, 50, 0.08);
+      border-left: 4px solid #f1c232;
+      border-radius: 8px;
+      padding: 28px;
+      margin-bottom: 40px;
+    }
+    .desc-callout h2 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #ffffff !important;
+      margin-bottom: 12px;
+    }
+    .desc-callout p {
+      color: #cbd5e1 !important;
+      font-size: 0.98rem;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+    .desc-callout p:last-child {
+      margin-bottom: 0;
+    }
+
     .badge-primary-custom {
       background: rgba(241, 194, 50, 0.2);
       color: #f1c232;
@@ -198,19 +305,6 @@
       font-weight: 700;
       display: inline-block;
       margin-bottom: 16px;
-    }
-    .hero-title {
-      font-size: 2.5rem;
-      font-weight: 800;
-      line-height: 1.25;
-      color: #ffffff !important;
-      margin-bottom: 18px;
-    }
-    .hero-subtitle {
-      font-size: 1.1rem;
-      color: #cbd5e1 !important;
-      line-height: 1.7;
-      margin-bottom: 28px;
     }
     .sku-card {
       background: #082d4d;
@@ -459,58 +553,76 @@
     </div>
   </header>
 
-  <main class="main">
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="main" id="main-content" role="main">
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="container">
-        <div class="row align-items-center gy-4">
-          <div class="col-lg-7" data-aos="fade-right">
-            <span class="badge-primary-custom"><i class="bi bi-pen me-1"></i> Instrumen Tulis &amp; Media Promosi Event</span>
-            <h1 class="hero-title">Pulpen Seminar Custom Cetak Logo untuk Event &amp; Perusahaan</h1>
-            <p class="hero-subtitle">
-              Sempurnakan paket seminar kit Anda dengan pilihan pulpen custom berkualitas tinggi. Mulai dari pulpen plastik boss hemat untuk event massal ribuan peserta, pulpen metal executive grafir laser untuk VIP, stylus touchscreen multifungsi, hingga eco-kraft pen ramah lingkungan.
-            </p>
-            <div class="d-flex flex-wrap gap-3">
-              <a href="https://wa.me/6288989643555?text=Halo%20Seminarkits.id%2C%20saya%20ingin%20konsultasi%20pemesanan%20Pulpen%20Seminar%20Custom." target="_blank" rel="noopener noreferrer" class="btn btn-warning fw-bold text-dark px-4 py-3" style="border-radius: 10px;">
-                <i class="bi bi-whatsapp me-2"></i> Konsultasi &amp; Mockup Gratis
-              </a>
-              <a href="/katalog" class="btn btn-outline-light px-4 py-3 fw-semibold" style="border-radius: 10px;">
-                <i class="bi bi-file-earmark-pdf me-2"></i> Unduh Katalog Pulpen
-              </a>
-            </div>
-            <div class="d-flex gap-4 mt-4 pt-2 text-white-50 small">
-              <div><i class="bi bi-check2-circle text-warning me-1"></i> MOQ Mulai 100 Pcs</div>
-              <div><i class="bi bi-check2-circle text-warning me-1"></i> Tinta Lancar Anti-Macet</div>
-              <div><i class="bi bi-check2-circle text-warning me-1"></i> Legalitas PKP Resmi</div>
+    <!-- Page Title & Breadcrumbs -->
+    <div class="page-title">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-9" data-aos="fade-up" data-aos-delay="100">
+              <span class="badge bg-warning text-dark px-3 py-2 text-uppercase fw-bold mb-3">Produsen &amp; Vendor Pulpen Seminar B2B</span>
+              <h1 class="heading-title">Pulpen Seminar Custom Cetak Logo untuk Event &amp; Perusahaan</h1>
+              <p class="mb-3">Sempurnakan paket seminar kit Anda dengan pilihan pulpen custom berkualitas tinggi. Mulai dari pulpen plastik boss hemat untuk event massal ribuan peserta, pulpen metal executive grafir laser untuk VIP, stylus touchscreen multifungsi, hingga eco-kraft pen ramah lingkungan.</p>
+              <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+                <a href="https://wa.me/6288989643555?text=Halo%20Seminarkits.id%2C%20saya%20ingin%20konsultasi%20pemesanan%20Pulpen%20Seminar%20Custom." class="btn-main-cta shadow-sm" target="_blank" rel="noopener">
+                  <i class="bi bi-whatsapp me-1"></i> Konsultasi Pulpen Seminar
+                </a>
+                <a href="/minta-penawaran" class="btn-outline-cta">
+                  <i class="bi bi-file-earmark-text me-1"></i> Ajukan Penawaran (RFQ)
+                </a>
+              </div>
             </div>
           </div>
-          <div class="col-lg-5" data-aos="fade-left">
-            <div class="position-relative">
-              <img src="../assets/img/blog/seminar-kit-lanyar-notebook-pulpen.webp" alt="Pulpen Seminar Custom untuk Perlengkapan Acara" class="img-fluid rounded-4 shadow-lg border border-secondary" width="600" height="400" loading="eager" decoding="async">
-              <div class="position-absolute bottom-0 end-0 bg-dark p-3 rounded-3 m-3 border border-warning shadow" style="background: rgba(4, 27, 48, 0.9) !important;">
-                <div class="text-warning fw-bold small">Harga Grosir Pabrik</div>
-                <div class="h5 mb-0 text-white fw-bold">Mulai Rp 1.800 /pcs</div>
+        </div>
+      </div>
+      <nav class="breadcrumbs" data-aos="fade-up" data-aos-delay="200" aria-label="Breadcrumb">
+        <div class="container">
+          <ol>
+            <li><a href="/"><i class="bi bi-house-door" aria-hidden="true"></i> Beranda</a></li>
+            <li><a href="/produk">Produk</a></li>
+            <li><a href="/produk/seminar-kit">Seminar Kit</a></li>
+            <li class="current" aria-current="page">Pulpen Seminar</li>
+          </ol>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Main Content Section -->
+    <section class="section py-5 events">
+      <div class="container" data-aos="fade-up">
+
+        <!-- Lead Overview Callout -->
+        <div class="desc-callout" data-aos="fade-up">
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-7">
+              <h2><i class="bi bi-pen text-warning me-2"></i>Pulpen Seminar Custom: Komponen Vital &amp; Media Promosi Berkelanjutan</h2>
+              <p>
+                <strong>Pulpen seminar custom</strong> adalah instrumen esensial yang tak terpisahkan dari setiap paket seminar kit instansi kementerian, kampus, BUMN, maupun korporasi swasta. Berfungsi langsung saat peserta mencatat poin-poin materi pelatihan dan notulensi simposium, pulpen promosi juga terus dibawa pulang dan digunakan berulang kali di meja kerja harian, memberikan paparan visual (*brand exposure*) jangka panjang bagi institusi Anda.
+              </p>
+              <p>
+                Di <strong>Seminarkits.id</strong>, kami menyediakan produksi pulpen seminar custom grosir berkualitas prima dari tangan pertama. Dilengkapi opsi sablon pad printing presisi, cetak UV digital tahan gores, dan laser engraving mewah untuk bodi logam. Didukung legalitas PKP resmi untuk penerbitan Faktur Pajak PPN 11%, kami menjamin ketepatan waktu pengiriman dan kualitas tinta lancar anti-macet.
+              </p>
+              <div class="d-flex gap-4 mt-3 pt-2 text-white-50 small">
+                <div><i class="bi bi-check2-circle text-warning me-1"></i> MOQ Mulai 100 Pcs</div>
+                <div><i class="bi bi-check2-circle text-warning me-1"></i> Tinta Lancar Anti-Macet</div>
+                <div><i class="bi bi-check2-circle text-warning me-1"></i> Legalitas PKP Resmi</div>
+              </div>
+            </div>
+            <div class="col-lg-5 text-center">
+              <div class="position-relative">
+                <img src="../assets/img/blog/seminar-kit-lanyar-notebook-pulpen.webp" alt="Pulpen Seminar Custom untuk Perlengkapan Acara" class="img-fluid rounded-4 shadow-lg border border-secondary" width="600" height="400" loading="lazy" decoding="async">
+                <div class="position-absolute bottom-0 end-0 p-3 rounded-3 m-3 border border-warning shadow" style="background: rgba(4, 27, 48, 0.9) !important;">
+                  <div class="text-warning fw-bold small">Harga Grosir Pabrik</div>
+                  <div class="h5 mb-0 text-white fw-bold">Mulai Rp 1.800 /pcs</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Breadcrumb -->
-    <div class="py-3" style="background: #041b30; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06);">
-      <div class="container">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb mb-0 small">
-            <li class="breadcrumb-item"><a href="/" class="text-white-50 text-decoration-none">Beranda</a></li>
-            <li class="breadcrumb-item"><a href="/produk" class="text-white-50 text-decoration-none">Produk</a></li>
-            <li class="breadcrumb-item"><a href="/produk/seminar-kit" class="text-white-50 text-decoration-none">Seminar Kit</a></li>
-            <li class="breadcrumb-item active text-warning" aria-current="page">Pulpen Seminar</li>
-          </ol>
-        </nav>
-      </div>
-    </div>
 
     <!-- SKU Showcase Grid -->
     <section class="py-5">
@@ -556,7 +668,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="sku-card">
               <div class="sku-card-img-wrap">
-                <img src="../assets/img/services/seminar-kit-foto-produk-vendor-01.webp" alt="Pulpen Metal Executive Laser Grafir" loading="lazy" decoding="async">
+                <img src="../assets/img/portfolio/executive-vip-corporate-gift-set.webp" alt="Pulpen Metal Executive Laser Grafir" loading="lazy" decoding="async">
                 <span class="sku-card-badge">Executive VIP</span>
               </div>
               <div class="sku-card-body">
